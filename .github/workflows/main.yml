@@ -47,6 +47,7 @@ jobs:
         run: |
              cd packages/create-theme/public/template
              npm run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+             ls 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
