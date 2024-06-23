@@ -4,12 +4,15 @@ import { CensoredThemeConfig } from "types"
 import {onMounted, ref, watchEffect} from "vue";
 const { theme } = useData<CensoredThemeConfig>()
 
+import DarkIMG from '../assets/ThemeCover3.jpg'
+import LightIMG from '../assets/ThemeCover1.jpg'
+
 const ThemeCover = ref("")
 function UpdateThemeCover() {
   const ThemeColor = document.documentElement.classList;
   ThemeCover.value = ThemeColor.contains("dark")
-      ? theme.value.index?.DarkThemeCoverURL
-      : theme.value.index?.LightThemeCoverURL
+      ? DarkIMG
+      : LightIMG
 }
 
 onMounted(() => {
