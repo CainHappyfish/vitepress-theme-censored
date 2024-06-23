@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress-theme-censored/config';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  srcDir: './',
   base: '/vitepress-theme-censored/',
   title: "BLOG THEME CENSORED",
   description: "A theme for Vitepress",

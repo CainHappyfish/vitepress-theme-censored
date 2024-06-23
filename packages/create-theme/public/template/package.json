@@ -3,5 +3,11 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.30"
   }
 }

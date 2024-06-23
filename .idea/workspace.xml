@@ -5,8 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageLoading.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeColorButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeColorButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/navBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/navBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/NotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/NotFound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-M3NQ2BCZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-M3NQ2BCZ.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/vitepress___@vueuse_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/vitepress___@vueuse_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeColorButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeColorButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/navBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/navBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/NotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/NotFound.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +137,7 @@
       <workItem from="1719074264413" duration="241000" />
       <workItem from="1719074510460" duration="2000" />
       <workItem from="1719074983799" duration="4379000" />
-      <workItem from="1719109033278" duration="28577000" />
+      <workItem from="1719109033278" duration="36266000" />
     </task>
     <servers />
   </component>

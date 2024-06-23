@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useData} from "vitepress";
+import {useData, withBase} from "vitepress";
 import { CensoredThemeConfig } from "types"
 import SwitchThemeColorButton from "./ThemeColorButton.vue"
 import {ref} from "vue";
@@ -16,7 +16,7 @@ const { theme } = useData<CensoredThemeConfig>()
           v-for="(item, index) in theme.navBars"
           :key="index"
           >
-            <a :href="item.url">{{ item.title }}</a>
+            <a :href="item.url ? withBase(item.url) : '404' ">{{ item.title }}</a>
           </li>
         </ul>
       </nav>
