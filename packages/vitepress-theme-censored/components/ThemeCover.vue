@@ -60,6 +60,8 @@ onMounted(() => {
 
   overflow: hidden;
   position: relative; /* 新增 */
+
+  z-index: 1;
 }
 
 .cover {
