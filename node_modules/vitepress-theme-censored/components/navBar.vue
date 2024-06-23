@@ -31,7 +31,7 @@ const { theme } = useData<CensoredThemeConfig>()
   width: 100%;
   height: 120px;
   border-radius: 10px;
-  z-index: 99;
+  z-index: 3;
 
   display: flex;
   align-items: center;

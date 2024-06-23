@@ -164,7 +164,7 @@ onMounted(() => {
   height: 100vh;
   background-color: var(--cencored-bg-color);
   transition: all 0.3s ease;
-  z-index: 2;
+  z-index: 4;
 }
 
 .pageLoad.off {

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress-theme-censored/config';
+import {withBase} from "vitepress";
 
 
 // https://vitepress.dev/reference/site-config
@@ -9,7 +10,7 @@ export default defineConfig({
   description: "A theme for Vitepress",
   themeConfig: {
     navBars: [
-      {title: "Home", url: "/home"},
+      {title: "Home", url: withBase("/home")},
       {title: "About", url: "/about"},
       {title: "Categories", url: "/categories"},
       {title: "Friends", url: "/friends"},
@@ -18,8 +19,8 @@ export default defineConfig({
     ],
 
     index: {
-       LightThemeCoverURL: "./public/ThemeCover1.jpg",
-       DarkThemeCoverURL: "./public/ThemeCover3.jpg",
+       LightThemeCoverURL: withBase("./public/ThemeCover1.jpg"),
+       DarkThemeCoverURL: withBase("./public/ThemeCover3.jpg"),
        BlogTitle: "破酥的个人博客",
        Signature: "我遗落的风景。",
     }
