@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/assets/ThemeCover2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/assets/ThemeCover3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeCover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/navBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/navBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeCover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/navBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/navBar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Learning/frontEnd/vitepress-theme-censored/public",
+    "last_opened_file_path": "D:/Learning/frontEnd/vitepress-theme-censored/packages/vitepress-theme-censored/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,6 +74,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\assets" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\public" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template\public" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
@@ -121,7 +122,7 @@
       <workItem from="1719074264413" duration="241000" />
       <workItem from="1719074510460" duration="2000" />
       <workItem from="1719074983799" duration="4379000" />
-      <workItem from="1719109033278" duration="42092000" />
+      <workItem from="1719109033278" duration="42522000" />
     </task>
     <servers />
   </component>
