@@ -18,7 +18,8 @@ export default defineConfig({
     ],
 
     index: {
-       ThemeCoverURL: "./public/ThemeCover1.jpg",
+       LightThemeCoverURL: "./public/ThemeCover1.jpg",
+       DarkThemeCoverURL: "./public/ThemeCover3.jpg",
        BlogTitle: "破酥的个人博客",
        Signature: "我遗落的风景。",
     }

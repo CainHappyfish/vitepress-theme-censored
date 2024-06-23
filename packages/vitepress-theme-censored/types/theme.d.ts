@@ -124,7 +124,8 @@ declare namespace CensoredTheme {
 	// 索引页
 	interface Index {
 		// 封面
-		ThemeCoverURL: string;
+		DarkThemeCoverURL: string;
+		LightThemeCoverURL: string;
 		// 博客名称
 		BlogTitle: string;
 		// 签名
