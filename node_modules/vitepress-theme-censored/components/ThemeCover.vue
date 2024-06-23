@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useData} from "vitepress";
+import {useData, withBase} from "vitepress";
 import { CensoredThemeConfig } from "types"
 import {onMounted, ref, watchEffect} from "vue";
 const { theme } = useData<CensoredThemeConfig>()
@@ -8,8 +8,9 @@ const ThemeCover = ref("")
 function UpdateThemeCover() {
   const ThemeColor = document.documentElement.classList;
   ThemeCover.value = ThemeColor.contains("dark")
-      ? theme.value.index?.DarkThemeCoverURL
-      : theme.value.index?.LightThemeCoverURL
+      ? withBase(theme.value.index?.DarkThemeCoverURL)
+      : withBase(theme.value.index?.LightThemeCoverURL)
+  console.log(ThemeCover.value);
 }
 
 onMounted(() => {
