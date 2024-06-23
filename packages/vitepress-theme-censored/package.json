@@ -1,0 +1,30 @@
+{
+  "name": "vitepress-theme-censored",
+  "version": "1.0.0",
+  "repository": "git@github.com:Cainhappyfish/vitepress-theme-censored.git",
+  "description": "",
+  "author": "破酥 C4iN",
+  "main": "index.ts",
+  "type": "module",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./index.ts",
+      "types": "./types/index.d.ts"
+    },
+    "./config": {
+      "default": "./config/index.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vitepress-theme",
+    "blog-theme"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "types": "^0.1.1"
+  }
+}

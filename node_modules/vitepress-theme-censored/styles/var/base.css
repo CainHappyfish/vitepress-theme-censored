@@ -1,0 +1,47 @@
+/* theme colors */
+:root {
+  /* theme color */
+  --censored-c-water-1: rgb(196,232,254);
+  --censored-c-water-2: rgb(242,232,233);
+  --censored-c-water-3: rgb(182,218,254);
+  --censored-c-water-4: rgb(183,208,238);
+
+  --censored-c-ice-1: rgb(231,240,247);
+  --censored-c-ice-2: rgb(175,210,230);
+  --censored-c-ice-3: rgb(125,190,208);
+  --censored-c-ice-4: rgb(101,161,189);
+
+  --censored-c-marsh-1: rgb(161,234,214);
+  --censored-c-marsh-2: rgb(136,222,239);
+  --censored-c-marsh-3: rgb(143,198,237);
+  --censored-c-marsh-4: rgb(141,173,222);
+
+}
+
+.dark {
+  --censored-c-deep-1: rgb(119,171,182);
+  --censored-c-deep-2: rgb(69,108,123);
+  --censored-c-deep-3: rgb(36,77,99);
+  --censored-c-deep-4: rgb(29,60,81);
+
+  --censored-c-velvet-1: rgb(253,124,189);
+  --censored-c-velvet-2: rgb(148,78,190);
+  --censored-c-velvet-3: rgb(79,63,151);
+  --censored-c-velvet-4: rgb(48,55,100);
+
+  --censored-c-dawn-1: rgb(46,116,176);
+  --censored-c-dawn-2: rgb(32,82,143);
+  --censored-c-dawn-3: rgb(22,67,109);
+  --censored-c-dawn-4: rgb(9,38,68);
+
+}
+
+/*text colors*/
+:root {
+  --censored-c-waves-1: rgb(255,255,255);
+  --censored-c-waves-2: rgb(162,224,239);
+  --censored-c-waves-3: rgb(111,175,203);
+  --censored-c-waves-4: rgb(58,123,153);
+
+
+}

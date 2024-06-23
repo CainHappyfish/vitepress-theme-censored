@@ -1,0 +1,69 @@
+@import "var/base.css";
+@import "components/buttons.css";
+
+:root {
+    color-scheme: light dark;
+}
+
+html {
+    background: var(--cencored-bg-color);
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+html.light {
+    /*background*/
+    --cencored-bg-color: var(--censored-c-ice-3);
+
+    /*navbar*/
+    --cencored-nav-color: var(--censored-c-ice-4);
+    --cencored-nav-text-color: var(--censored-c-ice-1);
+    --cencored-nav-hover-color: var(--censored-c-ice-1);
+    --cencored-nav-text-hover-color: var(--censored-c-ice-4);
+
+    /*buttons*/
+    /*switch theme color button*/
+    --censored-btn-stc-bg-color: var(--censored-c-ice-3);
+}
+
+html.dark {
+    /*background*/
+    --cencored-bg-color: var(--censored-c-dawn-4);
+
+    /*navbar*/
+    --cencored-nav-color: var(--censored-c-dawn-3);
+    --cencored-nav-hover-color: var(--censored-c-ice-1);
+    --cencored-nav-text-color: var(--censored-c-waves-2);
+    --cencored-nav-text-hover-color: var(--censored-c-dawn-4);
+
+    /*buttons*/
+    /*switch theme color button*/
+    --censored-btn-stc-bg-color: var(--censored-c-dawn-4);
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        /*background*/
+        --cencored-bg-color: var(--censored-c-ice-3);
+
+        /*navbar*/
+        --cencored-nav-color: var(--censored-c-dawn-3);
+        --cencored-nav-hover-color: var(--censored-c-ice-1);
+        --cencored-nav-text-color: var(--censored-c-waves-2);
+        --cencored-nav-text-hover-color: var(--censored-c-dawn-4);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html.dark {
+        /*background*/
+        --cencored-bg-color: var(--censored-c-dawn-4);
+
+        /*navbar*/
+        --cencored-nav-color: var(--censored-c-dawn-3);
+        --cencored-nav-hover-color: var(--censored-c-ice-1);
+        --cencored-nav-text-color: var(--censored-c-waves-2);
+        --cencored-nav-text-hover-color: var(--censored-c-dawn-4);
+
+    }
+
+}
