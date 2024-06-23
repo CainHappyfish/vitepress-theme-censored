@@ -23,6 +23,11 @@ html.light {
     /*buttons*/
     /*switch theme color button*/
     --censored-btn-stc-bg-color: var(--censored-c-ice-3);
+
+    /*texts*/
+    --censored-cover-text-color: var(--censored-c-ice-1);
+    --censored-cover-text-shadow-color: var(--censored-c-ice-4);
+
 }
 
 html.dark {
@@ -38,6 +43,11 @@ html.dark {
     /*buttons*/
     /*switch theme color button*/
     --censored-btn-stc-bg-color: var(--censored-c-dawn-4);
+
+    /*texts*/
+    --censored-cover-text-color: var(--censored-c-ice-1);
+    --censored-cover-text-shadow-color: var(--censored-c-ice-4);
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -50,6 +60,14 @@ html.dark {
         --cencored-nav-hover-color: var(--censored-c-ice-1);
         --cencored-nav-text-color: var(--censored-c-waves-2);
         --cencored-nav-text-hover-color: var(--censored-c-dawn-4);
+
+        /*buttons*/
+        /*switch theme color button*/
+        --censored-btn-stc-bg-color: var(--censored-c-ice-3);
+
+        /*texts*/
+        --censored-cover-text-color: var(--censored-c-ice-1);
+        --censored-cover-text-shadow-color: var(--censored-c-ice-4);
     }
 }
 
@@ -63,6 +81,15 @@ html.dark {
         --cencored-nav-hover-color: var(--censored-c-ice-1);
         --cencored-nav-text-color: var(--censored-c-waves-2);
         --cencored-nav-text-hover-color: var(--censored-c-dawn-4);
+
+        /*buttons*/
+        /*switch theme color button*/
+        --censored-btn-stc-bg-color: var(--censored-c-dawn-4);
+
+        /*texts*/
+        --censored-cover-text-color: var(--censored-c-ice-1);
+        --censored-cover-text-shadow-color: var(--censored-c-ice-4);
+
 
     }
 

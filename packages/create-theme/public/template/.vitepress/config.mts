@@ -15,7 +15,14 @@ export default defineConfig({
       {title: "Friends", url: "/friends"},
       {title: "Archives", url: "/archives"},
       {title: "Tags", url: "/friends"}
-    ]
+    ],
+
+    index: {
+       ThemeCoverURL: "./public/ThemeCover1.jpg",
+       BlogTitle: "破酥的个人博客",
+       Signature: "我遗落的风景。",
+    }
+
 
   }
 })

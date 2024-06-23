@@ -121,6 +121,16 @@ declare namespace CensoredTheme {
 		children: NavItemWithLink[];
 	}
 
+	// 索引页
+	interface Index {
+		// 封面
+		ThemeCoverURL: string;
+		// 博客名称
+		BlogTitle: string;
+		// 签名
+		Signature: string;
+	}
+
 	/** 友情链接 */
 	interface Links {
 		/**

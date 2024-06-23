@@ -57,6 +57,9 @@ export declare interface CensoredThemeConfig {
 	/** 自定义封面 | Customize the cover image */
 	cover?: CensoredTheme.ConverConfig;
 
+	// 主题封面 | Theme Cover
+	index?: CensoredTheme.Index;
+
 	/** 固定按钮 | Fixed button */
 	rightside?: CensoredTheme.FixedBtnConfig;
 

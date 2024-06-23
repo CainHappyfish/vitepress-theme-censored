@@ -27,6 +27,7 @@ const { theme } = useData<CensoredThemeConfig>()
 
 <style scoped>
 .navbar {
+  margin-top: 10px;
   width: 100%;
   height: 120px;
   border-radius: 10px;
@@ -37,6 +38,8 @@ const { theme } = useData<CensoredThemeConfig>()
   background: var(--cencored-nav-color);
   transition: background 0.5s ease, color 0.5s ease;
 
+  position: sticky;
+  top: 0;
 }
 
 .container ul{
