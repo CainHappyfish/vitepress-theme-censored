@@ -52,7 +52,7 @@ onMounted(() => {
   flex-wrap: wrap;
 
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   border-radius: 10px;
 
   overflow: hidden;
