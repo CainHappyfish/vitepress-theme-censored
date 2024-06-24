@@ -12,7 +12,7 @@ html {
 
 html.light {
     /*background*/
-    --cencored-bg-color: var(--censored-c-ice-3);
+    --cencored-bg-color: var(--censored-c-ice-2);
 
     /*navbar*/
     --cencored-nav-color: var(--censored-c-ice-4);
