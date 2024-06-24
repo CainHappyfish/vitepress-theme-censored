@@ -12,7 +12,7 @@ const handleScroll = (event: Event) => {
   const target = document.querySelector(props.location); // 根据 location prop 获取目标元素
   if (target) {
     const scrollTargetY = target.getBoundingClientRect().top + window.scrollY; // 计算目标元素的滚动位置
-    const scrollDuration = 600; // 滚动动画的持续时间（毫秒）
+    const scrollDuration = 400; // 滚动动画的持续时间（毫秒）
     const startY = window.scrollY; // 起始滚动位置
     const startTime = performance.now(); // 获取动画开始的时间
 

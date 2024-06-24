@@ -4,7 +4,8 @@ import { CensoredThemeConfig } from "types"
 import {onMounted, ref, watchEffect} from "vue";
 const { theme } = useData<CensoredThemeConfig>()
 
-import DarkIMG from '../assets/ThemeCover3.jpg'
+// 使用过大的图片会导致加载速度变慢
+import DarkIMG from '../assets/ThemeCover2.jpg'
 import LightIMG from '../assets/ThemeCover1.jpg'
 
 const ThemeCover = ref("")
@@ -21,7 +22,7 @@ onMounted(() => {
 
   // 监听主题类的变化
   watchEffect(() => {
-    const ThemeColor = document.documentElement.classList;
+    // const ThemeColor = document.documentElement.classList;
     const observer = new MutationObserver(() => {
       UpdateThemeCover();
     });

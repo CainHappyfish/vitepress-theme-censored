@@ -47,7 +47,7 @@ onMounted(() => {
 .inner > div {
   width: 50px;
   height: 50px;
-  background-color: var(--cencored-nav-color);
+  background-color: var(--censored-nav-color);
   border-radius: 100%;
   position: absolute;
   transition: all 0.5s ease;
@@ -162,7 +162,7 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--cencored-bg-color);
+  background-color: var(--censored-bg-color);
   transition: all 0.3s ease;
   z-index: 99;
 }

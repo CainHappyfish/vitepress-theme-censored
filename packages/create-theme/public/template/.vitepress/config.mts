@@ -35,6 +35,7 @@ export default defineConfig({
     },
 
     pageLoading: true,
+    themeLoading: true
 
 
   }

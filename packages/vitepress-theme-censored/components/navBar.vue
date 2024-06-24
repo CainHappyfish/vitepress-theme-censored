@@ -5,6 +5,8 @@ import SwitchThemeColorButton from "./ThemeColorButton.vue"
 
 const { theme } = useData<CensoredThemeConfig>()
 
+
+
 </script>
 
 <template>
@@ -36,7 +38,7 @@ const { theme } = useData<CensoredThemeConfig>()
   display: flex;
   align-items: center;
 
-  background: var(--cencored-nav-color);
+  background: var(--censored-nav-color);
   transition: background 0.5s ease, color 0.5s ease;
 
   position: sticky;
@@ -66,14 +68,14 @@ const { theme } = useData<CensoredThemeConfig>()
   background: transparent;
   transition: background 0.5s ease, opacity 0.5s ease, color 0.5s ease;
 
-  color: var(--cencored-nav-text-color);
+  color: var(--censored-nav-text-color);
 
 }
 
 .container a:hover {
   border-radius: 10px;
-  background: var(--cencored-nav-hover-color);
-  color: var(--cencored-nav-text-hover-color);
+  background: var(--censored-nav-hover-color);
+  color: var(--censored-nav-text-hover-color);
   opacity: 0.5; /* 初始透明度 */
 }
 

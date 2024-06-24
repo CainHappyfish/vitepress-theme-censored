@@ -2,10 +2,15 @@
 import {onMounted, ref} from "vue";
 import SunURL from "./icons/sun.svg"
 import MoonURL from "./icons/moon.svg"
+import { useData } from 'vitepress'
+import { CensoredThemeConfig } from "types"
+const { theme } = useData<CensoredThemeConfig>()
+
 
 
 function SwitchThemeColor() {
   const ThemeColor = document.documentElement.classList
+
   ThemeColor.toggle("dark")
   ThemeColor.toggle("light")
   updateSwitchSvgURL()
@@ -16,6 +21,7 @@ const SwitchSvgURL = ref("");
 function updateSwitchSvgURL() {
   const ThemeColor = document.documentElement.classList;
   SwitchSvgURL.value = ThemeColor.contains("dark") ? MoonURL : SunURL
+  theme.value.themeLoading = true
 }
 
 onMounted(() => {
