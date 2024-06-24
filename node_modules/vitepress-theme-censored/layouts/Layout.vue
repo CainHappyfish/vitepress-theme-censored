@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useData, useRouter} from 'vitepress'
+import { useData } from 'vitepress'
 import { CensoredThemeConfig } from "types"
 import PageLoading from '../components/PageLoading.vue'
 import NavBar from "../components/navBar.vue"
@@ -19,10 +19,10 @@ const { theme, page } = useData<CensoredThemeConfig>()
   <NotFound v-if="page.isNotFound"/>
   <div class="container" v-else>
     <PageLoading v-if="theme.pageLoading&&!page.isNotFound"/>
-    <NavBar />
     <PageContent class="page-container">
       <Index v-if="page.frontmatter.layout == 'index'" />
-      <About v-else-if="page.frontmatter.layout == 'about'"/>
+      <NavBar v-else/>
+      <About v-if="page.frontmatter.layout == 'about'"/>
 
     </PageContent>
     <SideBar />

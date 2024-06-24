@@ -48,14 +48,15 @@ onMounted(() => {
 
 <style scoped>
 .cover-container {
-  margin: 10px 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
   width: 100%;
-  height:30em;
+  height: 100%;
+  max-height: 100vh;
   border-radius: 10px;
 
   overflow: hidden;
