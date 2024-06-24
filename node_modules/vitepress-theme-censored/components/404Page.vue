@@ -46,7 +46,7 @@ import {withBase} from "vitepress";
             <div class="text">
                 <article>
                     <p>Uh oh! Looks like you got lost. </p>
-                    <button><a :href=withBase('/')>HOME</a></button>
+                    <button><a :href="withBase('/')">HOME</a></button>
                 </article>
             </div>
 
