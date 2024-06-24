@@ -6,7 +6,6 @@ const { frontmatter } = useData<CensoredThemeConfig>()
 
 <template>
 ABOUT PAGE
-  {{ frontmatter.title }}
 </template>
 
 <style scoped>

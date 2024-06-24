@@ -55,7 +55,7 @@ onMounted(() => {
   flex-wrap: wrap;
 
   width: 100%;
-  height: 90vh;
+  height:30em;
   border-radius: 10px;
 
   overflow: hidden;
@@ -80,6 +80,8 @@ onMounted(() => {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  padding: 2em 0;
 
   color: var(--censored-cover-text-color);
 

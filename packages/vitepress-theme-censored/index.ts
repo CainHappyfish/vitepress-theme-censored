@@ -3,7 +3,6 @@ import { Component } from 'vue';
 
 import LayoutPage from './layouts/Layout.vue';
 import NotFoundPage from './layouts/NotFound.vue';
-import About from './components/About.vue'
 import './styles/index.css'
 
 

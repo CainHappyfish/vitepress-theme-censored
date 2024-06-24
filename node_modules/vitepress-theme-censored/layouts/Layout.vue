@@ -1,21 +1,34 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import {useData, useRouter} from 'vitepress'
 import { CensoredThemeConfig } from "types"
 import PageLoading from '../components/PageLoading.vue'
 import NavBar from "../components/navBar.vue"
+import PageContent from "../components/PageContent.vue";
 import Index from "../components/PageIndex.vue"
 import SideBar from "../components/SideBar.vue";
+import About from "../components/PageAbout.vue"
+
+import NotFound from "../components/404Page.vue";
+
+const router = useRouter();
 
 
-
-const { theme, site, page } = useData<CensoredThemeConfig>()
+const { theme, page } = useData<CensoredThemeConfig>()
 </script>
 
 <template>
-  <PageLoading />
-  <NavBar />
-  <Index />
-  <SideBar />
+  <NotFound v-if="page.isNotFound"/>
+  <div class="container">
+    <PageLoading v-if="theme.pageLoading&&!page.isNotFound"/>
+    <NavBar />
+    <PageContent class="page-container">
+      <Index v-if="page.frontmatter.layout == 'index'" />
+      <About v-else-if="page.frontmatter.layout == 'about'"/>
+
+    </PageContent>
+    <SideBar />
+
+  </div>
 
 
 
@@ -28,5 +41,10 @@ const { theme, site, page } = useData<CensoredThemeConfig>()
   gap: 20px;
   overflow: auto;
 
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
 }
 </style>

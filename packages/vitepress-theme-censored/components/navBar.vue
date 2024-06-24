@@ -2,8 +2,8 @@
 import {useData, withBase} from "vitepress";
 import { CensoredThemeConfig } from "types"
 import SwitchThemeColorButton from "./ThemeColorButton.vue"
-import {ref} from "vue";
-const { theme } = useData<CensoredThemeConfig>()
+
+const { theme, page } = useData<CensoredThemeConfig>()
 
 </script>
 
@@ -29,7 +29,7 @@ const { theme } = useData<CensoredThemeConfig>()
 .navbar {
   margin-top: 10px;
   width: 100%;
-  height: 120px;
+  height: 90px;
   border-radius: 10px;
   z-index: 10;
 
