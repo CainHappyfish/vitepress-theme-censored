@@ -19,7 +19,7 @@ const AvatarURL = ref(Avatar)
 
 <style scoped>
 .container {
-  margin-top: 20px;
+  margin-top: 60px;
 
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ const AvatarURL = ref(Avatar)
   border-radius: 10px;
 
   position: sticky;
-  top: 90px;
+  top: 110px;
 
 }
 
