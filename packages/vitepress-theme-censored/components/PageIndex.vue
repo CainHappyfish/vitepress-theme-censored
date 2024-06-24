@@ -7,7 +7,7 @@ import PageScroll from "../components/PageAnchor.vue"
 <template>
   <div class="index-cover">
     <Cover />
-    <PageScroll location="#navbar"/>
+    <PageScroll location="#navbar" class="page-scroll"/>
     <NavBar id="navbar"/>
     <div class="index-container">
 
@@ -21,15 +21,24 @@ import PageScroll from "../components/PageAnchor.vue"
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
 }
 
 .index-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 1000px;
   width: 100%;
   background: var(--censored-c-dawn-3);
+
+}
+
+.page-scroll {
+  position: relative;
+  top:50%;
 
 }
 </style>

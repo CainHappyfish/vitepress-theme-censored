@@ -1,32 +1,48 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { defineProps } from 'vue';
 
+// 定义接受的 props，包含 location 属性，用于指定目标滚动位置的选择器
 const props = defineProps({
   location: String
 });
 
-onMounted(() => {
-  const links = document.querySelectorAll('a[href*="#"]');
-  links.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = (this as HTMLAnchorElement).getAttribute('href');
-      if (targetId) {
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.getBoundingClientRect().top + window.scrollY,
-            behavior: 'smooth'
-          });
-        }
+// 处理滚动的函数
+const handleScroll = (event: Event) => {
+  event.preventDefault(); // 阻止默认的锚点点击行为
+  const target = document.querySelector(props.location); // 根据 location prop 获取目标元素
+  if (target) {
+    const scrollTargetY = target.getBoundingClientRect().top + window.scrollY; // 计算目标元素的滚动位置
+    const scrollDuration = 600; // 滚动动画的持续时间（毫秒）
+    const startY = window.scrollY; // 起始滚动位置
+    const startTime = performance.now(); // 获取动画开始的时间
+
+    // 定义 easeInOutQuad 缓动函数
+    const easeInOutQuad = (t: number) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+    // 动画滚动函数
+    const animateScroll = () => {
+      const currentTime = performance.now(); // 获取当前时间
+      const time = Math.min(1, ((currentTime - startTime) / scrollDuration)); // 计算时间比例
+      const easedTime = easeInOutQuad(time); // 计算缓动时间
+
+      // 滚动到计算出的当前位置
+      window.scrollTo(0, Math.ceil((easedTime * (scrollTargetY - startY)) + startY));
+
+      // 如果已经滚动到目标位置或动画时间结束，则停止动画
+      if (window.scrollY !== scrollTargetY && time < 1) {
+        requestAnimationFrame(animateScroll); // 继续下一帧的动画
       }
-    });
-  });
-});
+    };
+
+    requestAnimationFrame(animateScroll); // 开始动画滚动
+  }
+};
 </script>
+
+
 <template>
 <section id="section10" class="demo">
-  <a :href="location"><span></span>Scroll</a>
+  <a href="#" @click="handleScroll"><span></span>Scroll</a>
 </section>
 </template>
 
@@ -51,7 +67,6 @@ section::after {
   content: '';
   width: 100%;
   height: 80%;
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
 section h1 {
@@ -66,41 +81,6 @@ section h1 {
   white-space: nowrap;
 }
 
-#section10 { background: url(https://picsum.photos/1200/800?image=516) center center / cover no-repeat;}
-
-#thanks {
-  background-color: #fff;
-}
-#thanks::after {
-  content: none;
-}
-#thanks div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-#thanks h2 {
-  margin-bottom: 60px;
-  color: #333;
-  font : normal 300 64px/1 'Josefin Sans', sans-serif;
-  text-align: center;
-  white-space: nowrap;
-}
-#thanks p {
-  color: #333;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-}
-#thanks p a {
-  color: #333;
-  text-decoration: none;
-  transition: color .3s;
-}
-#thanks p a:hover {
-  color: #888;
-}
 .demo a {
   position: absolute;
   bottom: 20px;

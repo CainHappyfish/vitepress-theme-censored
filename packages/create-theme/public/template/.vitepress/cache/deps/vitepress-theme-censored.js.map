@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../../node_modules/vitepress-theme-censored/index.ts"],
-  "sourcesContent": ["import type { Theme } from 'vitepress';\r\nimport { Component } from 'vue';\r\n\r\nimport LayoutPage from './layouts/Layout.vue';\r\nimport NotFoundPage from './layouts/NotFound.vue';\r\nimport './styles/index.css'\r\n\r\n\r\nexport default {\r\n  Layout: LayoutPage,\r\n  NotFound: NotFoundPage,\r\n  enhanceApp({ app, router, siteData }) {\r\n    // ...\r\n  }\r\n}"],
-  "mappings": ";AAGA,OAAO,gBAAgB;AACvB,OAAO,kBAAkB;AACzB,OAAO;AAGP,IAAO,mCAAQ;AAAA,EACb,QAAQ;AAAA,EACR,UAAU;AAAA,EACV,WAAW,EAAE,KAAK,QAAQ,SAAS,GAAG;AAAA,EAEtC;AACF;",
-  "names": []
-}
