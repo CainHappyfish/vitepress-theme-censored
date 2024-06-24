@@ -35,8 +35,13 @@ export default defineConfig({
     },
 
     pageLoading: true,
-    themeLoading: true
+    themeLoading: true,
+
+    user: {
+        name: "破酥",
+    }
+
+  },
 
 
-  }
 })

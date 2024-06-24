@@ -2,6 +2,7 @@
 import Cover from "../components/ThemeCover.vue"
 import NavBar from "./navBar.vue";
 import PageScroll from "../components/PageAnchor.vue"
+import SideBar from "../components/SideBar.vue";
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import PageScroll from "../components/PageAnchor.vue"
     <PageScroll location="#navbar" class="page-scroll"/>
     <NavBar id="navbar"/>
     <div class="index-container">
+      <SideBar />
 
     </div>
   </div>
@@ -28,11 +30,9 @@ import PageScroll from "../components/PageAnchor.vue"
 
 .index-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 1000px;
-  width: 100%;
-  background: var(--censored-c-dawn-3);
+  width: 80%;
+
 
 }
 
