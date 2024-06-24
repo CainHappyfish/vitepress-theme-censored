@@ -1,10 +1,11 @@
 <script setup>
 
 import {withBase} from "vitepress";
+import SwitchColorButton from "./ThemeColorButton.vue";
 </script>
 
 <template>
-
+    <SwitchColorButton />
     <section class="wrapper">
 
         <div class="container">
