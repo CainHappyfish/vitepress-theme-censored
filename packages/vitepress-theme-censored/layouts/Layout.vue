@@ -7,18 +7,17 @@ import PageContent from "../components/PageContent.vue";
 import Index from "../components/PageIndex.vue"
 import SideBar from "../components/SideBar.vue";
 import About from "../components/PageAbout.vue"
-
 import NotFound from "../components/404Page.vue";
 
-const router = useRouter();
 
 
 const { theme, page } = useData<CensoredThemeConfig>()
+
 </script>
 
 <template>
   <NotFound v-if="page.isNotFound"/>
-  <div class="container">
+  <div class="container" v-else>
     <PageLoading v-if="theme.pageLoading&&!page.isNotFound"/>
     <NavBar />
     <PageContent class="page-container">

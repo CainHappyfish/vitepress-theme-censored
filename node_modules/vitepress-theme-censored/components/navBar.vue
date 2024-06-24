@@ -3,7 +3,7 @@ import {useData, withBase} from "vitepress";
 import { CensoredThemeConfig } from "types"
 import SwitchThemeColorButton from "./ThemeColorButton.vue"
 
-const { theme, page } = useData<CensoredThemeConfig>()
+const { theme } = useData<CensoredThemeConfig>()
 
 </script>
 

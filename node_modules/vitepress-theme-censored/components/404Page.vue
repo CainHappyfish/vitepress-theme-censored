@@ -1,11 +1,13 @@
-<script setup>
+<script setup lang="ts">
 
 import {withBase} from "vitepress";
 import SwitchColorButton from "./ThemeColorButton.vue";
 </script>
 
 <template>
-    <SwitchColorButton />
+    <div class="btn">
+      <SwitchColorButton />
+    </div>
     <section class="wrapper">
 
         <div class="container">
@@ -56,17 +58,10 @@ import SwitchColorButton from "./ThemeColorButton.vue";
 </template>
 
 <style scoped lang="scss">
-.page {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+.btn {
+  z-index: 3;
 }
+
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
 
 $font-01: "Barlow",
@@ -308,12 +303,15 @@ nav {
 }
 
 .wrapper {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    top: -2em;
+
 
     .container {
         margin: 0 auto;

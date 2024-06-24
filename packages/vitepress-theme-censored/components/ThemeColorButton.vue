@@ -16,7 +16,6 @@ const SwitchSvgURL = ref("");
 function updateSwitchSvgURL() {
   const ThemeColor = document.documentElement.classList;
   SwitchSvgURL.value = ThemeColor.contains("dark") ? MoonURL : SunURL
-  console.log(SwitchSvgURL.value)
 }
 
 onMounted(() => {
