@@ -1,13 +1,9 @@
 <script setup lang="ts">
 
 import {withBase} from "vitepress";
-import SwitchColorButton from "./ThemeColorButton.vue";
 </script>
 
 <template>
-    <div class="btn">
-      <SwitchColorButton />
-    </div>
     <section class="wrapper">
 
         <div class="container">
@@ -58,9 +54,6 @@ import SwitchColorButton from "./ThemeColorButton.vue";
 </template>
 
 <style scoped lang="scss">
-.btn {
-  z-index: 3;
-}
 
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
 
@@ -149,7 +142,6 @@ body {
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 100%;
     backdrop-filter: blur(5px);
 
     img {

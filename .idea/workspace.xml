@@ -5,9 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/divider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/utils/blog.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/404Page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/404Page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAnchor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAnchor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/SideBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/SideBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeColorButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeColorButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/ThemeCover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/archives.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/archives.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/categories.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/categories.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/friends.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/friends.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/404Page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/404Page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAnchor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAnchor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/SideBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/SideBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeColorButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeColorButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeCover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/ThemeCover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -74,11 +97,11 @@
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template\posts" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\styles\var" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored" />
-      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\docs" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -120,6 +143,9 @@
       <workItem from="1719194526960" duration="12209000" />
       <workItem from="1719211718923" duration="1684000" />
       <workItem from="1719214743141" duration="2401000" />
+      <workItem from="1719247170507" duration="862000" />
+      <workItem from="1719292807100" duration="3457000" />
+      <workItem from="1719297728012" duration="7754000" />
     </task>
     <servers />
   </component>

@@ -2,12 +2,11 @@
 import { useData} from "vitepress";
 import { CensoredThemeConfig } from "types"
 import SideBar from "./SideBar.vue";
-import NavBar from "./navBar.vue";
 const { frontmatter } = useData<CensoredThemeConfig>()
 </script>
 
 <template>
-  <NavBar />
+
   <div class="about-container">
     <div class="content">
       <SideBar />

@@ -3,13 +3,13 @@ import {useData} from 'vitepress'
 import { CensoredThemeConfig } from "types"
 import PageLoading from '../components/PageLoading.vue'
 // import ThemeLoading from "../components/ThemeLoading.vue"
-import NavBar from "../components/navBar.vue"
 import PageContent from "../components/PageContent.vue"
 import Index from "../components/PageIndex.vue"
 import About from "../components/PageAbout.vue"
 import NotFound from "../components/404Page.vue"
 
 import {onMounted, onUnmounted, ref, watch} from "vue"
+import NavBar from "../components/navBar.vue";
 
 
 const { theme, page } = useData<CensoredThemeConfig>()
@@ -54,8 +54,9 @@ watch(page, () => {
   <NotFound v-if="page.isNotFound"/>
   <div class="container" v-else>
     <PageLoading v-if="theme.pageLoading && !page.isNotFound" :key="pageLoadingKey"/>
-    <PageContent class="page-container">
-      <Index v-if="page.frontmatter.layout == 'index'" />
+    <Index v-if="page.frontmatter.layout == 'index'" />
+    <PageContent class="page-container" v-else>
+      <NavBar />
       <About v-if="page.frontmatter.layout == 'about'"/>
     </PageContent>
   </div>
@@ -66,6 +67,8 @@ watch(page, () => {
 .page-container {
   width: 100%;
   height: 100%;
+
+
 
 
 }

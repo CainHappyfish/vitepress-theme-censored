@@ -7,6 +7,7 @@ const { theme } = useData<CensoredThemeConfig>()
 // 使用过大的图片会导致加载速度变慢
 import DarkIMG from '../assets/ThemeCover2.jpg'
 import LightIMG from '../assets/ThemeCover1.jpg'
+import PageScroll from "./PageAnchor.vue";
 
 const ThemeCover = ref("")
 function UpdateThemeCover() {
@@ -40,6 +41,7 @@ onMounted(() => {
 <template>
   <div class="cover-container">
     <img :src="ThemeCover" alt="ThemeCover" class="cover"/>
+    <PageScroll location="#navbar" class="page-scroll"/>
     <div class="title-container">
       <h1>{{ theme.index?.BlogTitle }}</h1>
       <h2>{{ theme.index?.Signature }}</h2>
@@ -48,6 +50,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.page-scroll {
+  position: absolute;
+  right: -40%;
+}
+
 .cover-container {
 
   display: flex;
@@ -61,12 +68,12 @@ onMounted(() => {
   border-radius: 10px;
 
   overflow: hidden;
-  position: relative; /* 新增 */
+  position: relative;
 
-  z-index: 1;
 }
 
 .cover {
+  z-index: 1;
   width: 100%;
   object-fit: cover;
 }
@@ -87,7 +94,7 @@ onMounted(() => {
 
   color: var(--censored-cover-text-color);
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .title-container h1 {

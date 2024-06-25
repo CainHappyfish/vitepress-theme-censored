@@ -38,6 +38,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.switch {
+  width: 60px;
+}
 .circle {
   border-radius: 50%;
   width: 50px;
