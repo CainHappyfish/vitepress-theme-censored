@@ -4,7 +4,7 @@ defineProps<{
   post: CensoredTheme.PostData
 }>()
 
-import defaultImageUrl from '../../assets/DefaultCover.jpg'; // 替换为你的默认图片 URL
+import defaultImageUrl from '../../assets/DefaultCover.jpg';
 
 const handleImageError = (event: any) => {
   event.target.src = defaultImageUrl;
@@ -24,7 +24,6 @@ const handleImageError = (event: any) => {
 
       <img v-else src='../../assets/DefaultCover.jpg'  alt="cover"/>
       <div class="summary">
-<!--        <div class="summary-gradient"></div>-->
         <h1>{{ post.title }}</h1>
         {{ post.excerpt }}
       </div>

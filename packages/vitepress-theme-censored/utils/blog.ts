@@ -34,6 +34,9 @@ export function triggerScrollAnimation (){
 }
 
 export function setupScrollAnimation() {
+  window.addEventListener('popstate', () => {
+    location.reload();
+  });
   RollingLoading();
   triggerScrollAnimation();
 }

@@ -11,17 +11,14 @@ import NotFound from "../components/404Page.vue"
 import {onMounted, onUnmounted, ref, watch} from "vue"
 import NavBar from "../components/navBar.vue";
 
-import {RollingLoading} from "../utils/blog"
+import { setupScrollAnimation } from "../utils/blog"
 
 const { theme, page } = useData<CensoredThemeConfig>()
 
 const pageLoadingKey = ref(0)
 
-RollingLoading()
+setupScrollAnimation()
 
-window.addEventListener('popstate', () => {
-  location.reload();
-});
 
 // 主题颜色变化时重新挂在PageLoading
 const observeClassChanges = () => {

@@ -7,12 +7,15 @@
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageLoading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageLoading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/divider.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPreviewCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPreviewCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/utils/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/utils/blog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/VitePress主题制作指北.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/VitePress主题制作指北.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageLoading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageLoading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/divider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/divider.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPreviewCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPreviewCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/utils/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/utils/blog.ts" afterDir="false" />
     </list>
@@ -88,11 +91,11 @@
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\global" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template\posts" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\styles\var" />
-      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -140,7 +143,7 @@
       <workItem from="1719297728012" duration="10297000" />
       <workItem from="1719374664873" duration="6390000" />
       <workItem from="1719391126556" duration="906000" />
-      <workItem from="1719397251970" duration="16619000" />
+      <workItem from="1719397251970" duration="19404000" />
     </task>
     <servers />
   </component>
