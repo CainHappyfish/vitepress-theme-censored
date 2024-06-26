@@ -1,7 +1,7 @@
 ---
 layout: page
 title: VitePress主题制作指北
-cover: https://pic.imgdb.cn/item/667a8faad9c307b7e97eb3c7.jpg
+cover: https://pic.imgdb.cn/item/667c343ed9c307b7e91885d2.png
 excerpt: VitePress主题制作指北
 ---
 

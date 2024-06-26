@@ -19,6 +19,10 @@ const pageLoadingKey = ref(0)
 
 RollingLoading()
 
+window.addEventListener('popstate', () => {
+  location.reload();
+});
+
 // 主题颜色变化时重新挂在PageLoading
 const observeClassChanges = () => {
   const observer = new MutationObserver(() => {
@@ -55,8 +59,8 @@ watch(page, () => {
 
 <template>
   <NotFound v-if="page.isNotFound"/>
-  <div class="container" v-else>
-    <PageLoading v-if="theme.pageLoading && !page.isNotFound" :key="pageLoadingKey"/>
+  <PageLoading v-if="theme.pageLoading && !page.isNotFound "/>
+  <div class="container">
     <Index v-if="page.frontmatter.layout == 'index'" />
     <PageContent class="page-container" v-else>
       <NavBar />

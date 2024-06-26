@@ -7,14 +7,20 @@ import PageCard from '../components/global/PostPreviewCard.vue'
 import {Content, useData} from "vitepress"
 import { CensoredThemeConfig } from "types"
 const { theme, page, frontmatter } = useData<CensoredThemeConfig>()
-import { RollingLoading } from "../utils/blog"
+import { setupScrollAnimation } from "../utils/blog"
 
 import { useAllPosts, useCategories, usePageUrl } from "../composables"
+import {onMounted, onUpdated} from "vue";
 
 const allPosts = useAllPosts();
-console.log(allPosts)
 
-RollingLoading()
+onMounted(() => {
+  setupScrollAnimation()
+});
+
+onUpdated(() => {
+  setupScrollAnimation()
+});
 </script>
 
 <template>
@@ -22,11 +28,11 @@ RollingLoading()
   <div class="index-cover">
     <Cover />
   </div>
-  <NavBar id="navbar"/>
+  <NavBar class="scroll-animation"/>
 
   <div class="index-container">
     <SideBar class="scroll-animation"/>
-    <div class="content">
+    <div class="content scroll-animation">
       <PageCard :post="allPosts[0]"/>
 
     </div>

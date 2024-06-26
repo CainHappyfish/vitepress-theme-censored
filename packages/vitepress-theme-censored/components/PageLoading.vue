@@ -2,6 +2,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 
+
 onMounted(() => {
   setTimeout(() => {
     document.querySelectorAll('.inner div').forEach(div => div.classList.add('done'));
