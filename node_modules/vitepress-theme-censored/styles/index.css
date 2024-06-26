@@ -12,20 +12,20 @@ html {
 
 html.light {
     /*background*/
-    --censored-bg-color: var(--censored-c-marsh-3);
+    --censored-bg-color: var(--censored-c-ice-1);
 
     /*navbar*/
-    --censored-nav-color: var(--censored-c-ice-2);
-    --censored-nav-text-color: var(--censored-c-ice-1);
+    --censored-nav-color: var(--censored-c-waves-1);
+    --censored-nav-text-color: var(--censored-c-marsh-2);
     --censored-nav-hover-color: var(--censored-c-ice-1);
     --censored-nav-text-hover-color: var(--censored-c-ice-4);
 
     /*buttons*/
     /*switch theme color button*/
-    --censored-btn-stc-bg-color: var(--censored-c-ice-3);
+    --censored-btn-stc-bg-color: var(--censored-c-water-1);
 
     /*texts*/
-    --censored-text-color: var(--censored-c-ice-4);
+    --censored-text-color: var(--censored-c-marsh-2);
     --censored-cover-text-color: var(--censored-c-ice-1);
     --censored-cover-text-shadow-color: var(--censored-c-ice-4);
 
@@ -55,20 +55,20 @@ html.dark {
 @media (prefers-color-scheme: light) {
     html {
         /*background*/
-        --censored-bg-color: var(--censored-c-marsh-3);
+        --censored-bg-color: var(--censored-c-ice-1);
 
         /*navbar*/
-        --censored-nav-color: var(--censored-c-ice-2);
+        --censored-nav-color: var(--censored-c-waves-1);
+        --censored-nav-text-color: var(--censored-c-marsh-2);
         --censored-nav-hover-color: var(--censored-c-ice-1);
-        --censored-nav-text-color: var(--censored-c-waves-2);
-        --censored-nav-text-hover-color: var(--censored-c-dawn-4);
+        --censored-nav-text-hover-color: var(--censored-c-ice-4);
 
         /*buttons*/
         /*switch theme color button*/
-        --censored-btn-stc-bg-color: var(--censored-c-ice-3);
+        --censored-btn-stc-bg-color: var(--censored-c-water-1);
 
         /*texts*/
-        --censored-text-color: var(--censored-c-deep-3);
+        --censored-text-color: var(--censored-c-marsh-2);
         --censored-cover-text-color: var(--censored-c-ice-1);
         --censored-cover-text-shadow-color: var(--censored-c-ice-4);
     }
