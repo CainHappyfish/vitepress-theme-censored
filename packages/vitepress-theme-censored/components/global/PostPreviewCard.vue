@@ -68,6 +68,7 @@ img {
   padding: 0 20px;
   z-index: 3;
   background: var(--censored-nav-color);
+  color: var(--censored-text-color);
 
   border-radius: 10px;
 
