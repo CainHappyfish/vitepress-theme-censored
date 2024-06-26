@@ -11,8 +11,10 @@ const AvatarURL = ref(Avatar)
 
 <template>
 <div class="container">
-<img :src="AvatarURL" alt="Avatar" class="side-avatar"/>
-<h2>{{ theme.user?.name }}</h2>
+  <img :src="AvatarURL" alt="Avatar" class="side-avatar"/>
+  <h2>{{ theme.user?.name }}</h2>
+  <p>{{ theme.user?.describe }}</p>
+
 
 </div>
 </template>

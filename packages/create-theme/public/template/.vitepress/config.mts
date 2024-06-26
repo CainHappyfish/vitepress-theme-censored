@@ -40,6 +40,7 @@ export default defineConfig({
 
     user: {
         name: "破酥",
+        describe: "博客正在开发中orz\n前端初学者",
     }
 
   },
