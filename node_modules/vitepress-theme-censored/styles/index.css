@@ -97,4 +97,15 @@ html.dark {
 
     }
 
+
+}
+.scroll-animation {
+    transform: translateY(30px) scale(1.02);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.scroll-animation.show {
+    transform: translateY(0) scale(1);
+    opacity: 1;
 }

@@ -1,12 +1,20 @@
 <script setup lang="ts">
 import Cover from "../components/ThemeCover.vue"
 import NavBar from "./navBar.vue";
-import SideBar from "../components/SideBar.vue";
+import SideBar from "../components/SideBar.vue"
+import PageCard from '../components/global/PostPreviewCard.vue'
 
-import {Content, useData} from "vitepress";
+import {Content, useData} from "vitepress"
 import { CensoredThemeConfig } from "types"
 const { theme, page, frontmatter } = useData<CensoredThemeConfig>()
-console.log(page.value.title)
+import { RollingLoading } from "../utils/blog"
+
+import { useAllPosts, useCategories, usePageUrl } from "../composables"
+
+const allPosts = useAllPosts();
+console.log(allPosts)
+
+RollingLoading()
 </script>
 
 <template>
@@ -17,9 +25,9 @@ console.log(page.value.title)
   <NavBar id="navbar"/>
 
   <div class="index-container">
-    <SideBar />
+    <SideBar class="scroll-animation"/>
     <div class="content">
-
+      <PageCard :post="allPosts[0]"/>
 
     </div>
 
@@ -48,7 +56,7 @@ console.log(page.value.title)
   flex-direction: row;
   justify-content: center;
   height: 1000px;
-  width: 1600px;
+  width: 1400px;
 }
 
 .content {
@@ -57,9 +65,9 @@ console.log(page.value.title)
   height: 1000px;
   min-height: 100vh;
 
-  border-radius: 10px;
-  background: var(--censored-nav-color);
+
 }
+
 
 
 </style>

@@ -60,7 +60,8 @@ declare namespace CensoredTheme {
 		 * 封面
 		 */
 		cover?: {
-			default: string | string[];
+			default: string;
+			// default: string | string[];
 			type: 'img' | 'date' | 'random';
 		};
 	}

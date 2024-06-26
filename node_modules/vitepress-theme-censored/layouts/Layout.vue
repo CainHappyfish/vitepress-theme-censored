@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useData} from 'vitepress'
+import {Content, useData} from 'vitepress'
 import { CensoredThemeConfig } from "types"
 import PageLoading from '../components/PageLoading.vue'
 // import ThemeLoading from "../components/ThemeLoading.vue"
@@ -11,10 +11,13 @@ import NotFound from "../components/404Page.vue"
 import {onMounted, onUnmounted, ref, watch} from "vue"
 import NavBar from "../components/navBar.vue";
 
+import {RollingLoading} from "../utils/blog"
 
 const { theme, page } = useData<CensoredThemeConfig>()
 
 const pageLoadingKey = ref(0)
+
+RollingLoading()
 
 // 主题颜色变化时重新挂在PageLoading
 const observeClassChanges = () => {
@@ -58,6 +61,7 @@ watch(page, () => {
     <PageContent class="page-container" v-else>
       <NavBar />
       <About v-if="page.frontmatter.layout == 'about'"/>
+      <Content v-else/>
     </PageContent>
   </div>
 </template>
