@@ -38,6 +38,7 @@ let observer: MutationObserver
 
 onMounted(() => {
   observer = observeClassChanges()
+  setupScrollAnimation()
 })
 
 onUnmounted(() => {

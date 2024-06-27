@@ -31,6 +31,7 @@ const handleImageError = (event: any) => {
 
 <style scoped>
 .post-card {
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   width: 500px;
   height: 200px;
   border-radius: 10px;
@@ -73,4 +74,16 @@ img {
 .summary h1 {
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 1400px) {
+  .post-card {
+    margin: 1vw 1vw;
+
+    width: 90vw;
+    height: 30vw;
+  }
+
+}
+
+
 </style>

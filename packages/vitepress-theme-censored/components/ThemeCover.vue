@@ -56,7 +56,6 @@ onMounted(() => {
 }
 
 .cover-container {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +74,7 @@ onMounted(() => {
 .cover {
   z-index: 1;
   width: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -106,4 +106,25 @@ onMounted(() => {
   font-size: 3vw;
   text-shadow: var(--censored-cover-text-shadow-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .page-scroll {
+    position: absolute;
+    left: 0;
+  }
+
+  .title-container {
+    width: 100vw;
+  }
+
+  .title-container h1{
+    font-size: 10vw;
+  }
+
+  .title-container h2{
+    font-size: 4vw;
+  }
+}
+
+
 </style>

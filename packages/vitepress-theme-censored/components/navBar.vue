@@ -5,13 +5,19 @@ import SwitchThemeColorButton from "./ThemeColorButton.vue"
 
 const { theme } = useData<CensoredThemeConfig>()
 
-
-
 </script>
 
 <template>
   <div class=navbar>
     <div class="container">
+      <div class="burger">
+        <a href="#" class="brand">Brand</a>
+        <div class="burger" id="burger">
+           <span class="burger-line"></span>
+           <span class="burger-line"></span>
+           <span class="burger-line"></span>
+        </div>
+      </div>
       <nav class="nav">
         <ul>
           <li
@@ -28,6 +34,10 @@ const { theme } = useData<CensoredThemeConfig>()
 </template>
 
 <style scoped>
+.burger {
+  display: none;
+}
+
 .navbar {
   margin-top: 10px;
   width: 100%;
@@ -39,6 +49,7 @@ const { theme } = useData<CensoredThemeConfig>()
   align-items: center;
 
   background: var(--censored-nav-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   transition: background 0.5s ease, color 0.5s ease;
 
   position: sticky;

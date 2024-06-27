@@ -33,6 +33,7 @@ const AvatarURL = ref(Avatar)
   max-height: 100vh;
   background: var(--censored-nav-color);
   color: var(--censored-text-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   border-radius: 10px;
 
   position: sticky;

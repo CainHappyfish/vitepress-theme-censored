@@ -35,16 +35,16 @@ onUpdated(() => {
   <div class="index-cover">
     <Cover />
   </div>
-  <NavBar class="scroll-animation"/>
+  <NavBar class="scroll-animation" id="index-navbar"/>
   <div class="index-container">
-    <SideBar class="scroll-animation"/>
+    <SideBar class="scroll-animation"  id="index-sidebar"/>
     <div class="content scroll-animation">
-      <Divider :content='LatestDivider' :style="DividerStyle"/>
+      <Divider :content='LatestDivider' :style="DividerStyle" class="divider"/>
       <PageCard :post="allPosts[0]"/>
-      <Divider :content='ArticleDivider'/>
+      <Divider :content='ArticleDivider' class="scroll-animation divider" />
       <div class="articles">
         <div v-for="(post, index) in allPosts.slice(1)" :key="index">
-          <PageCardMini :post="post" />
+          <PageCardMini :post="post" class="page-card"/>
         </div>
 
       </div>
@@ -57,11 +57,13 @@ onUpdated(() => {
 <style scoped>
 .index-cover {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  overflow: hidden;
 
 
 }
@@ -94,6 +96,49 @@ onUpdated(() => {
   justify-content: center;
   gap: 20px;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 640px) {
+  #index-navbar {
+    display: none;
+  }
+
+  #index-sidebar {
+    display: none;
+  }
+
+  .index-container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .divider {
+    display: none;
+  }
+
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1400px) {
+  #index-navbar {
+    display: none;
+  }
+
+  #index-sidebar {
+    display: none;
+  }
+
+  .index-container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .divider {
+    display: none;
+  }
+
+}
+
 
 
 </style>

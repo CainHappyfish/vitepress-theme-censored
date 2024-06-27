@@ -42,7 +42,7 @@ const handleScroll = (event: Event) => {
 
 <template>
 <section id="section10" class="demo">
-  <a href="#" @click="handleScroll"><span></span>Scroll</a>
+  <a href="#" @click="handleScroll"><span></span></a>
 </section>
 </template>
 
@@ -84,8 +84,8 @@ section {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 30px;
-  height: 50px;
+  width: 2rem;
+  height: 3rem;
   margin-left: -15px;
   border: 2px solid #fff;
   border-radius: 50px;
@@ -121,4 +121,33 @@ section {
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #section10 a span {
+    width: 5vw;
+    height: 9vw;
+  }
+
+  .demo a{
+    font-size: 2vw;
+  }
+
+  @keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 3.5vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+}
+
 </style>

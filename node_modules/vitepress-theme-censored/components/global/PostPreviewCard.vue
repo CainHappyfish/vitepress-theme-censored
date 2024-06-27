@@ -36,6 +36,7 @@ const handleImageError = (event: any) => {
   width: 100%;
   height: 400px;
   border-radius: 10px;
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
 }
 
 .card-content {
@@ -71,6 +72,42 @@ img {
 
   border-radius: 10px;
 
+
+}
+
+@media only screen and (max-width: 600px) {
+  .post-card {
+    margin: 1vw 1vw;
+
+    width: 90vw;
+    height: 40vw;
+  }
+
+  .summary {
+    font-size: 3vw;
+  }
+
+  .summary h1{
+    font-size: 4vw;
+  }
+
+}
+
+@media only screen and (max-width: 1400px) {
+  .post-card {
+    margin: 1vw 1vw;
+
+    width: 90vw;
+    height: 40vw;
+  }
+
+  .summary {
+    font-size: 3vw;
+  }
+
+  .summary h1{
+    font-size: 4vw;
+  }
 
 }
 

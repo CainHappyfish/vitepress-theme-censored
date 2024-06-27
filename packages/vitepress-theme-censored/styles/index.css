@@ -12,7 +12,7 @@ html {
 
 html.light {
     /*background*/
-    --censored-bg-color: var(--censored-c-ice-1);
+    --censored-bg-color: white;
 
     /*navbar*/
     --censored-nav-color: var(--censored-c-waves-1);
@@ -29,6 +29,8 @@ html.light {
     --censored-cover-text-color: var(--censored-c-ice-1);
     --censored-cover-text-shadow-color: var(--censored-c-ice-4);
 
+    /*shadow*/
+    --censored-shadow-color: var(--censored-c-marsh-2);
 }
 
 html.dark {
@@ -50,12 +52,15 @@ html.dark {
     --censored-cover-text-color: var(--censored-c-ice-1);
     --censored-cover-text-shadow-color: var(--censored-c-ice-4);
 
+    /*scroll*/
+    scrollbar-width: thin; /* 滚动条的宽度 */
+    scrollbar-color: rgba(74, 29, 161, 0.8) rgba(16,7,34, 0.8); /* 滚动条颜色 */
 }
 
 @media (prefers-color-scheme: light) {
     html {
         /*background*/
-        --censored-bg-color: var(--censored-c-ice-1);
+        --censored-bg-color: white;
 
         /*navbar*/
         --censored-nav-color: var(--censored-c-waves-1);
@@ -109,3 +114,30 @@ html.dark {
     transform: translateY(0) scale(1);
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
