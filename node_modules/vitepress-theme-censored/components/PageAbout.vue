@@ -11,6 +11,7 @@ const { frontmatter } = useData<CensoredThemeConfig>()
     <div class="content">
       <SideBar />
 
+
     </div>
   </div>
   {{ frontmatter.name }}

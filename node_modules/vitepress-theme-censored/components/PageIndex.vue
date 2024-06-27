@@ -35,7 +35,7 @@ onUpdated(() => {
   <div class="index-cover">
     <Cover />
   </div>
-  <NavBar class="scroll-animation" id="index-navbar"/>
+  <NavBar class="scroll-animation" id="navbar"/>
   <div class="index-container">
     <SideBar class="scroll-animation"  id="index-sidebar"/>
     <div class="content scroll-animation">
@@ -120,9 +120,6 @@ onUpdated(() => {
 
 /* Mobile Styles */
 @media only screen and (max-width: 1400px) {
-  #index-navbar {
-    display: none;
-  }
 
   #index-sidebar {
     display: none;

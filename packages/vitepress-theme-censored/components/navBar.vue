@@ -2,6 +2,7 @@
 import {useData, withBase} from "vitepress";
 import { CensoredThemeConfig } from "types"
 import SwitchThemeColorButton from "./ThemeColorButton.vue"
+import BurgerMenu from "./global/BurgerMenu.vue";
 
 const { theme } = useData<CensoredThemeConfig>()
 
@@ -10,14 +11,7 @@ const { theme } = useData<CensoredThemeConfig>()
 <template>
   <div class=navbar>
     <div class="container">
-      <div class="burger">
-        <a href="#" class="brand">Brand</a>
-        <div class="burger" id="burger">
-           <span class="burger-line"></span>
-           <span class="burger-line"></span>
-           <span class="burger-line"></span>
-        </div>
-      </div>
+      <BurgerMenu />
       <nav class="nav">
         <ul>
           <li
@@ -33,11 +27,7 @@ const { theme } = useData<CensoredThemeConfig>()
   </div>
 </template>
 
-<style scoped>
-.burger {
-  display: none;
-}
-
+<style scoped lang="scss">
 .navbar {
   margin-top: 10px;
   width: 100%;
@@ -88,6 +78,17 @@ const { theme } = useData<CensoredThemeConfig>()
   background: var(--censored-nav-hover-color);
   color: var(--censored-nav-text-hover-color);
   opacity: 0.5; /* 初始透明度 */
+}
+
+@media only screen and (max-width: 1400px) {
+  .burger-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav {
+    display: none;
+  }
 }
 
 
