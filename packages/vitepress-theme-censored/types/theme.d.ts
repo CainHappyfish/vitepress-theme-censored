@@ -338,42 +338,16 @@ declare namespace CensoredTheme {
 		 * 友情链接规则
 		 */
 		ruleText?: string;
+		/**
+		 * 随笔
+		 */
+		essay?: string;
 	}
 
 	/**
 	 * 顶部导航栏 || Layout top bars
 	 */
 	type TobBarsConfig = Array<CensoredTheme.NavItemWithLink | CensoredTheme.NavItemWithChildren>;
-
-	/**
-	 * 横幅配置 || Layout banner config
-	 */
-	interface BannerConfig {
-		/**
-		 * 横幅类型
-		 */
-		type?: 'img' | 'video';
-		/**
-		 * 横幅资源路径地址
-		 */
-		bgurl?: string;
-		/**
-		 * 横幅标题
-		 */
-		bannerTitle?: string;
-		/**
-		 * 横幅描述
-		 */
-		bannerText?: string;
-		/**
-		 * 同 CSS object-position
-		 */
-		position?: string;
-		/**
-		 * 同 CSS object-fit
-		 */
-		fit?: string;
-	}
 
 	/**
 	 * 侧栏配置 || Layout sidebar config

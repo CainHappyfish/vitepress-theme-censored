@@ -41,11 +41,16 @@ export default defineConfig({
     user: {
         name: "破酥",
         describe: "博客正在开发中orz\n前端初学者",
+        essay: "我将泪水也藏在表面之下。"
     },
 
     footer: {
         copyrightYear: 2024
     },
+
+    about: {
+        introduction: "这个博客主题编写的目的是练习我的前端技术，如有问题可以在issues中提出，感激不尽orz"
+    }
 
   },
 

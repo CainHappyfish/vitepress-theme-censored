@@ -65,7 +65,6 @@ watch(page, () => {
       <NavBar />
       <About v-if="page.frontmatter.layout == 'about'"/>
       <Content v-else/>
-      <PageFooter />
     </PageContent>
   </div>
 </template>

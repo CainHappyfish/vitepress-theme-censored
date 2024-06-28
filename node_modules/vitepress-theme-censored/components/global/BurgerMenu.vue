@@ -74,6 +74,7 @@ onMounted(() => {
 
 a {
   text-decoration: none;
+  color: var(--censored-text-color);
 }
 
 #burger {
@@ -129,6 +130,11 @@ a {
   left: 5px;
 
   font-size: 1.5em;
+  color: var(--censored-text-color);
+}
+
+.menu-item {
+  text-decoration: none;
   color: var(--censored-text-color);
 }
 
