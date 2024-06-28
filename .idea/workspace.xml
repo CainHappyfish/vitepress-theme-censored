@@ -7,16 +7,8 @@
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/BurgerMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/BurgerMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/types/theme.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/types/theme.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/BurgerMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/BurgerMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/types/theme.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/types/theme.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +136,7 @@
       <workItem from="1719460508449" duration="1896000" />
       <workItem from="1719493251400" duration="13614000" />
       <workItem from="1719542731025" duration="6796000" />
-      <workItem from="1719554171187" duration="7927000" />
+      <workItem from="1719554171187" duration="8155000" />
     </task>
     <servers />
   </component>

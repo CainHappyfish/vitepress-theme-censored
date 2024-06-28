@@ -22,6 +22,7 @@ const { theme } = useData<CensoredThemeConfig>()
 .foot-container {
   margin: 20px 0;
   background: var(--censored-nav-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   color: var(--censored-text-color);
   width: 100%;
   border-radius: 20px;

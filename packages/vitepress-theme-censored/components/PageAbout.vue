@@ -71,6 +71,7 @@ const AvatarURL = ref(Avatar)
   width: 100%;
   border-radius: 10px;
   background: var(--censored-nav-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
 
   display: flex;
   flex-direction: column;
@@ -95,6 +96,7 @@ const AvatarURL = ref(Avatar)
   height: 80vh;
   border-radius: 10px;
   background: var(--censored-nav-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
 
   display: flex;
   flex-direction: column;
