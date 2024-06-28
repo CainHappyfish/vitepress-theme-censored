@@ -57,7 +57,7 @@ const { theme } = useData<CensoredThemeConfig>()
 
 .nav {
   position: relative;
-  right: 10vw;
+  right: 10rem;
 }
 
 .container ul{
