@@ -31,7 +31,6 @@ const handleImageError = (event: any) => {
 
 <style scoped>
 .post-card {
-  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   width: 500px;
   height: 200px;
   border-radius: 10px;
@@ -67,7 +66,7 @@ img {
   z-index: 3;
   background: var(--censored-nav-color);
   color: var(--censored-text-color);
-
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   border-radius: 10px;
 }
 

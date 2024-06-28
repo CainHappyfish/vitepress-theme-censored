@@ -36,7 +36,7 @@ const handleImageError = (event: any) => {
   width: 100%;
   height: 400px;
   border-radius: 10px;
-  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
+
 }
 
 .card-content {
@@ -69,7 +69,7 @@ img {
   z-index: 3;
   background: var(--censored-nav-color);
   color: var(--censored-text-color);
-
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   border-radius: 10px;
 
 
