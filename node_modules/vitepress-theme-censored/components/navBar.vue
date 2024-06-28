@@ -11,7 +11,7 @@ const { theme } = useData<CensoredThemeConfig>()
 <template>
   <div class=navbar>
     <div class="container">
-      <BurgerMenu />
+      <BurgerMenu class="burger-menu" />
       <nav class="nav">
         <ul>
           <li
@@ -28,6 +28,11 @@ const { theme } = useData<CensoredThemeConfig>()
 </template>
 
 <style scoped lang="scss">
+.burger-menu {
+  display: none;
+  visibility: hidden;
+}
+
 .navbar {
   margin-top: 10px;
   width: 100%;
@@ -44,6 +49,15 @@ const { theme } = useData<CensoredThemeConfig>()
 
   position: sticky;
   top: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  position: relative;
+  right: 10vw;
 }
 
 .container ul{
@@ -88,6 +102,11 @@ const { theme } = useData<CensoredThemeConfig>()
 
   .nav {
     display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    visibility: visible;
   }
 }
 

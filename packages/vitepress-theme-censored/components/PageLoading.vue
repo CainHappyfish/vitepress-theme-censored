@@ -48,7 +48,7 @@ onMounted(() => {
 .inner > div {
   width: 50px;
   height: 50px;
-  background-color: var(--censored-nav-color);
+  background-color: var(--censored-text-color);
   border-radius: 100%;
   position: absolute;
   transition: all 0.5s ease;

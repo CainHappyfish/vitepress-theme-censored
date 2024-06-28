@@ -5,6 +5,10 @@ import {CensoredThemeConfig} from "../../types";
 import {onMounted} from "vue";
 
 const { theme, page } = useData<CensoredThemeConfig>()
+import Avatar from "../../assets/avatar.gif"
+import {ref} from "vue";
+
+const AvatarURL = ref(Avatar)
 
 const burgerMenuClick = () => {
   const burgerMenu = document.getElementById('burger');
@@ -33,17 +37,23 @@ onMounted(() => {
        <span></span>
        <span></span>
     </div>
-
-     <ul id="menu">
-        <li
-        v-for="(item, index) in theme.navBars"
-        :key="index"
-        class="menu-item"
-        >
-          <a :href="item.url ? withBase(item.url) : '404' " class="menu-link">{{ item.title }}</a>
-        </li>
-     </ul>
     <a href="#" class="title">{{ page.title }}</a>
+
+    <div class="menu-container" id="menu">
+      <img :src="AvatarURL" alt="Avatar" class="menu-avatar"/>
+      <h2>{{ theme.user?.name }}</h2>
+      <p>{{ theme.user?.describe }}</p>
+       <ul>
+          <li
+          v-for="(item, index) in theme.navBars"
+          :key="index"
+          class="menu-item"
+          >
+            <a :href="item.url ? withBase(item.url) : '404' " class="menu-link">{{ item.title }}</a>
+          </li>
+       </ul>
+
+    </div>
   </div>
 </template>
 
@@ -63,7 +73,7 @@ a {
 }
 
 #burger {
-  margin: 4vw;
+  margin: 2em;
 
   display: flex;
   flex-direction: column;
@@ -97,25 +107,86 @@ a {
 }
 
 #burger.is-active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, -5px);
+  transform-origin: 0 0;
+  transform: rotate(45deg) translate(-2px, -1px);
 }
 
 #burger.is-active span:nth-child(2) {
+  transform: rotate(0deg) scale(0.2, 0.2);
   opacity: 0;
 }
 
 #burger.is-active span:nth-child(3) {
-  transform: rotate(-45deg) translate(-5px, 5px);
+  transform-origin: 0 100%;
+  transform: rotate(-45deg) translate(-2px, 0);
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  left:  40%;
+
+  font-size: 1.5em;
+  color: var(--censored-text-color);
 }
 
 #menu.is-active {
   display: flex;
-  width: 70vw;
-  height: 50rem;
-  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  width: 94vw;
+  height: 80vh;
 
   background: var(--censored-nav-color);
-  position: relative;
-  top: 65vh;
+  border-radius: 20px;
+
+  position: absolute;
+  top: 100px;
+  left: 0.1rem;
+
+  animation: menuSlideIn 0.5s forwards;
+
+  overflow: auto;
+}
+
+.menu-container h2 {
+  font-size: 4vh;
+  color: var(--censored-text-color);
+}
+
+.menu-container p {
+  font-size: 2vh;
+  color: var(--censored-text-color);
+}
+
+.menu-container ul {
+  list-style: none;
+  text-decoration: none;
+  font-size: 3vh;
+
+}
+
+.menu-container ul li {
+  padding-bottom: 1vh;
+  color: var(--censored-text-color);
+}
+
+
+.menu-avatar {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@keyframes menuSlideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 </style>

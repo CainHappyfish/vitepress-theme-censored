@@ -131,7 +131,7 @@ onUpdated(() => {
   }
 
   .divider {
-    display: none;
+    display: none
   }
 
 }
