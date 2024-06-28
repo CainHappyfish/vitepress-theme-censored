@@ -13,6 +13,7 @@ import { setupScrollAnimation } from "../utils/blog"
 
 import { useAllPosts, useCategories, usePageUrl } from "../composables"
 import {onMounted, onUpdated, ref} from "vue";
+import PageFooter from "./PageFooter.vue";
 
 const allPosts = useAllPosts();
 
@@ -48,7 +49,7 @@ onUpdated(() => {
         </div>
 
       </div>
-
+      <PageFooter />
     </div>
 
   </div>

@@ -7,6 +7,7 @@ import PageContent from "../components/PageContent.vue"
 import Index from "../components/PageIndex.vue"
 import About from "../components/PageAbout.vue"
 import NotFound from "../components/404Page.vue"
+import PageFooter from "../components/PageFooter.vue";
 
 import {onMounted, onUnmounted, ref, watch} from "vue"
 import NavBar from "../components/navBar.vue";
@@ -64,6 +65,7 @@ watch(page, () => {
       <NavBar />
       <About v-if="page.frontmatter.layout == 'about'"/>
       <Content v-else/>
+      <PageFooter />
     </PageContent>
   </div>
 </template>
