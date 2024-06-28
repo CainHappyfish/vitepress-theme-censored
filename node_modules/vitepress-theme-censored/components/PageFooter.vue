@@ -38,4 +38,9 @@ const { theme } = useData<CensoredThemeConfig>()
 .foot-powered {
   margin: 0.5em 0;
 }
+.foot-powered a {
+  text-decoration: none;
+  color: var(--censored-text-color);
+}
+
 </style>

@@ -77,10 +77,6 @@ const AvatarURL = ref(Avatar)
   flex-direction: column;
 }
 
-.essay {
-  margin: 20px;
-}
-
 .about-text {
   margin: 20px
 }
