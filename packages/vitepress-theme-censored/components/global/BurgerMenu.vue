@@ -170,6 +170,9 @@ a {
   color: var(--censored-text-color);
 }
 
+.menu-container ul li a {
+  color: var(--censored-text-color);
+}
 
 .menu-avatar {
   margin: 1em;
