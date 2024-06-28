@@ -2,23 +2,28 @@
 
 import {useData, withBase} from "vitepress";
 import {CensoredThemeConfig} from "../../types";
-import {onMounted} from "vue";
+import {onMounted, ref} from "vue";
 
 const { theme, page } = useData<CensoredThemeConfig>()
 import Avatar from "../../assets/avatar.gif"
-import {ref} from "vue";
 
 const AvatarURL = ref(Avatar)
+
+const isActive = ref(false)
 
 const burgerMenuClick = () => {
   const burgerMenu = document.getElementById('burger');
   const navMenu = document.getElementById('menu');
-  console.log(burgerMenu)
-  console.log(navMenu)
-  if (burgerMenu) {
-      console.log("clicked");
+  if (burgerMenu && navMenu) {
+      isActive.value = !isActive.value;
+      if (isActive.value) {
+          navMenu.classList.add("slide-in");
+          navMenu.classList.remove("slide-out");
+      } else {
+          navMenu.classList.add("slide-out");
+          navMenu.classList.remove("slide-in");
+      }
       burgerMenu.classList.toggle("is-active");
-      navMenu.classList.toggle("is-active");
   }
 }
 
@@ -39,7 +44,7 @@ onMounted(() => {
     </div>
     <a href="#" class="title">{{ page.title }}</a>
 
-    <div class="menu-container" id="menu">
+    <div class="menu-container slide-out" id="menu">
       <img :src="AvatarURL" alt="Avatar" class="menu-avatar"/>
       <h2>{{ theme.user?.name }}</h2>
       <p>{{ theme.user?.describe }}</p>
@@ -52,7 +57,6 @@ onMounted(() => {
             <a :href="item.url ? withBase(item.url) : '404' " class="menu-link">{{ item.title }}</a>
           </li>
        </ul>
-
     </div>
   </div>
 </template>
@@ -79,8 +83,6 @@ a {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-
-
 }
 
 #burger span{
@@ -124,12 +126,13 @@ a {
 .title {
   text-align: center;
   position: relative;
+  left:  40%;
 
   font-size: 1.5em;
   color: var(--censored-text-color);
 }
 
-#menu.is-active {
+#menu.slide-in {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,9 +146,32 @@ a {
   top: 100px;
   left: 0.1rem;
 
+  overflow: auto;
+
   animation: menuSlideIn 0.5s forwards;
+}
+
+#menu.slide-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 94vw;
+  height: 80vh;
+
+  background: var(--censored-nav-color);
+  border-radius: 20px;
+
+  position: absolute;
+  top: 100px;
+  left: 0.1rem;
 
   overflow: auto;
+
+  animation: menuSlideOut 0.5s forwards;
+}
+
+.menu-container {
+  transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 .menu-container h2 {
@@ -162,15 +188,10 @@ a {
   list-style: none;
   text-decoration: none;
   font-size: 3vh;
-
 }
 
 .menu-container ul li {
   padding-bottom: 1vh;
-  color: var(--censored-text-color);
-}
-
-.menu-container ul li a {
   color: var(--censored-text-color);
 }
 
@@ -189,6 +210,17 @@ a {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes menuSlideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
   }
 }
 </style>
