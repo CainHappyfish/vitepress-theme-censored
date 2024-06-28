@@ -21,7 +21,6 @@ const { theme } = useData<CensoredThemeConfig>()
 <style scoped>
 .foot-container {
   margin: 20px 0;
-  background: var(--censored-nav-color);
   color: var(--censored-text-color);
   width: 100%;
   border-radius: 20px;

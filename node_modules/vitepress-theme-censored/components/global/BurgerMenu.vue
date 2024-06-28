@@ -126,7 +126,7 @@ a {
 .title {
   text-align: center;
   position: relative;
-  left:  40%;
+  left: 5px;
 
   font-size: 1.5em;
   color: var(--censored-text-color);

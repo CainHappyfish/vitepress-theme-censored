@@ -100,10 +100,6 @@ onUpdated(() => {
 
 /* Mobile Styles */
 @media only screen and (max-width: 640px) {
-  #index-navbar {
-    display: none;
-  }
-
   #index-sidebar {
     display: none;
   }
