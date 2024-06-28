@@ -80,6 +80,9 @@ html.dark {
         --censored-text-color: var(--censored-c-marsh-2);
         --censored-cover-text-color: var(--censored-c-ice-1);
         --censored-cover-text-shadow-color: var(--censored-c-ice-4);
+
+        /*shadow*/
+        --censored-shadow-color: var(--censored-c-marsh-2);
     }
 }
 
