@@ -11,8 +11,8 @@ import LinkCard from "./global/LinkCard.vue";
 
 <template>
   <div class="container">
-    <SideBar class="side-bar"/>
-    <div class="content">
+    <SideBar class="side-bar scroll-animation"/>
+    <div class="content scroll-animation">
       <ThemeBanner class="banner"/>
       <div class="about">
 

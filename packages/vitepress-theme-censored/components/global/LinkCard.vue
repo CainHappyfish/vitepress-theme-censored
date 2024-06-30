@@ -11,7 +11,7 @@ const shape = ref("circle")
 </script>
 
 <template>
-<a class="container" :href="link?.url">
+<a class="container scroll-animation" :href="link?.url">
   <ThemeAvatar :src="link.image" :size="60" :type="shape" style="margin: 10px" />
   <div class="content">
     <h3>{{ link.name }}</h3>
