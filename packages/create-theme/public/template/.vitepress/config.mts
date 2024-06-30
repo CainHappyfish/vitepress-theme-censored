@@ -62,7 +62,7 @@ export default defineConfig({
         { name: "今天睡够了吗", image:"https://pic.imgdb.cn/item/6681281bd9c307b7e9f8f3ed.jpg" ,url: "https://yhblogs.cn"},
         { name: "J.L.Picard", image:"https://pic.imgdb.cn/item/66812cafd9c307b7e9ff6a6e.png" ,url: "", desc:"Space, the final frontier"},
         { name: "youguan", image:"https://pic.imgdb.cn/item/66812d90d9c307b7e9008833.png" ,url: "", desc:"偶尔话起时的内心温暖就是我们一起活着的体现💗。"},
-        { name: "tsuki", image:"https://pic.imgdb.cn/item/66812e64d9c307b7e9017860.png" ,url: "", desc:""},
+        { name: "tsuki", image:"https://pic.imgdb.cn/item/66812e64d9c307b7e9017860.png" ,url: "", desc:"等一个纪念"},
         { name: "Salazar", image:"https://pic.imgdb.cn/item/66812fb8d9c307b7e902fc20.png" ,url: "", desc:"the invisible one"},
         { name: "Fr0ggit", image:"https://pic.imgdb.cn/item/66812f02d9c307b7e9022e7b.png" ,url: "", desc:"什么都没留下"},
         { name: "OURO", image:"https://pic.imgdb.cn/item/66812f35d9c307b7e9026d66.png" ,url: "", desc:"Be your true mind"},
