@@ -46,6 +46,7 @@ import LinkCard from "./global/LinkCard.vue";
   width: 720px;
   background: var(--censored-nav-color);
   color: var(--censored-text-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   border-radius: 10px;
 }
 
