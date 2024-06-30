@@ -39,6 +39,7 @@ const { theme } = useData<CensoredThemeConfig>()
   margin: 20px;
   position: absolute;
   top: 8rem;
+  color: white;
 }
 
 .title h1 {
@@ -61,6 +62,7 @@ const { theme } = useData<CensoredThemeConfig>()
     width: 92vw;
   }
   .title {
+    top: 5rem;
     width: 70vw;
   }
 

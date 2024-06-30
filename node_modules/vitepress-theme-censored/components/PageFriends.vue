@@ -15,7 +15,7 @@ import LinkCard from "./global/LinkCard.vue";
     <div class="content scroll-animation">
       <ThemeBanner class="banner"/>
       <div class="about">
-        <h1>本站信息</h1>
+        <h2>本站信息</h2>
         <p>网站名称：破酥的个人博客</p>
         <p>网站地址：https://cainhappyfish.github.io/vitepress-theme-censored</p>
       </div>
@@ -57,9 +57,6 @@ import LinkCard from "./global/LinkCard.vue";
   flex-wrap: wrap;
   justify-content: center;
 
-
-
-
   gap: 10px;
 }
 
@@ -72,9 +69,13 @@ import LinkCard from "./global/LinkCard.vue";
   .banner {
     min-width: 100vw;
   }
-
+  .about {
+    max-width: 80vw;
+  }
   .friends {
     min-width: 100vw;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
