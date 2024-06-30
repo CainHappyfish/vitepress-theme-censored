@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-import {useData, withBase} from "vitepress";
+import {useData, useRoute, withBase} from "vitepress";
 import {CensoredThemeConfig} from "../../types";
-import {onMounted, ref} from "vue";
+import {onMounted, ref, watch} from "vue";
 
 const { theme, page } = useData<CensoredThemeConfig>()
 import Avatar from "../../assets/avatar.gif"
@@ -23,16 +23,38 @@ const burgerMenuClick = () => {
           navMenu.classList.add("slide-out");
           navMenu.classList.remove("slide-in");
       }
-      burgerMenu.classList.toggle("is-active");
+
   }
 }
+const linkClick = () => {
+  const burgerMenu = document.getElementById('burger');
+  const navMenu = document.getElementById('menu');
+  console.log("click")
+
+  if (burgerMenu && navMenu) {
+    navMenu.classList.add("slide-out");
+    navMenu.classList.remove("slide-in");
+  }
+}
+
 
 onMounted(() => {
   const burger = document.getElementById('burger');
   if (burger) {
     burger.addEventListener('click', burgerMenuClick);
   }
+
 })
+
+const route = useRoute();
+
+watch(route, () => {
+  const navMenu = document.getElementById('menu');
+  if (navMenu) {
+    linkClick()
+    isActive.value = false;
+  }
+});
 </script>
 
 <template>
@@ -54,7 +76,7 @@ onMounted(() => {
           :key="index"
           class="menu-item"
           >
-            <a :href="item.url ? withBase(item.url) : '404' " class="menu-link">{{ item.title }}</a>
+            <a :href="item.url ? withBase(item.url) : '404' " class="menu-link" id="menu-link">{{ item.title }}</a>
           </li>
        </ul>
     </div>
@@ -139,10 +161,13 @@ a {
 }
 
 #menu.slide-in {
+  margin: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 94vw;
+  width: 300px;
+  min-width: 300px;
   height: 80vh;
 
   background: var(--censored-nav-color);
@@ -150,7 +175,7 @@ a {
 
   position: absolute;
   top: 100px;
-  left: 0.1rem;
+  left: 0.2rem;
 
   overflow: auto;
 
@@ -161,7 +186,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 94vw;
+  width: 300px;
+  min-width: 300px;
   height: 80vh;
 
   background: var(--censored-nav-color);

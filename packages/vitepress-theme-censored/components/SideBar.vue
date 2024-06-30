@@ -29,6 +29,7 @@ const AvatarURL = ref(Avatar)
 
 
   width: 300px;
+  max-width: 300px;
   height: 500px;
   max-height: 100vh;
   background: var(--censored-nav-color);

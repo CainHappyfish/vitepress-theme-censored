@@ -50,7 +50,26 @@ export default defineConfig({
 
     about: {
         introduction: "这个博客主题编写的目的是练习我的前端技术，如有问题可以在issues中提出，感激不尽orz"
-    }
+    },
+
+    banner: {
+        bgurl: "https://pic.imgdb.cn/item/66810524d9c307b7e9cd8b8f.jpg",
+        bannerText: "\"于迷途之中 我们彼此相伴\"",
+    },
+
+    links: [
+        { name: "flandre495", image:"https://pic.imgdb.cn/item/668125d2d9c307b7e9f6425a.png" ,url: "https://www.cnblogs.com/maple276", desc: "伸臂引诱人" },
+        { name: "今天睡够了吗", image:"https://pic.imgdb.cn/item/6681281bd9c307b7e9f8f3ed.jpg" ,url: "https://yhblogs.cn"},
+        { name: "J.L.Picard", image:"https://pic.imgdb.cn/item/66812cafd9c307b7e9ff6a6e.png" ,url: "", desc:"Space, the final frontier"},
+        { name: "youguan", image:"https://pic.imgdb.cn/item/66812d90d9c307b7e9008833.png" ,url: "", desc:"偶尔话起时的内心温暖就是我们一起活着的体现💗。"},
+        { name: "tsuki", image:"https://pic.imgdb.cn/item/66812e64d9c307b7e9017860.png" ,url: "", desc:""},
+        { name: "Salazar", image:"https://pic.imgdb.cn/item/66812fb8d9c307b7e902fc20.png" ,url: "", desc:"the invisible one"},
+        { name: "Fr0ggit", image:"https://pic.imgdb.cn/item/66812f02d9c307b7e9022e7b.png" ,url: "", desc:"什么都没留下"},
+        { name: "OURO", image:"https://pic.imgdb.cn/item/66812f35d9c307b7e9026d66.png" ,url: "", desc:"Be your true mind"},
+        { name: "容寒梓霜🌻", image:"https://pic.imgdb.cn/item/66812f5ad9c307b7e902968c.png" ,url: "", desc:"心是一切温柔的起点。"},
+    ]
+
+
 
   },
 

@@ -13,6 +13,7 @@ import {onMounted, onUnmounted, ref, watch} from "vue"
 import NavBar from "../components/navBar.vue";
 
 import { setupScrollAnimation } from "../utils/blog"
+import Friends from "../components/PageFriends.vue";
 
 const { theme, page } = useData<CensoredThemeConfig>()
 
@@ -64,6 +65,7 @@ watch(page, () => {
     <PageContent class="page-container" v-else>
       <NavBar />
       <About v-if="page.frontmatter.layout == 'about'"/>
+      <Friends v-else-if="page.frontmatter.layout == 'friends'"/>
       <Content v-else/>
     </PageContent>
   </div>

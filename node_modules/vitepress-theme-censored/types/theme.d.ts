@@ -153,6 +153,36 @@ declare namespace CensoredTheme {
 		desc?: string;
 	}
 
+	/**
+	 * 横幅配置 || Layout banner config
+	 */
+	interface BannerConfig {
+		/**
+		 * 横幅类型
+		 */
+		type?: 'img' | 'video';
+		/**
+		 * 横幅资源路径地址
+		 */
+		bgurl?: string;
+		/**
+		 * 横幅标题
+		 */
+		bannerTitle?: string;
+		/**
+		 * 横幅描述
+		 */
+		bannerText?: string;
+		/**
+		 * 同 CSS object-position
+		 */
+		position?: string;
+		/**
+		 * 同 CSS object-fit
+		 */
+		fit?: string;
+	}
+
 	/** 文章目录 */
 	interface MenuItem {
 		title: string;

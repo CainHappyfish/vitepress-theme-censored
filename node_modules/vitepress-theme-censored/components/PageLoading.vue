@@ -171,6 +171,7 @@ onMounted(() => {
 .pageLoad.off {
   opacity: 0;
   pointer-events: none;
+
 }
 
 h1 {
