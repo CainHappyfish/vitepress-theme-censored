@@ -71,7 +71,6 @@ onUpdated(() => {
 
 .index-container {
   position: relative;
-  margin: auto;
 
   display: flex;
   flex-direction: row;
@@ -123,7 +122,7 @@ onUpdated(() => {
   }
 
   .index-container {
-    width: 100vw;
+    width: 94vw;
     height: 100vh;
   }
 
