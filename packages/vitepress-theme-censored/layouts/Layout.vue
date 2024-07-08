@@ -2,30 +2,36 @@
 import {Content, useData} from 'vitepress'
 import { CensoredThemeConfig } from "types"
 import PageLoading from '../components/PageLoading.vue'
-// import ThemeLoading from "../components/ThemeLoading.vue"
 import PageContent from "../components/PageContent.vue"
 import Index from "../components/PageIndex.vue"
 import About from "../components/PageAbout.vue"
+import Friends from "../components/PageFriends.vue";
 import NotFound from "../components/404Page.vue"
-import PageFooter from "../components/PageFooter.vue";
 
-import {onMounted, onUnmounted, ref, watch} from "vue"
+import { useLoadingStore } from "../stores/loading"
+
+const LoadStore = useLoadingStore()
+
+import {onMounted, onUnmounted, watch} from "vue"
 import NavBar from "../components/navBar.vue";
 
 import { setupScrollAnimation } from "../utils/blog"
-import Friends from "../components/PageFriends.vue";
+
 
 const { theme, page } = useData<CensoredThemeConfig>()
 
-const pageLoadingKey = ref(0)
 
 setupScrollAnimation()
 
 
-// 主题颜色变化时重新挂在PageLoading
+function loadCounter() {
+  LoadStore.pageLoadingKey++
+}
+
+// 主题颜色变化时重新挂载PageLoading
 const observeClassChanges = () => {
   const observer = new MutationObserver(() => {
-    pageLoadingKey.value++;
+    loadCounter()
   })
 
   observer.observe(document.documentElement, {
@@ -40,6 +46,7 @@ let observer: MutationObserver
 
 onMounted(() => {
   observer = observeClassChanges()
+  loadCounter()
   setupScrollAnimation()
 })
 
@@ -49,17 +56,16 @@ onUnmounted(() => {
   }
 });
 
-
 watch(page, () => {
   // 每次页面发生变化时，重新挂载PageLoading组件
-  pageLoadingKey.value++
+  loadCounter()
 })
 
 </script>
 
 <template>
   <NotFound v-if="page.isNotFound"/>
-  <PageLoading v-if="theme.pageLoading && !page.isNotFound "/>
+  <PageLoading v-if="theme.pageLoading && !page.isNotFound " :key="LoadStore.pageLoadingKey"/>
   <div class="container">
     <Index v-if="page.frontmatter.layout == 'index'" />
     <PageContent class="page-container" v-else>
@@ -73,6 +79,9 @@ watch(page, () => {
 
 
 <style scoped>
+html, body {
+  overflow-x: hidden;
+}
 .page-container {
   width: 100%;
   height: 100%;

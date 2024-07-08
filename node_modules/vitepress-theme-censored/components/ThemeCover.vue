@@ -10,6 +10,8 @@ import LightIMG from '../assets/ThemeCover1.jpg'
 import PageScroll from "./PageAnchor.vue";
 
 const ThemeCover = ref("")
+const Scroll = ref(window.scrollY)
+
 function UpdateThemeCover() {
   const ThemeColor = document.documentElement.classList;
   ThemeCover.value = ThemeColor.contains("dark")
@@ -19,7 +21,7 @@ function UpdateThemeCover() {
 
 onMounted(() => {
   UpdateThemeCover()
-  console.log(ThemeCover.value)
+  // console.log(ThemeCover.value)
 
   // 监听主题类的变化
   watchEffect(() => {
@@ -34,14 +36,20 @@ onMounted(() => {
       observer.disconnect();
     };
   });
+  // 监听滚动事件
+  window.addEventListener('scroll', () => {
+    Scroll.value = window.scrollY;
+  });
 })
+
+
 
 </script>
 
 <template>
-  <div class="cover-container">
+  <div class="cover-container" @click="check">
     <img :src="ThemeCover" alt="ThemeCover" class="cover"/>
-    <PageScroll location="#navbar" class="page-scroll"/>
+    <PageScroll location="#navbar" class="page-scroll" :scroll="Scroll" />
     <div class="title-container">
       <h1>{{ theme.index?.BlogTitle }}</h1>
       <h2>{{ theme.index?.Signature }}</h2>

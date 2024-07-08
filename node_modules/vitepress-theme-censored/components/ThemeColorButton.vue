@@ -5,14 +5,18 @@ import MoonURL from "./icons/moon.svg"
 import { useData } from 'vitepress'
 import { CensoredThemeConfig } from "types"
 const { theme } = useData<CensoredThemeConfig>()
+import { useLoadingStore } from "../stores/loading"
 
-
+const LoadStore = useLoadingStore()
 
 function SwitchThemeColor() {
   const ThemeColor = document.documentElement.classList
 
   ThemeColor.toggle("dark")
   ThemeColor.toggle("light")
+  theme.value.themeLoading = true
+  LoadStore.themeLoadingKey++
+  console.log(theme.value.themeLoading)
   updateSwitchSvgURL()
 }
 

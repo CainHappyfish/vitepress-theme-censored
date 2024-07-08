@@ -1,4 +1,4 @@
-// 滚动加载
+
 
 export function RollingLoading() {
     window.addEventListener('load', () => {
@@ -26,7 +26,7 @@ export function RollingLoading() {
 export function triggerScrollAnimation (){
   const elements = document.querySelectorAll('.scroll-animation');
   elements.forEach((element) => {
-    const el = element as HTMLElement; // 类型断言为 HTMLElement
+    const el = element as HTMLElement;
     el.classList.remove('show');
     // Trigger reflow
     void el.offsetWidth;

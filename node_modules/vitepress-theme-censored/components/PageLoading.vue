@@ -1,6 +1,8 @@
 <!--https://codepen.io/creotip/pen/myeMvz-->
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+const isLoaded = ref(false)
+
 
 
 onMounted(() => {
@@ -23,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="pageLoad">
+  <div class="pageLoad" :class="{ off: isLoaded }">
     <div class="inner">
       <div></div>
       <div></div>

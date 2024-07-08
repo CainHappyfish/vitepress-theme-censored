@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
 
-// 定义接受的 props，包含 location 属性，用于指定目标滚动位置的选择器
 const props = defineProps({
-  location: String
+  location: String,     // 滚动目标
+  scroll: Number        // 滚动起始点
 });
 
 // 处理滚动的函数
 const handleScroll = (event: Event) => {
+  // console.log("current scroll", window.scrollY);
   event.preventDefault(); // 阻止默认的锚点点击行为
   const target = document.querySelector(props.location); // 根据 location prop 获取目标元素
   if (target) {
     const scrollTargetY = target.getBoundingClientRect().top + window.scrollY; // 计算目标元素的滚动位置
     const scrollDuration = 400; // 滚动动画的持续时间（毫秒）
-    const startY = window.scrollY; // 起始滚动位置
+    const startY = props.scroll; // 起始滚动位置
+    // console.log('scroll start', startY, scrollDuration);
     const startTime = performance.now(); // 获取动画开始的时间
 
     // 定义 easeInOutQuad 缓动函数

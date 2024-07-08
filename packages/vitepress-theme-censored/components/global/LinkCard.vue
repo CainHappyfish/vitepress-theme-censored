@@ -11,7 +11,7 @@ const shape = ref("circle")
 </script>
 
 <template>
-<a class="container scroll-animation" :href="link?.url">
+<a class="container" :href="link?.url">
   <ThemeAvatar :src="link.image" :size="60" :type="shape" style="margin: 10px" />
   <div class="content">
     <h3>{{ link.name }}</h3>
@@ -39,5 +39,11 @@ const shape = ref("circle")
 
 .content {
   margin: 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    min-width: 80vw;
+  }
 }
 </style>

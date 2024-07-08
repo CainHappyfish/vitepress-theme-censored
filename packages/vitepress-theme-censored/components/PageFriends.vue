@@ -6,6 +6,40 @@ const { theme } = useData<CensoredThemeConfig>()
 import SideBar from "./SideBar.vue";
 import ThemeBanner from "./global/ThemeBanner.vue";
 import LinkCard from "./global/LinkCard.vue";
+import {computed, nextTick, onMounted, ref, watch} from "vue";
+import {setupScrollAnimation, triggerScrollAnimation} from "../utils/blog";
+import Pagination from "./global/Pagination.vue";
+
+
+
+const itemsPerPage = ref(6);
+const currentPage = ref(1);
+const reRenderKey = ref(0); // 用于重新渲染的 key
+
+const paginatedItems = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage.value;
+  const end = start + itemsPerPage.value;
+  console.log("start: ", start, " end: ", end, " paginatedItems: ", theme.value?.links.slice(start, end));
+  return theme.value?.links.slice(start, end) || [];
+});
+
+const handlePageChange = async (page: number) => {
+  currentPage.value = page;
+  console.log(paginatedItems);
+  reRenderKey.value++;
+  await nextTick(); // 等待DOM更新
+  setupScrollAnimation()
+};
+
+onMounted(async () => {
+  await nextTick(); // 等待DOM更新
+  setupScrollAnimation()
+})
+
+watch(currentPage, async (newPage, oldPage) => {
+  await nextTick();
+  setupScrollAnimation()
+});
 
 </script>
 
@@ -14,15 +48,25 @@ import LinkCard from "./global/LinkCard.vue";
     <SideBar class="side-bar scroll-animation"/>
     <div class="content scroll-animation">
       <ThemeBanner class="banner"/>
-      <div class="about">
+      <div class="about scroll-animation">
         <h2>本站信息</h2>
         <p>网站名称：破酥的个人博客</p>
         <p>网站地址：https://cainhappyfish.github.io/vitepress-theme-censored</p>
       </div>
-      <div class="friends">
-        <LinkCard v-for="(friend, index) in theme.links" :key="index" :link="friend" />
-
+      <div class="friends" :key="reRenderKey">
+        <LinkCard v-for="(friend, index) in paginatedItems"
+                  :key="index + currentPage || friend.name"
+                  :link="friend"
+                  class="scroll-animation"
+        />
       </div>
+      <Pagination
+        :PageNo="currentPage"
+        :pageSize="itemsPerPage"
+        :total="theme.links?.length"
+        :continues="6"
+        @update:PageNo="handlePageChange"
+      />
     </div>
   </div>
 </template>
@@ -75,9 +119,16 @@ import LinkCard from "./global/LinkCard.vue";
   }
   .friends {
     min-width: 100vw;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .friends {
+    min-width: 100vw;
     flex-direction: column;
     align-items: center;
   }
-
 }
 </style>
