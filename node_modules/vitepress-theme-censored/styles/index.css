@@ -122,6 +122,14 @@ html.dark {
     opacity: 1;
 }
 
+@media only screen and (min-width: 1400px){
+    .scroll-animation.show {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        overflow: hidden;
+    }
+}
+
 
 
 

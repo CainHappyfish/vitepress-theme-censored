@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFriends.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFriends.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/Pagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/Pagination.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFriends.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFriends.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/Pagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/Pagination.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
