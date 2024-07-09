@@ -13,10 +13,8 @@ export default defineConfig({
     navBars: [
       {title: "Home", url: "/"},
       {title: "About", url: "/about"},
-      {title: "Categories", url: "/categories"},
       {title: "Friends", url: "/friends"},
       {title: "Archives", url: "/archives"},
-      {title: "Tags", url: "/tags"}
     ],
     // 这里有个bug，这样写找不到img
     index: {
@@ -30,8 +28,6 @@ export default defineConfig({
         home: '/' || '/home',
         about: '/about',
         archives: '/archives',
-        tags: '/tags',
-        categories: '/categories',
         friends: '/friends'
     },
 
@@ -69,6 +65,7 @@ export default defineConfig({
         { name: "容寒梓霜🌻", image:"https://pic.imgdb.cn/item/66812f5ad9c307b7e902968c.png" ,url: "", desc:"心是一切温柔的起点。"},
         { name: "Cakndex", image:"https://pic.imgdb.cn/item/668132fed9c307b7e90696f1.jpg" ,url: "https://cakndex.github.io/Cakndex.github.io-blog/", desc:"拨开云层的心房，关掉太阳关掉月亮吧"},
         { name: "Andonade", image:"https://s2.loli.net/2024/04/26/7LRHdZcFeG3WVi9.jpg" ,url: "https://andonade.github.io", desc:"Normal one. Normal days."},
+
     ]
 
 

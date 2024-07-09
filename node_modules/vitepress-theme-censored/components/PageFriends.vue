@@ -7,7 +7,7 @@ import SideBar from "./SideBar.vue";
 import ThemeBanner from "./global/ThemeBanner.vue";
 import LinkCard from "./global/LinkCard.vue";
 import {computed, nextTick, onMounted, ref, watch} from "vue";
-import {setupScrollAnimation, triggerScrollAnimation} from "../utils/blog";
+import { setupScrollAnimation } from "../utils/blog";
 import Pagination from "./global/Pagination.vue";
 
 
@@ -36,7 +36,7 @@ onMounted(async () => {
   setupScrollAnimation()
 })
 
-watch(currentPage, async (newPage, oldPage) => {
+watch(currentPage, async () => {
   await nextTick();
   setupScrollAnimation()
 });
@@ -64,7 +64,7 @@ watch(currentPage, async (newPage, oldPage) => {
         :PageNo="currentPage"
         :pageSize="itemsPerPage"
         :total="theme.links?.length"
-        :continues="6"
+        :continues="5"
         @update:PageNo="handlePageChange"
       />
     </div>
