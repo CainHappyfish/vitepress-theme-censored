@@ -64,8 +64,8 @@ watch(route, () => {
        <span></span>
        <span></span>
     </div>
-    <a href="#" class="title">{{ page.title }}</a>
-
+    <a href="#" class="title" v-if="page.frontmatter.layout!=='page'">{{ page.title }}</a>
+    <h2 v-else>ARTICLE</h2>/
     <div class="menu-container slide-out" id="menu">
       <img :src="AvatarURL" alt="Avatar" class="menu-avatar"/>
       <h2>{{ theme.user?.name }}</h2>
