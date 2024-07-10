@@ -5,6 +5,7 @@
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "gray-matter": "^4.0.3",
     "sass": "^1.77.6",
+    "shiki": "^1.10.3",
     "vitepress": "^1.2.3",
     "vitepress-theme-censored": "file:packages/vitepress-theme-censored"
   },
@@ -38,7 +39,6 @@
     "rfdc": "^1.4.1",
     "rollup": "^4.18.0",
     "search-insights": "^2.14.0",
-    "shiki": "^1.9.0",
     "source-map-js": "^1.2.0",
     "speakingurl": "^14.0.1",
     "superjson": "^2.2.1",

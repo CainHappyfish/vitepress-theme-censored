@@ -75,8 +75,8 @@ onUpdated(() => {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 1000px;
-  width: 1400px;
+
+  width: 100%;
 }
 
 .content {

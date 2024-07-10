@@ -1,5 +1,22 @@
 import { defineConfig } from 'vitepress-theme-censored/config';
 
+function replaceClassPlugin(md) {
+  const defaultRender = md.renderer.rules.fence || function (tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  md.renderer.rules.fence = function (tokens, idx, options, env, self) {
+    tokens[idx].attrJoin('class', 'censored-post');
+    return defaultRender(tokens, idx, options, env, self);
+  };
+
+  const originalRender = md.renderer.render;
+  md.renderer.render = function (tokens, options, env) {
+    const html = originalRender.call(this, tokens, options, env);
+    return html.replace(/vp-adaptive-theme/g, 'censored-post');
+  };
+}
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,6 +26,12 @@ export default defineConfig({
   base: '/vitepress-theme-censored/',
   title: "BLOG THEME CENSORED",
   description: "A theme for Vitepress",
+  markdown: {
+    config: (md) => {
+      // 使用自定义插件
+      md.use(replaceClassPlugin);
+    }
+  },
   themeConfig: {
     navBars: [
       {title: "Home", url: "/"},

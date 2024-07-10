@@ -5,8 +5,380 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PagePost.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-full.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-full.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-full.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-full.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-web.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-web.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-web.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/bundle-web.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/chunks/wasm-dynamic.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/chunks/wasm-dynamic.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/core-unwasm.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/core-unwasm.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/core-unwasm.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/core-unwasm.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/core.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/core.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/core.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/core.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/index.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/abap.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/abap.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/actionscript-3.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/actionscript-3.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ada.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ada.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/adoc.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/adoc.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-expression.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-expression.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-html.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-html.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-inline-style.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-inline-style.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-inline-template.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-inline-template.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-template-blocks.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-template-blocks.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-template.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-template.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-ts.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/angular-ts.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/apache.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/apache.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/apex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/apex.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/apl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/apl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/applescript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/applescript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ara.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ara.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/asciidoc.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/asciidoc.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/asm.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/asm.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/astro.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/astro.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/awk.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/awk.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ballerina.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ballerina.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bash.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bash.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bat.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bat.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/batch.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/batch.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/be.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/be.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/beancount.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/beancount.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/berry.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/berry.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bibtex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bibtex.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bicep.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/bicep.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/blade.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/blade.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/c.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/c.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cadence.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cadence.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cdc.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cdc.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/clarity.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/clarity.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/clj.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/clj.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/clojure.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/clojure.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/closure-templates.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/closure-templates.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cmake.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cmake.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cmd.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cmd.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cobol.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cobol.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/codeowners.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/codeowners.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/codeql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/codeql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/coffee.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/coffee.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/coffeescript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/coffeescript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/common-lisp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/common-lisp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/console.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/console.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cpp-macro.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cpp-macro.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cpp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cpp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/crystal.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/crystal.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cs.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cs.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/csharp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/csharp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/css.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/css.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/csv.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/csv.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cue.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cue.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cypher.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/cypher.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/d.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/d.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dart.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dart.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dax.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dax.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/desktop.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/desktop.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/diff.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/diff.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/docker.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/docker.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dockerfile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dockerfile.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dream-maker.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/dream-maker.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/elisp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/elisp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/elixir.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/elixir.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/elm.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/elm.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/emacs-lisp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/emacs-lisp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/erb.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/erb.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/erl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/erl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/erlang.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/erlang.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f03.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f03.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f08.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f08.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f18.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f18.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f77.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f77.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f90.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f90.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f95.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/f95.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fennel.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fennel.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fish.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fish.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fluent.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fluent.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/for.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/for.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fortran-fixed-form.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fortran-fixed-form.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fortran-free-form.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fortran-free-form.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fs.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fs.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fsharp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fsharp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fsl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/fsl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ftl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ftl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gdresource.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gdresource.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gdscript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gdscript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gdshader.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gdshader.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/genie.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/genie.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gherkin.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gherkin.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/git-commit.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/git-commit.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/git-rebase.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/git-rebase.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gjs.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gjs.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gleam.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gleam.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/glimmer-js.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/glimmer-js.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/glimmer-ts.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/glimmer-ts.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/glsl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/glsl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gnuplot.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gnuplot.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/go.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/go.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/graphql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/graphql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/groovy.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/groovy.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gts.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/gts.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hack.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hack.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/haml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/haml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/handlebars.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/handlebars.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/haskell.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/haskell.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/haxe.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/haxe.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hbs.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hbs.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hcl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hcl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hjson.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hjson.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hlsl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hlsl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hs.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hs.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/html-derivative.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/html-derivative.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/html.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/html.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/http.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/http.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hxml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hxml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hy.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/hy.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/imba.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/imba.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ini.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ini.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jade.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jade.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/java.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/java.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/javascript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/javascript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jinja-html.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jinja-html.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jinja.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jinja.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jison.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jison.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/js.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/js.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/json.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/json.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/json5.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/json5.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsonc.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsonc.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsonl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsonl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsonnet.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsonnet.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jssm.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jssm.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsx.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/jsx.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/julia.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/julia.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kotlin.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kotlin.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kt.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kt.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kts.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kts.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kusto.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/kusto.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/latex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/latex.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/less.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/less.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/liquid.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/liquid.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/lisp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/lisp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/log.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/log.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/logo.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/logo.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/lua.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/lua.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/make.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/make.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/makefile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/makefile.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/markdown-vue.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/markdown-vue.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/markdown.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/markdown.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/marko.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/marko.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/matlab.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/matlab.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/md.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/md.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mdc.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mdc.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mdx.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mdx.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mediawiki.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mediawiki.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mermaid.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mermaid.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mojo.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/mojo.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/move.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/move.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nar.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nar.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/narrat.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/narrat.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nextflow.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nextflow.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nf.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nf.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nginx.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nginx.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nim.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nim.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nix.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nix.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nu.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nu.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nushell.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/nushell.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/objc.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/objc.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/objective-c.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/objective-c.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/objective-cpp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/objective-cpp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ocaml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ocaml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/pascal.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/pascal.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/perl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/perl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/perl6.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/perl6.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/php.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/php.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/plsql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/plsql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/po.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/po.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/postcss.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/postcss.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/pot.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/pot.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/potx.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/potx.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/powerquery.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/powerquery.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/powershell.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/powershell.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/prisma.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/prisma.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/prolog.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/prolog.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/properties.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/properties.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/proto.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/proto.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ps.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ps.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ps1.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ps1.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/pug.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/pug.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/puppet.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/puppet.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/purescript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/purescript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/py.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/py.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/python.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/python.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/qml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/qml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/qmldir.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/qmldir.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/qss.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/qss.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/r.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/r.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/racket.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/racket.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/raku.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/raku.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/razor.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/razor.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rb.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rb.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/reg.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/reg.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/regex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/regex.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/regexp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/regexp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rel.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rel.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/riscv.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/riscv.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rs.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rs.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rst.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rst.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ruby.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ruby.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rust.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/rust.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sas.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sas.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sass.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sass.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/scala.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/scala.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/scheme.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/scheme.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/scss.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/scss.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sh.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sh.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shader.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shader.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shaderlab.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shaderlab.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shell.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shell.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shellscript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shellscript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shellsession.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/shellsession.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/smalltalk.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/smalltalk.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/solidity.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/solidity.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/soy.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/soy.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sparql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sparql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/spl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/spl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/splunk.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/splunk.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sql.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/sql.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ssh-config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ssh-config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/stata.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/stata.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/styl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/styl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/stylus.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/stylus.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/svelte.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/svelte.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/swift.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/swift.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/system-verilog.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/system-verilog.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/systemd.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/systemd.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tasl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tasl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tcl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tcl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/terraform.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/terraform.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tex.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tf.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tf.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tfvars.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tfvars.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/toml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/toml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ts.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/ts.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tsp.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tsp.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tsv.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tsv.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tsx.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/tsx.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/turtle.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/turtle.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/twig.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/twig.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typ.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typ.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typescript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typescript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typespec.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typespec.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typst.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/typst.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/v.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/v.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vala.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vala.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vb.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vb.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/verilog.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/verilog.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vhdl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vhdl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vim.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vim.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/viml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/viml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vimscript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vimscript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-directives.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-directives.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-html.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-html.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-interpolations.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-interpolations.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-sfc-style-variable-injection.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue-sfc-style-variable-injection.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vue.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vy.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vy.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vyper.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/vyper.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wasm.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wasm.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wenyan.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wenyan.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wgsl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wgsl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wiki.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wiki.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wikitext.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wikitext.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wolfram.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/wolfram.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/xml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/xml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/xsl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/xsl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/yaml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/yaml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/yml.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/yml.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/zenscript.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/zenscript.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/zig.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/zig.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/langs/zsh.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/langs/zsh.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/theme-css-variables.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/theme-css-variables.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/theme-css-variables.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/theme-css-variables.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/andromeeda.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/andromeeda.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/aurora-x.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/aurora-x.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/ayu-dark.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/ayu-dark.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-frappe.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-frappe.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-latte.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-latte.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-macchiato.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-macchiato.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-mocha.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/catppuccin-mocha.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/dark-plus.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/dark-plus.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/dracula-soft.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/dracula-soft.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/dracula.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/dracula.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-dark-default.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-dark-default.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-dark-dimmed.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-dark-dimmed.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-dark.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-dark.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-light-default.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-light-default.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-light.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/github-light.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/houston.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/houston.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/light-plus.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/light-plus.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-darker.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-darker.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-lighter.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-lighter.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-ocean.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-ocean.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-palenight.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme-palenight.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/material-theme.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/min-dark.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/min-dark.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/min-light.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/min-light.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/monokai.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/monokai.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/night-owl.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/night-owl.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/nord.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/nord.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/one-dark-pro.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/one-dark-pro.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/one-light.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/one-light.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/poimandres.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/poimandres.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/red.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/red.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/rose-pine-dawn.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/rose-pine-dawn.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/rose-pine-moon.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/rose-pine-moon.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/rose-pine.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/rose-pine.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/slack-dark.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/slack-dark.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/slack-ochin.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/slack-ochin.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/snazzy-light.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/snazzy-light.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/solarized-dark.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/solarized-dark.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/solarized-light.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/solarized-light.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/synthwave-84.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/synthwave-84.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/tokyo-night.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/tokyo-night.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vesper.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vesper.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vitesse-black.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vitesse-black.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vitesse-dark.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vitesse-dark.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vitesse-light.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/themes/vitesse-light.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/types.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/types.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/types.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/types.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/types/wasm-dynamic.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/types/wasm-dynamic.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/wasm.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/wasm.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/dist/wasm.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/dist/wasm.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/shiki/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/shiki/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/var/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/var/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/var/base.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +389,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -77,11 +449,11 @@
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\global" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template\posts" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template" />
-      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -185,11 +557,6 @@
           <url>file://$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/BurgerMenu.vue</url>
           <line>168</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue</url>
-          <line>1</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAnchor.vue</url>
