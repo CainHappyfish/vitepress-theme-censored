@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress-theme-censored/config';
+import Shiki from '@shikijs/markdown-it';
 
 function replaceClassPlugin(md) {
   const defaultRender = md.renderer.rules.fence || function (tokens, idx, options, env, self) {
@@ -6,14 +7,14 @@ function replaceClassPlugin(md) {
   };
 
   md.renderer.rules.fence = function (tokens, idx, options, env, self) {
-    tokens[idx].attrJoin('class', 'censored-post');
+    tokens[idx].attrJoin('class', 'censored-code');
     return defaultRender(tokens, idx, options, env, self);
   };
 
   const originalRender = md.renderer.render;
   md.renderer.render = function (tokens, options, env) {
     const html = originalRender.call(this, tokens, options, env);
-    return html.replace(/vp-adaptive-theme/g, 'censored-post');
+    return html.replace(/vp-code/g, 'censored-code');
   };
 }
 
@@ -27,9 +28,12 @@ export default defineConfig({
   title: "BLOG THEME CENSORED",
   description: "A theme for Vitepress",
   markdown: {
+    // https://shiki.tmrs.site/themes
+    theme: 'nord',
     config: (md) => {
       // 使用自定义插件
       md.use(replaceClassPlugin);
+
     }
   },
   themeConfig: {

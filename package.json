@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@shikijs/markdown-it": "^1.10.3",
     "@types/node": "^20.14.9",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",

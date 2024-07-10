@@ -6,6 +6,9 @@ import LayoutPage from './layouts/Layout.vue';
 import NotFoundPage from './layouts/NotFound.vue';
 import './styles/index.css'
 
+import MarkdownIt from 'markdown-it'
+import Shiki from '@shikijs/markdown-it'
+
 
 export default {
   Layout: LayoutPage,
