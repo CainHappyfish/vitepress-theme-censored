@@ -1,5 +1,64 @@
 import { defineConfig } from 'vitepress-theme-censored/config';
-import Shiki from '@shikijs/markdown-it';
+import MarkdownIt from "markdown-it";
+import mathjax3 from "markdown-it-mathjax3"
+
+
+const wrapImagesPlugin: PluginWithOptions = (md, options) => {
+  const defaultRender = md.renderer.rules.image || function (tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  md.renderer.rules.image = function (tokens, idx, options, env, self) {
+    const token = tokens[idx];
+    const img = defaultRender(tokens, idx, options, env, self);
+
+    return `<div class="img-container">${img}</div>`;
+  };
+};
+
+const wrapListsPlugin: PluginWithOptions = (md, options) => {
+  const defaultRenderOL = md.renderer.rules.ordered_list_open || function (tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  const defaultRenderUL = md.renderer.rules.bullet_list_open || function (tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  md.renderer.rules.ordered_list_open = function (tokens, idx, options, env, self) {
+    return '<div class="list-container">' + defaultRenderOL(tokens, idx, options, env, self);
+  };
+
+  md.renderer.rules.ordered_list_close = function (tokens, idx, options, env, self) {
+    return defaultRenderOL(tokens, idx, options, env, self) + '</div>';
+  };
+
+  md.renderer.rules.bullet_list_open = function (tokens, idx, options, env, self) {
+    return '<div class="list-container">' + defaultRenderUL(tokens, idx, options, env, self);
+  };
+
+  md.renderer.rules.bullet_list_close = function (tokens, idx, options, env, self) {
+    return defaultRenderUL(tokens, idx, options, env, self) + '</div>';
+  };
+};
+
+const wrapTablePlugin: PluginWithOptions = (md, options) => {
+  const defaultRenderTableOpen = md.renderer.rules.table_open || function (tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  const defaultRenderTableClose = md.renderer.rules.table_close || function (tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  md.renderer.rules.table_open = function (tokens, idx, options, env, self) {
+    return '<div class="table-container">' + defaultRenderTableOpen(tokens, idx, options, env, self);
+  };
+
+  md.renderer.rules.table_close = function (tokens, idx, options, env, self) {
+    return defaultRenderTableClose(tokens, idx, options, env, self) + '</div>';
+  };
+};
 
 function replaceClassPlugin(md) {
   const defaultRender = md.renderer.rules.fence || function (tokens, idx, options, env, self) {
@@ -33,7 +92,10 @@ export default defineConfig({
     config: (md) => {
       // 使用自定义插件
       md.use(replaceClassPlugin);
-
+      md.use(wrapImagesPlugin);
+      md.use(wrapListsPlugin);
+      md.use(wrapTablePlugin);
+      md.use(mathjax3);
     }
   },
   themeConfig: {

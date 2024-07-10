@@ -65,7 +65,7 @@ watch(route, () => {
        <span></span>
     </div>
     <a href="#" class="title" v-if="page.frontmatter.layout!=='page'">{{ page.title }}</a>
-    <h2 v-else>ARTICLE</h2>/
+    <h2 v-else style="color: var(--censored-text-color)">ARTICLE</h2>
     <div class="menu-container slide-out" id="menu">
       <img :src="AvatarURL" alt="Avatar" class="menu-avatar"/>
       <h2>{{ theme.user?.name }}</h2>
@@ -217,6 +217,11 @@ a {
 }
 
 .menu-container ul {
+  position: relative;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   text-decoration: none;
   font-size: 3vh;

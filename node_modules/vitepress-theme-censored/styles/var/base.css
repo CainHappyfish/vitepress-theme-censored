@@ -31,6 +31,25 @@
   --censored-c-dawn-3: rgb(22,67,109);
   --censored-c-dawn-4: rgb(9,38,68);
 
+  --censored-c-purple-1: #625985;
+  --censored-c-purple-2: #433C68;
+  --censored-c-purple-3: #3A3053;
+  --censored-c-purple-4: #19102B;
+
+  --censored-c-formal-1: #DEE5EB;
+  --censored-c-formal-2: #9FB2C0;
+  --censored-c-formal-3: #536E83;
+  --censored-c-formal-4: #27374D;
+
+  --censored-c-dblue-1: #2C74B3;
+  --censored-c-dblue-2: #205295;
+  --censored-c-dblue-3: #114272;
+  --censored-c-dblue-4: #0A2674;
+
+  --censored-c-db-1: #054561;
+  --censored-c-db-2: #03293C;
+  --censored-c-db-3: #031E33;
+
 }
 
 /*text colors*/

@@ -80,6 +80,55 @@ export declare interface CensoredThemeConfig {
 	languages?: Record<string, CensoredTheme.Language>;
 }
 
+// mathjax配置
+interface MarkdownItMathjaxOptions {
+  /**
+   * 输出格式
+   *
+   * @default 'svg'
+   */
+
+  output?: "chtml" | "svg";
+
+  /**
+   * 是否允许两端带空格的内联数学
+   *
+   * @description 不建议将此设置为 true，因为它很可能会破坏 $ 的默认使用
+   *
+   * @default false
+   */
+  allowInlineWithSpace?: boolean;
+
+  /**
+   * 是否将解析的数学语言 fence 块转换为显示模式数学
+   *
+   * @default false
+   */
+  mathFence?: boolean;
+
+  /**
+   * 是否启用无障碍
+   *
+   * @default true
+   */
+  a11y?: boolean;
+
+  /**
+   * TeX 输入选项
+   */
+  tex?: MathJaxTexInputOptions;
+
+  /**
+   * 通用 HTML 输出选项
+   */
+  chtml?: MathjaxCommonHTMLOutputOptions;
+
+  /**
+   * SVG 输出选项
+   */
+  svg?: MathjaxSVGOutputOptions;
+}
+
 import Theme, { defineTheme } from '../index';
 
 import './theme.d.ts';

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+.censored-code {
+  display: flex;
+  overflow: auto;
+}
 
 [class*='language-'] {
   background: var(--censored-code-bg-color);
@@ -36,14 +40,6 @@ code {
     color 0.5s;
 }
 
-/*.dark .vp-code span {*/
-/*  color: var(--shiki-dark, inherit);*/
-/*}*/
-
-/*html:not(.dark) .vp-code span {*/
-/*  color: var(--shiki-light, inherit);*/
-/*}*/
-
 :root {
   --vp-local-search-bg: var(--vp-c-bg);
   --vp-local-search-result-bg: var(--vp-c-bg);
@@ -55,11 +51,14 @@ code {
 }
 
 code .highlighted {
+  position: absolute;
+  left: -5px;
+
   background-color: var(--vp-code-line-highlight-color);
   transition: background-color 0.5s;
   margin: 0 -24px;
   padding: 0 24px;
-  width: calc(100% + 2 * 24px);
+  width: 1em;
   display: inline-block;
 }
 
@@ -83,32 +82,12 @@ code .diff::before {
   position: absolute;
   left: 10px;
 }
-/*copy buttons*/
-[class^="language-"] {
-  position: relative;
-}
 
-[class^="language-"] > button.copy {
-  background-image: url("../../assets/icons/copy.svg");
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 1;
-  /*border: 1px solid var(--vp-code-copy-code-border-color);*/
-  border-radius: 4px;
-  width: 32px;
-  height: 32px;
-  /*background-color: var(--vp-code-copy-code-bg);*/
-  background-color: transparent;
-  opacity: 0;
-  cursor: pointer;
-  background-position: center;
-  background-size: 16px;
-  background-repeat: no-repeat;
-  transition: opacity 0.25s;
-}
 
-/* 在悬停时显示按钮 */
-[class^="language-"]:hover > button.copy {
-  opacity: 1;
+
+@media only screen and (max-width: 1400px) {
+  [class^="language-"] {
+    width: 96%;
+  }
+
 }

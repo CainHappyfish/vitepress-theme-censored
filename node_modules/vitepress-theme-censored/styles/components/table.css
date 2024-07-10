@@ -1,0 +1,45 @@
+:root {
+    table-min-width: 2em;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    color: var(--censored-table-text-color);
+
+}
+
+.table-container table {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.table-container th, .table-container td {
+    padding: 5px;
+    text-align: left;
+    min-height: 0.5em;
+}
+
+td:nth-child(1), th:nth-child(1) { min-width: 1em; }
+td:nth-child(2), th:nth-child(2) { min-width: 1em; }
+td:nth-child(3), th:nth-child(3) { min-width: 1em; }
+
+.table-container table thead {
+    background-color: var(--censored-table-head-color);
+
+}
+
+.table-container table tbody {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 6em;
+    tr:nth-child(odd) {
+      background-color: var(--censored-table-body-odd-color);
+    }
+    tr:nth-child(even) {
+      background-color: var(--censored-table-body-even-color);
+    }
+}

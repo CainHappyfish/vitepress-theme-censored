@@ -1,12 +1,10 @@
 <script setup lang="ts">
-
 import {Content} from "vitepress";
 </script>
 
 <template>
   <div class="page-container">
     <Content class="content"/>
-
   </div>
 
 
@@ -14,6 +12,7 @@ import {Content} from "vitepress";
 
 <style scoped>
 .page-container {
+  width: 100%;
   display: flex;
   justify-content: center;
 
@@ -21,11 +20,19 @@ import {Content} from "vitepress";
 
 .content {
   width: 70rem;
-  background: var(--censored-nav-color);
   margin: 20px;
   padding: 20px;
   border-radius: 20px;
+  background: var(--censored-nav-color);
   color: var(--censored-text-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
 
+}
+
+@media only screen and (max-width: 1400px) {
+  .content {
+    width: 100%;
+    max-width: 90vw;
+  }
 }
 </style>
