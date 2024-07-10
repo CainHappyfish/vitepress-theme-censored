@@ -1,8 +1,9 @@
 blockquote{
+
   display:block;
   background: var(--censored-quote-bg-color);
   padding: 15px 20px 15px 45px;
-  margin: 0 0 20px;
+  margin: 10px 0;
   position: relative;
   border-radius: 15px;
 
@@ -10,7 +11,8 @@ blockquote{
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.2;
-  color: var(--censored-quote-text-color);
+  color: var(--censor
+  ed-quote-text-color);
   text-align: justify;
 
   /*Borders - (Optional)*/

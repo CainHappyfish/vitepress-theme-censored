@@ -47,6 +47,8 @@ html.light {
 
     /*code*/
     --censored-code-bg-color: var(--censored-c-dawn-4);
+    --censored-inline-code-bg-color: var(--censored-c-dawn-4);
+
 
     /*blockquote*/
     --censored-quote-color: var(--censored-bg-color);
@@ -87,6 +89,7 @@ html.dark {
 
     /*code*/
     --censored-code-bg-color: var(--censored-c-dawn-4);
+    --censored-inline-code-bg-color: var(--censored-c-dawn-4);
 
     /*blockquote*/
     --censored-quote-color: var(--censored-nav-color);
@@ -125,12 +128,27 @@ html.dark {
         /*shadow*/
         --censored-shadow-color: var(--censored-c-marsh-2);
 
+        /*scroll*/
+        scrollbar-width: thin; /* 滚动条的宽度 */
+        scrollbar-color: var(--censored-text-color) var(--censored-bg-color); /* 滚动条颜色 */
+
+        /*code*/
+        --censored-code-bg-color: var(--censored-c-dawn-4);
+        --censored-inline-code-bg-color: var(--censored-c-dawn-4);
+
+
         /*blockquote*/
         --censored-quote-color: var(--censored-bg-color);
         --censored-quote-bg-color: var(--censored-c-marsh-2);
         --censored-quote-shadow-color: var(--censored-c-marsh-4);
         --censored-quote-border-color: var(--censored-c-dawn-4);
         --censored-quote-text-color: var(--censored-bg-color);
+
+        /*tables*/
+        --censored-table-text-color: white;
+        --censored-table-head-color: var(--censored-c-waves-4);
+        --censored-table-body-odd-color: var(--censored-c-waves-2);
+        --censored-table-body-even-color: var(--censored-c-waves-3);
     }
 }
 
@@ -154,12 +172,26 @@ html.dark {
         --censored-cover-text-color: var(--censored-c-ice-1);
         --censored-cover-text-shadow-color: var(--censored-c-ice-4);
 
+        /*scroll*/
+        scrollbar-width: thin; /* 滚动条的宽度 */
+        scrollbar-color: var(--censored-text-color) var(--censored-bg-color); /* 滚动条颜色 */
+
+        /*code*/
+        --censored-code-bg-color: var(--censored-c-dawn-4);
+        --censored-inline-code-bg-color: var(--censored-c-dawn-4);
+
         /*blockquote*/
         --censored-quote-color: var(--censored-nav-color);
         --censored-quote-bg-color: var(--censored-c-purple-4);
         --censored-quote-shadow-color: var(--censored-c-dawn-4);
         --censored-quote-border-color: var(--censored-c-dawn-4);
         --censored-quote-text-color: var(--censored-text-color);
+
+        /*tables*/
+        --censored-table-text-color: var(--censored-text-color);
+        --censored-table-head-color: var(--censored-c-db-3);
+        --censored-table-body-odd-color: var(--censored-c-db-2);
+        --censored-table-body-even-color: var(--censored-c-dawn-4);
     }
 
 

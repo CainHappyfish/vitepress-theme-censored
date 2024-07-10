@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress-theme-censored/config';
-import MarkdownIt from "markdown-it";
+import { PluginWithOptions } from 'markdown-it';
 import mathjax3 from "markdown-it-mathjax3"
 
 
@@ -77,6 +77,16 @@ function replaceClassPlugin(md) {
   };
 }
 
+const inlineCodePlugin: PluginWithOptions = (md, options) => {
+  const defaultRender = md.renderer.rules.code_inline || function (tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  md.renderer.rules.code_inline = function (tokens, idx, options, env, self) {
+    tokens[idx].attrJoin('class', 'inline-code');
+    return defaultRender(tokens, idx, options, env, self);
+  };
+};
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -95,6 +105,7 @@ export default defineConfig({
       md.use(wrapImagesPlugin);
       md.use(wrapListsPlugin);
       md.use(wrapTablePlugin);
+      md.use(inlineCodePlugin);
       md.use(mathjax3);
     }
   },
