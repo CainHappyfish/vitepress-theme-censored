@@ -6,7 +6,7 @@ import {onMounted, onUnmounted, ref} from "vue";
 const isSmallScreen = ref(false);
 
 const handleResize = () => {
-  isSmallScreen.value = window.innerWidth < 600;
+  isSmallScreen.value = window.innerWidth < 1400;
 };
 
 onMounted(() => {
