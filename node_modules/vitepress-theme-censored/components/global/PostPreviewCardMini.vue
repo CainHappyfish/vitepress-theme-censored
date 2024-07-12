@@ -84,5 +84,14 @@ img {
 
 }
 
+@media only screen and (max-width: 600px) {
+  .post-card {
+    margin: 1vw 1vw;
+
+    width: 90vw;
+    height: 40vw;
+  }
+
+}
 
 </style>
