@@ -9,6 +9,7 @@ import LinkCard from "./global/LinkCard.vue";
 import {computed, nextTick, onMounted, onUnmounted, ref, watch} from "vue";
 import { setupScrollAnimation } from "../utils/blog";
 import Pagination from "./global/Pagination.vue";
+import PageFooter from "./PageFooter.vue";
 
 
 
@@ -82,6 +83,7 @@ watch(currentPage, async () => {
         :continues="5"
         @update:PageNo="handlePageChange"
       />
+      <PageFooter />
     </div>
   </div>
 </template>

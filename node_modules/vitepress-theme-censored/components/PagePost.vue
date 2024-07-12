@@ -2,6 +2,7 @@
 import {Content} from "vitepress";
 import SideBar from "./SideBar.vue";
 import {onMounted, onUnmounted, ref} from "vue";
+import PageFooter from "./PageFooter.vue";
 
 const isSmallScreen = ref(false);
 
@@ -24,7 +25,7 @@ onUnmounted(() => {
     <Content class="content"/>
     <SideBar class="side-bar" v-if="!isSmallScreen"/>
   </div>
-
+  <PageFooter />
 
 </template>
 
