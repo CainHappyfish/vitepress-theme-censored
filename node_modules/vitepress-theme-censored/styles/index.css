@@ -233,6 +233,12 @@ html.dark {
     }
 }
 
+@media only screen and (max-width: 1200px){
+    .side-bar {
+        display: none;
+        visibility: hidden;
+    }
+}
 
 
 

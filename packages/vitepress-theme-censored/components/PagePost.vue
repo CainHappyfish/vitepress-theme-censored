@@ -36,10 +36,5 @@ import SideBar from "./SideBar.vue";
     width: 100%;
     max-width: 90vw;
   }
-
-  .side-bar {
-    display: none;
-    visibility: hidden;
-  }
 }
 </style>

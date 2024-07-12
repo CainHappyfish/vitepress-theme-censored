@@ -23,7 +23,7 @@ defineProps<{
 <style scoped>
 .timeline-container {
   width: 1000px;
-  border-radius: 10px;
+  display: flex;
 
 
 }
@@ -58,5 +58,26 @@ defineProps<{
   border-radius: 10px;
   filter: drop-shadow(0 0 2px var(--censored-shadow-color));
 
+}
+
+@media only screen and (max-width: 1400px) {
+  .timeline-container {
+    width: 65vw;
+  }
+
+  .timeline-content {
+    width: 55vw;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .timeline-container {
+    width: 80vw;
+  }
+
+  .timeline-content {
+    width: 80vw;
+  }
 }
 </style>
