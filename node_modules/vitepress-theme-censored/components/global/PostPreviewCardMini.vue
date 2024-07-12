@@ -11,7 +11,7 @@ const handleImageError = (event: any) => {
 </script>
 
 <template>
-  <div class="post-card scroll-animation">
+  <div class="post-card">
     <a class="card-content" :href="post.url">
       <img v-if="post.cover?.default"
         :src="post.cover?.default"

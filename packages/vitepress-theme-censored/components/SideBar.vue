@@ -10,7 +10,7 @@ const AvatarURL = ref(Avatar)
 </script>
 
 <template>
-<div class="container">
+<div class="side-container">
   <img :src="AvatarURL" alt="Avatar" class="side-avatar"/>
   <h2>{{ theme.user?.name }}</h2>
   <p>{{ theme.user?.describe }}</p>
@@ -20,13 +20,12 @@ const AvatarURL = ref(Avatar)
 </template>
 
 <style scoped>
-.container {
-  margin-top: 120px;
+.side-container {
+  margin-top: 90px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
 
   width: 300px;
   max-width: 300px;
@@ -38,7 +37,7 @@ const AvatarURL = ref(Avatar)
   border-radius: 10px;
 
   position: sticky;
-  top: 170px;
+  top: 110px;
 
 }
 

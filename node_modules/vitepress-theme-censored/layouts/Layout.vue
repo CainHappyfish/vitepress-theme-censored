@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {Content, useData} from 'vitepress'
+import { useData } from 'vitepress'
 import { CensoredThemeConfig } from "types"
 import PageLoading from '../components/PageLoading.vue'
 import PageContent from "../components/PageContent.vue"
@@ -7,16 +7,18 @@ import Index from "../components/PageIndex.vue"
 import About from "../components/PageAbout.vue"
 import Friends from "../components/PageFriends.vue";
 import NotFound from "../components/404Page.vue"
+import Archives from "../components/PageArchives.vue"
 
 import { useLoadingStore } from "../stores/loading"
-
-const LoadStore = useLoadingStore()
 
 import {onMounted, onUnmounted, watch} from "vue"
 import NavBar from "../components/navBar.vue";
 
 import { setupScrollAnimation } from "../utils/blog"
 import PagePost from "../components/PagePost.vue";
+
+const LoadStore = useLoadingStore()
+
 
 
 const { theme, page } = useData<CensoredThemeConfig>()
@@ -73,6 +75,7 @@ watch(page, () => {
       <NavBar />
       <About v-if="page.frontmatter.layout == 'about'"/>
       <Friends v-else-if="page.frontmatter.layout == 'friends'"/>
+      <Archives v-else-if="page.frontmatter.layout == 'archives'"/>
       <PagePost v-else/>
     </PageContent>
   </div>

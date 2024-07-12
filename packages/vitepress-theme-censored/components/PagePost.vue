@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import {Content} from "vitepress";
+import SideBar from "./SideBar.vue";
 </script>
 
 <template>
   <div class="page-container">
     <Content class="content"/>
+    <SideBar class="side-bar" />
   </div>
 
 
@@ -33,6 +35,11 @@ import {Content} from "vitepress";
   .content {
     width: 100%;
     max-width: 90vw;
+  }
+
+  .side-bar {
+    display: none;
+    visibility: hidden;
   }
 }
 </style>

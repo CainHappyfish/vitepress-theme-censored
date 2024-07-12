@@ -84,7 +84,8 @@ code .diff::before {
 }
 
 .inline-code {
-  margin-right: 20px;
+  text-align: center;
+  margin-right: 30px;
   padding: 0 8px;
   background-color: var(--censored-inline-code-bg-color);
   border-radius: 2px;

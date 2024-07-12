@@ -11,9 +11,10 @@ import { CensoredThemeConfig } from "types"
 const { theme, page, frontmatter } = useData<CensoredThemeConfig>()
 import { setupScrollAnimation } from "../utils/blog"
 
-import { useAllPosts, useCategories, usePageUrl } from "../composables"
-import {onMounted, onUpdated, ref} from "vue";
+import { useAllPosts } from "../composables"
+import {computed, nextTick, onMounted, onUpdated, ref, watch} from "vue";
 import PageFooter from "./PageFooter.vue";
+import Pagination from "./global/Pagination.vue";
 
 const allPosts = useAllPosts();
 
@@ -29,6 +30,35 @@ onMounted(() => {
 onUpdated(() => {
   setupScrollAnimation()
 });
+
+
+const itemsPerPage = ref(6);
+const currentPage = ref(1);
+const reRenderKey = ref(0);
+
+const blogs = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage.value;
+  const end = start + itemsPerPage.value;
+  return allPosts.slice(start, end);
+})
+
+const handlePageChange = async (page: number) => {
+  currentPage.value = page;
+  console.log(paginatedItems);
+  reRenderKey.value++;
+  await nextTick(); // 等待DOM更新
+  setupScrollAnimation()
+};
+
+onMounted(async () => {
+  await nextTick(); // 等待DOM更新
+  setupScrollAnimation()
+})
+
+watch(currentPage, async () => {
+  await nextTick();
+  setupScrollAnimation()
+});
 </script>
 
 <template>
@@ -39,16 +69,22 @@ onUpdated(() => {
   <NavBar class="scroll-animation" id="navbar"/>
   <div class="index-container">
     <SideBar class="scroll-animation"  id="index-sidebar"/>
-    <div class="content scroll-animation">
+    <div class="content">
       <Divider :content='LatestDivider' :style="DividerStyle" class="divider"/>
-      <PageCard :post="allPosts[0]"/>
+      <PageCard :post="allPosts[allPosts.length - 1]"/>
       <Divider :content='ArticleDivider' class="scroll-animation divider" />
-      <div class="articles">
-        <div v-for="(post, index) in allPosts.slice(1)" :key="index">
+      <div class="articles scroll-animation" :key="reRenderKey">
+        <div v-for="(post, index) in blogs" :key="index">
           <PageCardMini :post="post" class="page-card"/>
         </div>
-
       </div>
+      <Pagination
+        :PageNo="currentPage"
+        :pageSize="itemsPerPage"
+        :total="theme.links?.length"
+        :continues="5"
+        @update:PageNo="handlePageChange"
+      />
       <PageFooter />
     </div>
 
@@ -71,19 +107,22 @@ onUpdated(() => {
 
 .index-container {
   position: relative;
-
+  min-height: 10000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
   width: 100%;
+
 }
 
 .content {
   margin: 20px 40px;
   width: 1200px;
-  height: 1000px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .articles {
