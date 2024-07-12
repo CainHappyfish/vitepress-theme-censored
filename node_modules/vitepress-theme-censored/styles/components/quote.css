@@ -11,8 +11,7 @@ blockquote{
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.2;
-  color: var(--censor
-  ed-quote-text-color);
+  color: var(--censored-quote-text-color);
   text-align: justify;
 
   /*Borders - (Optional)*/
