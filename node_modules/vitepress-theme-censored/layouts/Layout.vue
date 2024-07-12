@@ -84,6 +84,7 @@ watch(page, () => {
 
 <style scoped>
 html, body {
+  max-height: 100%;
   overflow-x: hidden;
 }
 .page-container {

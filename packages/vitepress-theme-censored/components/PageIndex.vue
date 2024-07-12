@@ -107,7 +107,7 @@ watch(currentPage, async () => {
 
 .index-container {
   position: relative;
-  min-height: 10000px;
+  min-height: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
