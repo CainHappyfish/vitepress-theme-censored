@@ -65,7 +65,8 @@ html.light {
     --censored-table-body-even-color: var(--censored-c-waves-3);
 
     /*timeline*/
-    --censored-timeline-color: var(--censored-c-waves-3);
+    --censored-timeline-color: var(--censored-c-waves-2);
+    --censored-timeline-icon-color: var(--censored-c-waves-3);
 }
 
 html.dark {
@@ -109,7 +110,8 @@ html.dark {
     --censored-table-body-even-color: var(--censored-c-dawn-4);
 
     /*timeline*/
-    --censored-timeline-color: var(--censored-c-dawn-3);
+    --censored-timeline-color: var(--censored-c-waves-3);
+    --censored-timeline-icon-color: var(--censored-c-dawn-3);
 }
 
 @media (prefers-color-scheme: light) {
@@ -156,6 +158,10 @@ html.dark {
         --censored-table-head-color: var(--censored-c-waves-4);
         --censored-table-body-odd-color: var(--censored-c-waves-2);
         --censored-table-body-even-color: var(--censored-c-waves-3);
+
+        /*timeline*/
+        --censored-timeline-color: var(--censored-c-waves-2);
+        --censored-timeline-icon-color: var(--censored-c-waves-3);
     }
 }
 
@@ -199,6 +205,10 @@ html.dark {
         --censored-table-head-color: var(--censored-c-db-3);
         --censored-table-body-odd-color: var(--censored-c-db-2);
         --censored-table-body-even-color: var(--censored-c-dawn-4);
+
+        /*timeline*/
+        --censored-timeline-color: var(--censored-c-waves-3);
+        --censored-timeline-icon-color: var(--censored-c-dawn-3);
     }
 
 

@@ -40,7 +40,7 @@ defineProps<{
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: var(--censored-nav-color);
+  background-color: var(--censored-timeline-icon-color);
 }
 
 .timeline-content {
@@ -56,5 +56,7 @@ defineProps<{
   background-color: var(--censored-nav-color);
   color: var(--censored-text-color);
   border-radius: 10px;
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
+
 }
 </style>
