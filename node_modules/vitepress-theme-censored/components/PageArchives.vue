@@ -6,6 +6,7 @@
 import SideBar from "./SideBar.vue";
 import ArchiveCard from "./global/ArchiveCard.vue";
 import {useAllPosts} from "../composables";
+import {onMounted, onUnmounted, ref, watch} from "vue";
 
 
 const allPosts = useAllPosts();
@@ -15,6 +16,21 @@ const sortByTime = (posts, key) => {
 };
 
 const items = sortByTime(allPosts, "lastUpdated");
+
+const isSmallScreen = ref(false);
+
+const handleResize = () => {
+  isSmallScreen.value = window.innerWidth < 600;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+  handleResize(); // 初始化检查屏幕宽度
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+});
 </script>
 
 <template>
@@ -30,7 +46,7 @@ const items = sortByTime(allPosts, "lastUpdated");
         />
       </div>
     </div>
-    <SideBar class="side-bar"/>
+    <SideBar class="side-bar" v-if="!isSmallScreen"/>
   </div>
 </template>
 
@@ -48,4 +64,9 @@ const items = sortByTime(allPosts, "lastUpdated");
   flex-direction: column;
 }
 
+@media only screen and (max-width: 800px) {
+  .archive-card {
+    width: 90vw;
+  }
+}
 </style>

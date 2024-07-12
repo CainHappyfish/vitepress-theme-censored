@@ -80,4 +80,11 @@ defineProps<{
     width: 80vw;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .timeline-content {
+    width: 70vw;
+    left: 10px;
+  }
+}
 </style>

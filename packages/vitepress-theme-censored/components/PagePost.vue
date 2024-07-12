@@ -1,12 +1,28 @@
 <script setup lang="ts">
 import {Content} from "vitepress";
 import SideBar from "./SideBar.vue";
+import {onMounted, onUnmounted, ref} from "vue";
+
+const isSmallScreen = ref(false);
+
+const handleResize = () => {
+  isSmallScreen.value = window.innerWidth < 600;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+  handleResize(); // 初始化检查屏幕宽度
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+});
 </script>
 
 <template>
   <div class="page-container">
     <Content class="content"/>
-    <SideBar class="side-bar" />
+    <SideBar class="side-bar" v-if="!isSmallScreen"/>
   </div>
 
 
@@ -34,7 +50,9 @@ import SideBar from "./SideBar.vue";
 @media only screen and (max-width: 1400px) {
   .content {
     width: 100%;
-    max-width: 90vw;
+    max-width: 85vw;
   }
+
+
 }
 </style>

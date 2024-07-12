@@ -153,10 +153,13 @@ onMounted(() => {
 .inner > div.done {
   margin-left: 0;
   margin-top: 27px;
+  max-width: 100vw;
 }
 
 .inner > div.page {
   transform: scale(40);
+  max-width: 100vw;
+
 }
 
 .pageLoad {

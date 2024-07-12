@@ -6,7 +6,7 @@ const { theme } = useData<CensoredThemeConfig>()
 import SideBar from "./SideBar.vue";
 import ThemeBanner from "./global/ThemeBanner.vue";
 import LinkCard from "./global/LinkCard.vue";
-import {computed, nextTick, onMounted, ref, watch} from "vue";
+import {computed, nextTick, onMounted, onUnmounted, ref, watch} from "vue";
 import { setupScrollAnimation } from "../utils/blog";
 import Pagination from "./global/Pagination.vue";
 
@@ -31,6 +31,21 @@ const handlePageChange = async (page: number) => {
   setupScrollAnimation()
 };
 
+const isSmallScreen = ref(false);
+
+const handleResize = () => {
+  isSmallScreen.value = window.innerWidth < 600;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize);
+  handleResize(); // 初始化检查屏幕宽度
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+});
+
 onMounted(async () => {
   await nextTick(); // 等待DOM更新
   setupScrollAnimation()
@@ -45,7 +60,7 @@ watch(currentPage, async () => {
 
 <template>
   <div class="container">
-    <SideBar class="side-bar scroll-animation"/>
+    <SideBar class="side-bar scroll-animation" v-if="!isSmallScreen"/>
     <div class="content scroll-animation">
       <ThemeBanner class="banner"/>
       <div class="about scroll-animation">
@@ -126,7 +141,8 @@ watch(currentPage, async () => {
 
 @media only screen and (max-width: 600px) {
   .friends {
-    min-width: 100vw;
+    overflow-x: hidden;
+    max-width: 81vw;
     flex-direction: column;
     align-items: center;
   }

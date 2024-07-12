@@ -75,23 +75,6 @@ img {
 
 }
 
-@media only screen and (max-width: 600px) {
-  .post-card {
-    margin: 1vw 1vw;
-
-    width: 90vw;
-    height: 40vw;
-  }
-
-  .summary {
-    font-size: 3vw;
-  }
-
-  .summary h1{
-    font-size: 4vw;
-  }
-
-}
 
 @media only screen and (max-width: 1400px) {
   .post-card {
