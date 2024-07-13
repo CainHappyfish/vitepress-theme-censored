@@ -1,9 +1,10 @@
 ---
 layout: page
-title: 主题测试
+title: CENSORED主题测试
 tags: 
   - Vitepress
   - 主题测试
+
 ---
 
 本文章用于测试主题功能是否可以正常使用
