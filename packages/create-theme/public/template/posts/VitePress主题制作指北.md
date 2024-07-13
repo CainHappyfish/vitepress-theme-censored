@@ -4,6 +4,9 @@ title: VitePress主题制作指北
 date: 2024-7-1
 cover: https://pic.imgdb.cn/item/667c343ed9c307b7e91885d2.png
 excerpt: VitePress主题制作指北
+tags: 
+  - Vitepress	
+  - 主题制作
 ---
 
 

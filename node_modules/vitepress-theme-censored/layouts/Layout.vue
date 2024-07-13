@@ -16,6 +16,7 @@ import NavBar from "../components/navBar.vue";
 
 import { setupScrollAnimation } from "../utils/blog"
 import PagePost from "../components/PagePost.vue";
+import TESTPAGE from "../components/global/TESTPAGE.vue";
 
 const LoadStore = useLoadingStore()
 
@@ -76,6 +77,7 @@ watch(page, () => {
       <About v-if="page.frontmatter.layout == 'about'"/>
       <Friends v-else-if="page.frontmatter.layout == 'friends'"/>
       <Archives v-else-if="page.frontmatter.layout == 'archives'"/>
+      <TESTPAGE v-else-if="page.frontmatter.layout == 'test'"/>
       <PagePost v-else/>
     </PageContent>
   </div>

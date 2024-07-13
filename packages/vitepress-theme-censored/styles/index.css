@@ -67,6 +67,9 @@ html.light {
     /*timeline*/
     --censored-timeline-color: var(--censored-c-waves-2);
     --censored-timeline-icon-color: var(--censored-c-waves-3);
+
+    /*tag*/
+    --censore-tag-color: var(--censored-c-waves-3);
 }
 
 html.dark {
@@ -112,6 +115,9 @@ html.dark {
     /*timeline*/
     --censored-timeline-color: var(--censored-c-waves-3);
     --censored-timeline-icon-color: var(--censored-c-dawn-3);
+
+    /*tag*/
+    --censore-tag-color: var(--censored-c-dawn-4);
 }
 
 @media (prefers-color-scheme: light) {

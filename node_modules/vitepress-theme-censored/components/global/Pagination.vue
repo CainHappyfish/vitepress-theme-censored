@@ -6,7 +6,7 @@ const props = defineProps({
   continues: Number  // 页数过多时中间展示的连续页码
 })
 
-import { ref, computed, defineEmits, watch } from 'vue';
+import { ref, computed, watch } from 'vue';
 
 const emit = defineEmits(['update:PageNo']);
 

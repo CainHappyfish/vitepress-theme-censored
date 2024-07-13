@@ -128,7 +128,8 @@ export default defineConfig({
         home: '/' || '/home',
         about: '/about',
         archives: '/archives',
-        friends: '/friends'
+        friends: '/friends',
+        test: '/test',
     },
 
     pageLoading: true,
