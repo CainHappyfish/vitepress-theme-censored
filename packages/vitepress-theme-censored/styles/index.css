@@ -118,6 +118,10 @@ html.dark {
 
     /*tag*/
     --censore-tag-color: var(--censored-c-dawn-4);
+
+    /*outline*/
+    --censored-current-title-color: var(--censored-c-dawn-4);
+    --censored-current-title-text-color: var(--censored-text-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -168,6 +172,10 @@ html.dark {
         /*timeline*/
         --censored-timeline-color: var(--censored-c-waves-2);
         --censored-timeline-icon-color: var(--censored-c-waves-3);
+
+        /*outline*/
+        --censored-current-title-color: var(--censored-c-marsh-2);
+        --censored-current-title-text-color: var(--censored-bg-color);
     }
 }
 

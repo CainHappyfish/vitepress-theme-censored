@@ -24,7 +24,7 @@ const { theme } = useData<CensoredThemeConfig>()
   background: var(--censored-nav-color);
   filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   color: var(--censored-text-color);
-  width: 100%;
+  width: 97%;
   border-radius: 20px;
 
   font-family: "Microsoft YaHei UI Light", sans-serif;

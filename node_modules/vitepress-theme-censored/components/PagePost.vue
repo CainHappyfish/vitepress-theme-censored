@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import {Content} from "vitepress";
-import SideBar from "./SideBar.vue";
+import {useData} from "vitepress";
+import { CensoredThemeConfig } from "types"
+const { page } = useData<CensoredThemeConfig>()
+
+// import SideBar from "./SideBar.vue";
 import {onMounted, onUnmounted, ref} from "vue";
 import PageFooter from "./PageFooter.vue";
+import Outline from "./global/Outline.vue";
+import ArticleInfo from "./global/ArticleInfo.vue";
 
 const isSmallScreen = ref(false);
 
@@ -22,10 +28,16 @@ onUnmounted(() => {
 
 <template>
   <div class="page-container">
-    <Content class="content"/>
-    <SideBar class="side-bar" v-if="!isSmallScreen"/>
+    <div class="page-content">
+      <Content class="post-content"/>
+      <PageFooter />
+    </div>
+    <div class="right-side" v-if="!isSmallScreen">
+      <Outline />
+      <ArticleInfo :title="page.title" :description="page.description"/>
+    </div>
   </div>
-  <PageFooter />
+
 
 </template>
 
@@ -37,7 +49,22 @@ onUnmounted(() => {
 
 }
 
-.content {
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side {
+  margin-top: 90px;
+  position: sticky;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.post-content {
   width: 70rem;
   margin: 20px;
   padding: 20px;
@@ -48,8 +75,11 @@ onUnmounted(() => {
 
 }
 
+
+
+
 @media only screen and (max-width: 1400px) {
-  .content {
+  .post-content {
     width: 100%;
     max-width: 85vw;
   }

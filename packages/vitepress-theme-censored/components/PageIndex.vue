@@ -26,7 +26,7 @@ const ArticleDivider = ref("BLOGS | 博客文章")
 const isSmallScreen = ref(false);
 
 const handleResize = () => {
-  isSmallScreen.value = window.innerWidth < 600;
+  isSmallScreen.value = window.innerWidth < 1400;
 };
 
 
@@ -186,6 +186,7 @@ watch(currentPage, async () => {
 }
 
 .tags {
+  margin-top: 10px;
   padding: 10px;
   width: 100%;
   border-radius: 10px;

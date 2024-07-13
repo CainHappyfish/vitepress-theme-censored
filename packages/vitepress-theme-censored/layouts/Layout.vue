@@ -8,6 +8,7 @@ import About from "../components/PageAbout.vue"
 import Friends from "../components/PageFriends.vue";
 import NotFound from "../components/404Page.vue"
 import Archives from "../components/PageArchives.vue"
+import toTop from "../components/global/toTop.vue"
 
 import { useLoadingStore } from "../stores/loading"
 
@@ -70,7 +71,7 @@ watch(page, () => {
 <template>
   <NotFound v-if="page.isNotFound"/>
   <PageLoading v-if="theme.pageLoading && !page.isNotFound " :key="LoadStore.pageLoadingKey"/>
-  <div class="container">
+  <div class="layout-container">
     <Index v-if="page.frontmatter.layout == 'index'" />
     <PageContent class="page-container" v-else>
       <NavBar />
@@ -81,6 +82,7 @@ watch(page, () => {
       <PagePost v-else/>
     </PageContent>
   </div>
+  <toTop />
 </template>
 
 
@@ -89,6 +91,13 @@ html, body {
   max-height: 100%;
   overflow-x: hidden;
 }
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-container {
   width: 100%;
   height: 100%;
