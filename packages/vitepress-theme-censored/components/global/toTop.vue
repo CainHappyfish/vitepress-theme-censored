@@ -29,7 +29,7 @@ function scrollToTop() {
   border-radius: 5px;
   background: var(--censored-nav-color);
   color: var(--censored-text-color);
-  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
+  filter: drop-shadow(0 0 2px var(--censored-toTop-shadow-color));
   display: flex;
   align-items: center;
   justify-content: center;

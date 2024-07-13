@@ -76,14 +76,18 @@ onUnmounted(() => {
 }
 
 
-
-
 @media only screen and (max-width: 1400px) {
   .post-content {
     width: 100%;
     max-width: 85vw;
   }
 
-
 }
+
+@media only screen and (max-width: 1600px) {
+  .post-content {
+    max-width: 70vw;
+  }
+}
+
 </style>

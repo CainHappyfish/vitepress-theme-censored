@@ -68,8 +68,15 @@ html.light {
     --censored-timeline-color: var(--censored-c-waves-2);
     --censored-timeline-icon-color: var(--censored-c-waves-3);
 
+    /*outline*/
+    --censored-current-title-color: var(--censored-c-marsh-2);
+    --censored-current-title-text-color: var(--censored-bg-color);
+
     /*tag*/
     --censore-tag-color: var(--censored-c-waves-3);
+
+    /*toTop*/
+    --censored-toTop-shadow-color: var(--censored-c-ice-4);
 }
 
 html.dark {
@@ -122,6 +129,9 @@ html.dark {
     /*outline*/
     --censored-current-title-color: var(--censored-c-dawn-4);
     --censored-current-title-text-color: var(--censored-text-color);
+
+    /*toTop*/
+    --censored-toTop-shadow-color: var(--censored-c-purple-4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -176,6 +186,12 @@ html.dark {
         /*outline*/
         --censored-current-title-color: var(--censored-c-marsh-2);
         --censored-current-title-text-color: var(--censored-bg-color);
+
+        /*tag*/
+        --censore-tag-color: var(--censored-c-waves-3);
+
+        /*toTop*/
+        --censored-toTop-shadow-color: var(--censored-c-ice-4);
     }
 }
 
@@ -223,6 +239,16 @@ html.dark {
         /*timeline*/
         --censored-timeline-color: var(--censored-c-waves-3);
         --censored-timeline-icon-color: var(--censored-c-dawn-3);
+
+        /*tag*/
+        --censore-tag-color: var(--censored-c-dawn-4);
+
+        /*outline*/
+        --censored-current-title-color: var(--censored-c-dawn-4);
+        --censored-current-title-text-color: var(--censored-text-color);
+
+        /*toTop*/
+        --censored-toTop-shadow-color: var(--censored-c-purple-4);
     }
 
 
