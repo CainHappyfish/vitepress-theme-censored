@@ -9,7 +9,7 @@ const { theme } = useData<CensoredThemeConfig>()
 <template>
   <div class="foot-container">
     <div class="foot-copyright">
-      © {{ theme.footer?.copyrightYear }} - {{ formatDate(new Date(), "YYYY") }} . {{ theme.user?.name }}
+      © {{ theme.footer?.copyrightYear }} - {{ formatDate(new Date(), "YYYY") }} . {{ theme.user?.name }}   All Rights Reserved.
     </div>
     <div class="foot-powered">
       powered by <a href='https://vitepress.dev' target='_blank' rel='noopener'>Vitepress</a>

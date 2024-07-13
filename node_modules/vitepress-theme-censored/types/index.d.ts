@@ -1,5 +1,7 @@
 import { DefaultTheme } from 'vitepress';
 export declare interface CensoredThemeConfig {
+	// 网站地址
+	url?: string;
 /** 页面切换动画 | page transition animations */
 	pageLoading?: boolean;
 

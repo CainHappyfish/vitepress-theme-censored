@@ -110,6 +110,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
+      url: "https://cainhappyfish.github.io/vitepress-theme-censored/",
     navBars: [
       {title: "Home", url: "/"},
       {title: "About", url: "/about"},

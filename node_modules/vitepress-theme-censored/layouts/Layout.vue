@@ -50,10 +50,28 @@ const observeClassChanges = () => {
 let observer: MutationObserver
 
 onMounted(() => {
-  observer = observeClassChanges()
-  loadCounter()
-  setupScrollAnimation()
-})
+  const observer = observeClassChanges();
+  loadCounter();
+  setupScrollAnimation();
+
+  document.addEventListener('copy', function(event) {
+    // 获取选中的文本
+    let selection = window.getSelection().toString();
+
+    // 添加版权信息
+    const copyrightInfo = `
+--------------------------------------------------------------------
+
+© 2024 ${theme.value.user?.name}. All rights reserved.
+This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+Article from ${theme.value.url}`;
+    const modifiedSelection = selection + copyrightInfo;
+
+    // 修改剪切板内容
+    event.clipboardData.setData('text/plain', modifiedSelection);
+    event.preventDefault();
+  });
+});
 
 onUnmounted(() => {
   if (observer) {
