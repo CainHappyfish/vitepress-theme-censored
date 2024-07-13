@@ -50,7 +50,7 @@ const observeClassChanges = () => {
 let observer: MutationObserver
 
 onMounted(() => {
-  const observer = observeClassChanges();
+  observer = observeClassChanges();
   loadCounter();
   setupScrollAnimation();
 
