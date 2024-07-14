@@ -1,1 +1,0 @@
-import{_ as t,p as a,l as e}from"./chunks/framework.DLat4R4U.js";const l=JSON.parse('{"title":"tags","description":"","frontmatter":{"layout":"tags","title":"tags"},"headers":[],"relativePath":"tags.md","filePath":"tags.md"}'),s={name:"tags.md"};function r(o,n,c,p,i,_){return e(),a("div")}const m=t(s,[["render",r]]);export{l as __pageData,m as default};
