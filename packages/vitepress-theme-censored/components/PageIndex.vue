@@ -191,6 +191,7 @@ watch(currentPage, async () => {
   border-radius: 10px;
   background: var(--censored-nav-color);
   color: var(--censored-text-color);
+  filter: drop-shadow(0 0 2px var(--censored-shadow-color));
 
   display: flex;
   justify-content: center;
@@ -199,7 +200,9 @@ watch(currentPage, async () => {
 .tag {
   cursor: pointer;
   border-radius: 5px;
-  background: var(--censore-tag-color);
+  background: var(--censored-tag-color);
+  color: var(--censored-tag-text-color);
+
   margin: 0 10px;
   padding: 10px;
 }

@@ -60,7 +60,7 @@ img {
 }
 
 .summary {
-  height: 100%;
+  height: calc(100% - 10px);
   width: 70%;
   padding: 0 20px;
   z-index: 3;

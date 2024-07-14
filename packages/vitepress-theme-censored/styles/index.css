@@ -74,7 +74,8 @@ html.light {
     --censored-current-title-text-color: var(--censored-bg-color);
 
     /*tag*/
-    --censore-tag-color: var(--censored-c-waves-3);
+    --censored-tag-color: var(--censored-c-waves-3);
+    --censored-tag-text-color: var(--censored-c-waves-1);
 
     /*toTop*/
     --censored-toTop-shadow-color: var(--censored-c-ice-4);
@@ -125,7 +126,8 @@ html.dark {
     --censored-timeline-icon-color: var(--censored-c-dawn-3);
 
     /*tag*/
-    --censore-tag-color: var(--censored-c-dawn-4);
+    --censored-tag-color: var(--censored-c-dawn-4);
+    --censored-tag-text-color: var(--censored-text-color);
 
     /*outline*/
     --censored-current-title-color: var(--censored-c-dawn-4);

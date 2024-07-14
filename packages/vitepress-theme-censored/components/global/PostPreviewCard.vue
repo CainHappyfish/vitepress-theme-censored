@@ -55,7 +55,7 @@ const handleImageError = (event: any) => {
 
 img {
   height: 90%;
-  width: 40%;
+  width: calc(40%- 20px);
 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -63,8 +63,8 @@ img {
 }
 
 .summary {
-  height: 100%;
-  width: 70%;
+  height: calc(100% - 10px);
+  width: 50%;
   padding: 0 20px;
   z-index: 3;
   background: var(--censored-nav-color);
