@@ -1,0 +1,1 @@
+import{_ as e,p as t,l as r}from"./chunks/framework.DLat4R4U.js";const _=JSON.parse('{"title":"friends","description":"","frontmatter":{"layout":"friends","title":"friends"},"headers":[],"relativePath":"friends.md","filePath":"friends.md"}'),s={name:"friends.md"};function n(a,i,d,o,f,c){return r(),t("div")}const l=e(s,[["render",n]]);export{_ as __pageData,l as default};

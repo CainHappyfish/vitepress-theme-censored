@@ -87,6 +87,7 @@ watch(page, () => {
 </script>
 
 <template>
+  <link rel="icon" href="../assets/favicon.ico" />
   <NotFound v-if="page.isNotFound"/>
   <PageLoading v-if="theme.pageLoading && !page.isNotFound " :key="LoadStore.pageLoadingKey"/>
   <div class="layout-container">
@@ -100,7 +101,7 @@ watch(page, () => {
       <PagePost v-else/>
     </PageContent>
   </div>
-  <toTop />
+  <toTop class="toTop"/>
 </template>
 
 
@@ -120,4 +121,6 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
+
 </style>

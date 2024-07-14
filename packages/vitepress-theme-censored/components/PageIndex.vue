@@ -105,7 +105,6 @@ watch(currentPage, async () => {
 </script>
 
 <template>
-
   <div class="index-cover">
     <Cover />
   </div>
@@ -116,14 +115,14 @@ watch(currentPage, async () => {
       <Divider :content='LatestDivider' :style="DividerStyle" class="divider"/>
       <PageCard :post="allPosts[allPosts.length - 1]" v-if="!isSmallScreen"/>
       <Divider :content='ArticleDivider' class="scroll-animation divider" />
-      <div class="tags">
+      <div class="tags" v-if="!isSmallScreen">
         <div class="tag" @click="showAll">ALL</div>
         <div class="tag" v-for="(tag, index) in tags()" :key="index" @click="showTag(tag)">
           {{ tag }}
         </div>
       </div>
       <div class="articles scroll-animation" :key="reRenderKey">
-        <div v-for="(post, index) in blogs" :key="index">
+        <div v-for="(post, index) in blogs.reverse()" :key="index">
           <PageCardMini :post="post" class="page-card"/>
         </div>
       </div>

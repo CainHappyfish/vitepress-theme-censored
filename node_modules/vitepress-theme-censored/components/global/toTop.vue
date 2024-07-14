@@ -40,4 +40,18 @@ function scrollToTop() {
   height: 90%;
   width: 90%;
 }
+
+@media only screen and (max-width: 1400px){
+  .toTop-container {
+    left: 92%;
+
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .toTop-container {
+    left: 85%;
+
+  }
+}
 </style>

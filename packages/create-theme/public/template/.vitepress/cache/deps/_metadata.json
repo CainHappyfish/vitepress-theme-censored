@@ -2,64 +2,76 @@
   "hash": "c8670c69",
   "configHash": "1523c519",
   "lockfileHash": "9c7c16dc",
-  "browserHash": "fd192679",
+  "browserHash": "e9f4c520",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "bb7fa1ac",
+      "fileHash": "bc767e0b",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "50ccdabb",
+      "fileHash": "6e0c3037",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "91279e4f",
+      "fileHash": "cc4ca1a6",
       "needsInterop": false
     },
     "types": {
       "src": "../../../../../../../node_modules/types/index.js",
       "file": "types.js",
-      "fileHash": "af943435",
+      "fileHash": "c2c01038",
       "needsInterop": true
     },
     "@vueuse/shared": {
       "src": "../../../../../../../node_modules/@vueuse/shared/index.mjs",
       "file": "@vueuse_shared.js",
-      "fileHash": "12a56356",
+      "fileHash": "3ae8192e",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../../../../node_modules/vue-router/dist/vue-router.mjs",
       "file": "vue-router.js",
-      "fileHash": "9eff1f48",
+      "fileHash": "1401f81b",
       "needsInterop": false
     },
     "pinia": {
       "src": "../../../../../../../node_modules/pinia/dist/pinia.mjs",
       "file": "pinia.js",
-      "fileHash": "a3b4bed8",
+      "fileHash": "abd9ce83",
       "needsInterop": false
     },
     "markdown-it": {
       "src": "../../../../../../../node_modules/markdown-it/index.mjs",
       "file": "markdown-it.js",
-      "fileHash": "756c95d8",
+      "fileHash": "619495f5",
       "needsInterop": false
     },
     "@shikijs/markdown-it": {
       "src": "../../../../../../../node_modules/@shikijs/markdown-it/dist/index.mjs",
       "file": "@shikijs_markdown-it.js",
-      "fileHash": "f13ee401",
+      "fileHash": "f8d8b5d8",
       "needsInterop": false
+    },
+    "@homegrown/word-counter": {
+      "src": "../../../../../../../node_modules/@homegrown/word-counter/dist/index.js",
+      "file": "@homegrown_word-counter.js",
+      "fileHash": "4afa7d54",
+      "needsInterop": true
     }
   },
   "chunks": {
+    "vitesse-light-HTNC4ECX": {
+      "file": "vitesse-light-HTNC4ECX.js"
+    },
+    "snazzy-light-K32TPLVV": {
+      "file": "snazzy-light-K32TPLVV.js"
+    },
     "solarized-dark-OHDXKJSG": {
       "file": "solarized-dark-OHDXKJSG.js"
     },
@@ -81,8 +93,8 @@
     "vitesse-dark-IA27M4M3": {
       "file": "vitesse-dark-IA27M4M3.js"
     },
-    "vitesse-light-HTNC4ECX": {
-      "file": "vitesse-light-HTNC4ECX.js"
+    "one-light-4A2IA74M": {
+      "file": "one-light-4A2IA74M.js"
     },
     "poimandres-HBYKN4XS": {
       "file": "poimandres-HBYKN4XS.js"
@@ -105,8 +117,8 @@
     "slack-ochin-PTRQU6W6": {
       "file": "slack-ochin-PTRQU6W6.js"
     },
-    "snazzy-light-K32TPLVV": {
-      "file": "snazzy-light-K32TPLVV.js"
+    "material-theme-ocean-BZRTZSXF": {
+      "file": "material-theme-ocean-BZRTZSXF.js"
     },
     "material-theme-palenight-7SQYKJ34": {
       "file": "material-theme-palenight-7SQYKJ34.js"
@@ -129,8 +141,8 @@
     "one-dark-pro-4FL3JL55": {
       "file": "one-dark-pro-4FL3JL55.js"
     },
-    "one-light-4A2IA74M": {
-      "file": "one-light-4A2IA74M.js"
+    "github-light-QF52PM7Y": {
+      "file": "github-light-QF52PM7Y.js"
     },
     "github-light-default-LY4AAJWN": {
       "file": "github-light-default-LY4AAJWN.js"
@@ -153,8 +165,8 @@
     "material-theme-lighter-JSHYLIPX": {
       "file": "material-theme-lighter-JSHYLIPX.js"
     },
-    "material-theme-ocean-BZRTZSXF": {
-      "file": "material-theme-ocean-BZRTZSXF.js"
+    "catppuccin-macchiato-TPAFDSF7": {
+      "file": "catppuccin-macchiato-TPAFDSF7.js"
     },
     "catppuccin-mocha-WPJ2NM4P": {
       "file": "catppuccin-mocha-WPJ2NM4P.js"
@@ -177,8 +189,8 @@
     "github-dark-dimmed-X4JI4GLE": {
       "file": "github-dark-dimmed-X4JI4GLE.js"
     },
-    "github-light-QF52PM7Y": {
-      "file": "github-light-QF52PM7Y.js"
+    "zenscript-AG4GWUI5": {
+      "file": "zenscript-AG4GWUI5.js"
     },
     "zig-RZCPE43U": {
       "file": "zig-RZCPE43U.js"
@@ -201,8 +213,8 @@
     "catppuccin-latte-UJRLOU5A": {
       "file": "catppuccin-latte-UJRLOU5A.js"
     },
-    "catppuccin-macchiato-TPAFDSF7": {
-      "file": "catppuccin-macchiato-TPAFDSF7.js"
+    "vue-html-LYAEE5UU": {
+      "file": "vue-html-LYAEE5UU.js"
     },
     "vyper-HVVBXI2W": {
       "file": "vyper-HVVBXI2W.js"
@@ -219,8 +231,8 @@
     "xsl-FCXGZ3ST": {
       "file": "xsl-FCXGZ3ST.js"
     },
-    "wikitext-LKB6OU5A": {
-      "file": "wikitext-LKB6OU5A.js"
+    "wikitext-AD7J35XR": {
+      "file": "wikitext-AD7J35XR.js"
     },
     "chunk-5JQTND7P": {
       "file": "chunk-5JQTND7P.js"
@@ -228,8 +240,8 @@
     "wolfram-MZYSPNOM": {
       "file": "wolfram-MZYSPNOM.js"
     },
-    "zenscript-AG4GWUI5": {
-      "file": "zenscript-AG4GWUI5.js"
+    "typst-5CQRH2UF": {
+      "file": "typst-5CQRH2UF.js"
     },
     "v-VGELAEBQ": {
       "file": "v-VGELAEBQ.js"
@@ -255,11 +267,11 @@
     "vue-TEXBPCNA": {
       "file": "vue-TEXBPCNA.js"
     },
-    "vue-html-LYAEE5UU": {
-      "file": "vue-html-LYAEE5UU.js"
-    },
     "chunk-LFZM6WTK": {
       "file": "chunk-LFZM6WTK.js"
+    },
+    "systemd-3E26G3J2": {
+      "file": "systemd-3E26G3J2.js"
     },
     "tasl-NSHMQ55F": {
       "file": "tasl-NSHMQ55F.js"
@@ -276,14 +288,14 @@
     "tsv-EFC2FAJS": {
       "file": "tsv-EFC2FAJS.js"
     },
-    "twig-6XERLK3W": {
-      "file": "twig-6XERLK3W.js"
+    "twig-5AQDNZOS": {
+      "file": "twig-5AQDNZOS.js"
     },
     "typespec-7F6MRIUD": {
       "file": "typespec-7F6MRIUD.js"
     },
-    "typst-5CQRH2UF": {
-      "file": "typst-5CQRH2UF.js"
+    "soy-2V5ZYV22": {
+      "file": "soy-2V5ZYV22.js"
     },
     "turtle-J5IIPJIZ": {
       "file": "turtle-J5IIPJIZ.js"
@@ -309,11 +321,11 @@
     "system-verilog-2CBLUDTX": {
       "file": "system-verilog-2CBLUDTX.js"
     },
-    "systemd-3E26G3J2": {
-      "file": "systemd-3E26G3J2.js"
+    "riscv-5INZRQK4": {
+      "file": "riscv-5INZRQK4.js"
     },
-    "rst-ZMTAOAUN": {
-      "file": "rst-ZMTAOAUN.js"
+    "rst-27VVZ76C": {
+      "file": "rst-27VVZ76C.js"
     },
     "sas-D65IDIJB": {
       "file": "sas-D65IDIJB.js"
@@ -333,8 +345,8 @@
     "solidity-BYFUM7O5": {
       "file": "solidity-BYFUM7O5.js"
     },
-    "soy-2V5ZYV22": {
-      "file": "soy-2V5ZYV22.js"
+    "qml-HT2ABORO": {
+      "file": "qml-HT2ABORO.js"
     },
     "qmldir-QHJAFGX3": {
       "file": "qmldir-QHJAFGX3.js"
@@ -360,8 +372,8 @@
     "rel-HSFZ2RWP": {
       "file": "rel-HSFZ2RWP.js"
     },
-    "riscv-5INZRQK4": {
-      "file": "riscv-5INZRQK4.js"
+    "powerquery-B7634VNK": {
+      "file": "powerquery-B7634VNK.js"
     },
     "powershell-NDTHC2QY": {
       "file": "powershell-NDTHC2QY.js"
@@ -390,8 +402,8 @@
     "purescript-MQMAZL5I": {
       "file": "purescript-MQMAZL5I.js"
     },
-    "qml-HT2ABORO": {
-      "file": "qml-HT2ABORO.js"
+    "nim-NCPX5RXM": {
+      "file": "nim-NCPX5RXM.js"
     },
     "nix-EMKQN7JA": {
       "file": "nix-EMKQN7JA.js"
@@ -417,8 +429,8 @@
     "po-UVOTBHKW": {
       "file": "po-UVOTBHKW.js"
     },
-    "powerquery-B7634VNK": {
-      "file": "powerquery-B7634VNK.js"
+    "mdc-DN7R7LEI": {
+      "file": "mdc-DN7R7LEI.js"
     },
     "mdx-ZJU67R62": {
       "file": "mdx-ZJU67R62.js"
@@ -441,14 +453,17 @@
     "nginx-YE4QZ5SL": {
       "file": "nginx-YE4QZ5SL.js"
     },
-    "nim-NCPX5RXM": {
-      "file": "nim-NCPX5RXM.js"
+    "tex-IZ2BZ5XO": {
+      "file": "tex-IZ2BZ5XO.js"
     },
-    "latex-KSBIMERC": {
-      "file": "latex-KSBIMERC.js"
+    "latex-ZXMWFCF3": {
+      "file": "latex-ZXMWFCF3.js"
     },
-    "chunk-RAXDP27B": {
-      "file": "chunk-RAXDP27B.js"
+    "chunk-BFMUTA6T": {
+      "file": "chunk-BFMUTA6T.js"
+    },
+    "chunk-LWLZ7NHP": {
+      "file": "chunk-LWLZ7NHP.js"
     },
     "liquid-K6OVZKXE": {
       "file": "liquid-K6OVZKXE.js"
@@ -468,8 +483,8 @@
     "matlab-CIRWP227": {
       "file": "matlab-CIRWP227.js"
     },
-    "mdc-DN7R7LEI": {
-      "file": "mdc-DN7R7LEI.js"
+    "jinja-FASAOMY4": {
+      "file": "jinja-FASAOMY4.js"
     },
     "jison-VA6DFNFU": {
       "file": "jison-VA6DFNFU.js"
@@ -498,11 +513,8 @@
     "kusto-HNV7BFY7": {
       "file": "kusto-HNV7BFY7.js"
     },
-    "tex-IZ2BZ5XO": {
-      "file": "tex-IZ2BZ5XO.js"
-    },
-    "chunk-LWLZ7NHP": {
-      "file": "chunk-LWLZ7NHP.js"
+    "hcl-MPDWLDIP": {
+      "file": "hcl-MPDWLDIP.js"
     },
     "hjson-WPQU4WLJ": {
       "file": "hjson-WPQU4WLJ.js"
@@ -531,8 +543,8 @@
     "chunk-VIFWQ4HU": {
       "file": "chunk-VIFWQ4HU.js"
     },
-    "jinja-FASAOMY4": {
-      "file": "jinja-FASAOMY4.js"
+    "glimmer-js-TLAHXCHA": {
+      "file": "glimmer-js-TLAHXCHA.js"
     },
     "glimmer-ts-5N2PTWCX": {
       "file": "glimmer-ts-5N2PTWCX.js"
@@ -552,8 +564,8 @@
     "hack-ZUYOTU5B": {
       "file": "hack-ZUYOTU5B.js"
     },
-    "haml-XKHBOXUJ": {
-      "file": "haml-XKHBOXUJ.js"
+    "haml-UD5UOX77": {
+      "file": "haml-UD5UOX77.js"
     },
     "handlebars-O2JF5UKY": {
       "file": "handlebars-O2JF5UKY.js"
@@ -567,14 +579,17 @@
     "chunk-2ONR5OLJ": {
       "file": "chunk-2ONR5OLJ.js"
     },
-    "hcl-MPDWLDIP": {
-      "file": "hcl-MPDWLDIP.js"
+    "gdshader-HERJMEB5": {
+      "file": "gdshader-HERJMEB5.js"
     },
     "gdscript-UIFH5UJX": {
       "file": "gdscript-UIFH5UJX.js"
     },
-    "gdresource-IG6YSXRH": {
-      "file": "gdresource-IG6YSXRH.js"
+    "gdresource-RN3WL5EF": {
+      "file": "gdresource-RN3WL5EF.js"
+    },
+    "chunk-ZHSKBJDF": {
+      "file": "chunk-ZHSKBJDF.js"
     },
     "chunk-YVOEYG2D": {
       "file": "chunk-YVOEYG2D.js"
@@ -594,8 +609,8 @@
     "gleam-66PRA5BH": {
       "file": "gleam-66PRA5BH.js"
     },
-    "glimmer-js-TLAHXCHA": {
-      "file": "glimmer-js-TLAHXCHA.js"
+    "erb-IYUBGFHP": {
+      "file": "erb-IYUBGFHP.js"
     },
     "fennel-AJERITJZ": {
       "file": "fennel-AJERITJZ.js"
@@ -627,11 +642,8 @@
     "chunk-JH5SIFD4": {
       "file": "chunk-JH5SIFD4.js"
     },
-    "gdshader-HERJMEB5": {
-      "file": "gdshader-HERJMEB5.js"
-    },
-    "chunk-ZHSKBJDF": {
-      "file": "chunk-ZHSKBJDF.js"
+    "d-FUVPFQCL": {
+      "file": "d-FUVPFQCL.js"
     },
     "dart-VEONL3VP": {
       "file": "dart-VEONL3VP.js"
@@ -660,8 +672,11 @@
     "emacs-lisp-EXGD5JSH": {
       "file": "emacs-lisp-EXGD5JSH.js"
     },
-    "erb-3DXOBR6L": {
-      "file": "erb-3DXOBR6L.js"
+    "cmake-7XHMINPI": {
+      "file": "cmake-7XHMINPI.js"
+    },
+    "chunk-QUFQ3MEP": {
+      "file": "chunk-QUFQ3MEP.js"
     },
     "cobol-5O5MFT77": {
       "file": "cobol-5O5MFT77.js"
@@ -684,8 +699,11 @@
     "cypher-BZVPBTET": {
       "file": "cypher-BZVPBTET.js"
     },
-    "d-FUVPFQCL": {
-      "file": "d-FUVPFQCL.js"
+    "bat-5JAL4BXE": {
+      "file": "bat-5JAL4BXE.js"
+    },
+    "chunk-TYHLKVGS": {
+      "file": "chunk-TYHLKVGS.js"
     },
     "beancount-ZF73V4EE": {
       "file": "beancount-ZF73V4EE.js"
@@ -711,11 +729,8 @@
     "clarity-YMI7673F": {
       "file": "clarity-YMI7673F.js"
     },
-    "cmake-7XHMINPI": {
-      "file": "cmake-7XHMINPI.js"
-    },
-    "chunk-QUFQ3MEP": {
-      "file": "chunk-QUFQ3MEP.js"
+    "asciidoc-EWQSK3EU": {
+      "file": "asciidoc-EWQSK3EU.js"
     },
     "asm-XXYBJOYQ": {
       "file": "asm-XXYBJOYQ.js"
@@ -747,56 +762,59 @@
     "ballerina-CMBI4LQY": {
       "file": "ballerina-CMBI4LQY.js"
     },
-    "bat-5JAL4BXE": {
-      "file": "bat-5JAL4BXE.js"
+    "lua-QSAAVGCG": {
+      "file": "lua-QSAAVGCG.js"
     },
-    "chunk-TYHLKVGS": {
-      "file": "chunk-TYHLKVGS.js"
+    "ruby-7YW7B7XB": {
+      "file": "ruby-7YW7B7XB.js"
     },
-    "ruby-3C7QFP4T": {
-      "file": "ruby-3C7QFP4T.js"
+    "chunk-HXE6TMFN": {
+      "file": "chunk-HXE6TMFN.js"
+    },
+    "chunk-THINXRLJ": {
+      "file": "chunk-THINXRLJ.js"
     },
     "rust-7BBOL7IO": {
       "file": "rust-7BBOL7IO.js"
     },
-    "sass-7DI27DJF": {
-      "file": "sass-7DI27DJF.js"
-    },
-    "scala-M3L4BN72": {
-      "file": "scala-M3L4BN72.js"
-    },
-    "swift-52ZUOA5E": {
-      "file": "swift-52ZUOA5E.js"
-    },
-    "toml-BRATGNMP": {
-      "file": "toml-BRATGNMP.js"
-    },
-    "typescript-EHFDJC23": {
-      "file": "typescript-EHFDJC23.js"
-    },
-    "asciidoc-ZBSJBWOO": {
-      "file": "asciidoc-ZBSJBWOO.js"
-    },
-    "chunk-N4Y2LRQ6": {
-      "file": "chunk-N4Y2LRQ6.js"
-    },
     "chunk-JCJN3NOG": {
       "file": "chunk-JCJN3NOG.js"
+    },
+    "sass-7DI27DJF": {
+      "file": "sass-7DI27DJF.js"
     },
     "chunk-5Y2BSQJK": {
       "file": "chunk-5Y2BSQJK.js"
     },
+    "scala-M3L4BN72": {
+      "file": "scala-M3L4BN72.js"
+    },
     "chunk-6OSF4K25": {
       "file": "chunk-6OSF4K25.js"
+    },
+    "swift-52ZUOA5E": {
+      "file": "swift-52ZUOA5E.js"
     },
     "chunk-GIEWFZB5": {
       "file": "chunk-GIEWFZB5.js"
     },
+    "toml-BRATGNMP": {
+      "file": "toml-BRATGNMP.js"
+    },
     "chunk-OABRENPB": {
       "file": "chunk-OABRENPB.js"
     },
+    "typescript-EHFDJC23": {
+      "file": "typescript-EHFDJC23.js"
+    },
     "chunk-3PIZQKFI": {
       "file": "chunk-3PIZQKFI.js"
+    },
+    "julia-NXQ47JSI": {
+      "file": "julia-NXQ47JSI.js"
+    },
+    "chunk-4ZRMWBGF": {
+      "file": "chunk-4ZRMWBGF.js"
     },
     "kotlin-DZLXC4GX": {
       "file": "kotlin-DZLXC4GX.js"
@@ -840,11 +858,11 @@
     "chunk-IYFWSHZ7": {
       "file": "chunk-IYFWSHZ7.js"
     },
-    "lua-QSAAVGCG": {
-      "file": "lua-QSAAVGCG.js"
+    "elm-C2W5CMYO": {
+      "file": "elm-C2W5CMYO.js"
     },
-    "chunk-THINXRLJ": {
-      "file": "chunk-THINXRLJ.js"
+    "chunk-4ZFMY62A": {
+      "file": "chunk-4ZFMY62A.js"
     },
     "erlang-5JO7YKJ7": {
       "file": "erlang-5JO7YKJ7.js"
@@ -879,20 +897,17 @@
     "python-IJR72VOX": {
       "file": "python-IJR72VOX.js"
     },
-    "r-ED37SWHA": {
-      "file": "r-ED37SWHA.js"
-    },
-    "julia-5QKWXLZE": {
-      "file": "julia-5QKWXLZE.js"
-    },
-    "chunk-JTPOOJPM": {
-      "file": "chunk-JTPOOJPM.js"
-    },
     "chunk-ZVDHZGZK": {
       "file": "chunk-ZVDHZGZK.js"
     },
+    "r-ED37SWHA": {
+      "file": "r-ED37SWHA.js"
+    },
     "chunk-XDR6NHIG": {
       "file": "chunk-XDR6NHIG.js"
+    },
+    "regexp-7AIDWCCD": {
+      "file": "regexp-7AIDWCCD.js"
     },
     "glsl-AVPEVOGQ": {
       "file": "glsl-AVPEVOGQ.js"
@@ -900,11 +915,17 @@
     "sql-ROLEQPLX": {
       "file": "sql-ROLEQPLX.js"
     },
-    "cpp-L4V7HMED": {
-      "file": "cpp-L4V7HMED.js"
+    "cpp-6N3DOOZ2": {
+      "file": "cpp-6N3DOOZ2.js"
     },
-    "chunk-L6QIU3SO": {
-      "file": "chunk-L6QIU3SO.js"
+    "chunk-27XQGKZJ": {
+      "file": "chunk-27XQGKZJ.js"
+    },
+    "chunk-XHHCTUCU": {
+      "file": "chunk-XHHCTUCU.js"
+    },
+    "chunk-QKC2NWN6": {
+      "file": "chunk-QKC2NWN6.js"
     },
     "chunk-TZVHG2IN": {
       "file": "chunk-TZVHG2IN.js"
@@ -933,14 +954,8 @@
     "chunk-SUFB3OYT": {
       "file": "chunk-SUFB3OYT.js"
     },
-    "elm-C2W5CMYO": {
-      "file": "elm-C2W5CMYO.js"
-    },
-    "chunk-4ZFMY62A": {
-      "file": "chunk-4ZFMY62A.js"
-    },
-    "chunk-QKC2NWN6": {
-      "file": "chunk-QKC2NWN6.js"
+    "apl-HNQNS6JH": {
+      "file": "apl-HNQNS6JH.js"
     },
     "applescript-XAI4VMJQ": {
       "file": "applescript-XAI4VMJQ.js"
@@ -978,17 +993,17 @@
     "chunk-CGJF6WM7": {
       "file": "chunk-CGJF6WM7.js"
     },
-    "regexp-7AIDWCCD": {
-      "file": "regexp-7AIDWCCD.js"
-    },
-    "chunk-XHHCTUCU": {
-      "file": "chunk-XHHCTUCU.js"
+    "angular-html-YUTPKPY7": {
+      "file": "angular-html-YUTPKPY7.js"
     },
     "scss-GK3TNUNR": {
       "file": "scss-GK3TNUNR.js"
     },
-    "angular-ts-NM2IMJ2M": {
-      "file": "angular-ts-NM2IMJ2M.js"
+    "angular-ts-AIYS5FOM": {
+      "file": "angular-ts-AIYS5FOM.js"
+    },
+    "chunk-XBW2ZR2V": {
+      "file": "chunk-XBW2ZR2V.js"
     },
     "chunk-N3TVCSHH": {
       "file": "chunk-N3TVCSHH.js"
@@ -1005,17 +1020,14 @@
     "xml-6HBTS6VO": {
       "file": "xml-6HBTS6VO.js"
     },
-    "json-FWHPCXCH": {
-      "file": "json-FWHPCXCH.js"
-    },
-    "apl-HNQNS6JH": {
-      "file": "apl-HNQNS6JH.js"
-    },
     "chunk-USVNKMHJ": {
       "file": "chunk-USVNKMHJ.js"
     },
     "chunk-L6ODLBQJ": {
       "file": "chunk-L6ODLBQJ.js"
+    },
+    "json-FWHPCXCH": {
+      "file": "json-FWHPCXCH.js"
     },
     "chunk-HYWKHKJB": {
       "file": "chunk-HYWKHKJB.js"
@@ -1037,12 +1049,6 @@
     },
     "html-BTWATJ4U": {
       "file": "html-BTWATJ4U.js"
-    },
-    "angular-html-YUTPKPY7": {
-      "file": "angular-html-YUTPKPY7.js"
-    },
-    "chunk-XBW2ZR2V": {
-      "file": "chunk-XBW2ZR2V.js"
     },
     "chunk-IJQ3BNZB": {
       "file": "chunk-IJQ3BNZB.js"

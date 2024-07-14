@@ -2,6 +2,8 @@
 import {Content} from "vitepress";
 import {useData} from "vitepress";
 import { CensoredThemeConfig } from "types"
+import { countWords } from "@homegrown/word-counter"
+
 const { page } = useData<CensoredThemeConfig>()
 
 // import SideBar from "./SideBar.vue";
@@ -9,8 +11,10 @@ import {onMounted, onUnmounted, ref} from "vue";
 import PageFooter from "./PageFooter.vue";
 import Outline from "./global/Outline.vue";
 import ArticleInfo from "./global/ArticleInfo.vue";
+import PostPageSideIntro from "./global/PostPageSideIntro.vue";
 
-const isSmallScreen = ref(false);
+const isSmallScreen = ref(false)
+const wordCount = ref(0);
 
 const handleResize = () => {
   isSmallScreen.value = window.innerWidth < 1400;
@@ -19,6 +23,11 @@ const handleResize = () => {
 onMounted(() => {
   window.addEventListener('resize', handleResize);
   handleResize(); // 初始化检查屏幕宽度
+
+  const contentElement = document.querySelector('.post-content');
+  if (contentElement) {
+    wordCount.value = countWords(contentElement.textContent || '');
+  }
 });
 
 onUnmounted(() => {
@@ -29,12 +38,19 @@ onUnmounted(() => {
 <template>
   <div class="page-container">
     <div class="page-content">
+      <ArticleInfo
+          :title="page.title"
+          :word="wordCount"
+          :cover="page.frontmatter.cover"
+          :tags="page.frontmatter.tags"
+          :author="page.frontmatter.author"
+          class="page-info"/>
       <Content class="post-content"/>
       <PageFooter />
     </div>
     <div class="right-side" v-if="!isSmallScreen">
+      <PostPageSideIntro />
       <Outline />
-      <ArticleInfo :title="page.title" :description="page.description"/>
     </div>
   </div>
 
@@ -89,5 +105,6 @@ onUnmounted(() => {
     max-width: 70vw;
   }
 }
+
 
 </style>

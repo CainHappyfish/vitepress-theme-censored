@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress-theme-censored/config';
 import { PluginWithOptions } from 'markdown-it';
 import mathjax3 from "markdown-it-mathjax3"
-
+import fs from 'fs';
+import path from 'path';
 
 const wrapImagesPlugin: PluginWithOptions = (md, options) => {
   const defaultRender = md.renderer.rules.image || function (tokens, idx, options, env, self) {
@@ -90,6 +91,9 @@ const inlineCodePlugin: PluginWithOptions = (md, options) => {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   srcDir: './',
   postDir: './posts',
   cleanUrls: true,
@@ -110,6 +114,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
+      logo: "/favicon.ico",
       url: "https://cainhappyfish.github.io/vitepress-theme-censored/",
     navBars: [
       {title: "Home", url: "/"},

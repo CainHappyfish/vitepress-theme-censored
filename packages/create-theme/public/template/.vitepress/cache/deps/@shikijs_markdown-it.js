@@ -27,7 +27,7 @@ var bundledLanguagesInfo = [
   {
     "id": "angular-ts",
     "name": "Angular TypeScript",
-    "import": () => import("./angular-ts-NM2IMJ2M.js")
+    "import": () => import("./angular-ts-AIYS5FOM.js")
   },
   {
     "id": "apache",
@@ -60,7 +60,7 @@ var bundledLanguagesInfo = [
     "aliases": [
       "adoc"
     ],
-    "import": () => import("./asciidoc-ZBSJBWOO.js")
+    "import": () => import("./asciidoc-EWQSK3EU.js")
   },
   {
     "id": "asm",
@@ -189,7 +189,7 @@ var bundledLanguagesInfo = [
     "aliases": [
       "c++"
     ],
-    "import": () => import("./cpp-L4V7HMED.js")
+    "import": () => import("./cpp-6N3DOOZ2.js")
   },
   {
     "id": "crystal",
@@ -292,7 +292,7 @@ var bundledLanguagesInfo = [
   {
     "id": "erb",
     "name": "ERB",
-    "import": () => import("./erb-3DXOBR6L.js")
+    "import": () => import("./erb-IYUBGFHP.js")
   },
   {
     "id": "erlang",
@@ -354,7 +354,7 @@ var bundledLanguagesInfo = [
   {
     "id": "gdresource",
     "name": "GDResource",
-    "import": () => import("./gdresource-IG6YSXRH.js")
+    "import": () => import("./gdresource-RN3WL5EF.js")
   },
   {
     "id": "gdscript",
@@ -443,7 +443,7 @@ var bundledLanguagesInfo = [
   {
     "id": "haml",
     "name": "Ruby Haml",
-    "import": () => import("./haml-XKHBOXUJ.js")
+    "import": () => import("./haml-UD5UOX77.js")
   },
   {
     "id": "handlebars",
@@ -586,7 +586,7 @@ var bundledLanguagesInfo = [
     "aliases": [
       "jl"
     ],
-    "import": () => import("./julia-5QKWXLZE.js")
+    "import": () => import("./julia-NXQ47JSI.js")
   },
   {
     "id": "kotlin",
@@ -608,7 +608,7 @@ var bundledLanguagesInfo = [
   {
     "id": "latex",
     "name": "LaTeX",
-    "import": () => import("./latex-KSBIMERC.js")
+    "import": () => import("./latex-ZXMWFCF3.js")
   },
   {
     "id": "less",
@@ -901,7 +901,7 @@ var bundledLanguagesInfo = [
   {
     "id": "rst",
     "name": "reStructuredText",
-    "import": () => import("./rst-ZMTAOAUN.js")
+    "import": () => import("./rst-27VVZ76C.js")
   },
   {
     "id": "ruby",
@@ -909,7 +909,7 @@ var bundledLanguagesInfo = [
     "aliases": [
       "rb"
     ],
-    "import": () => import("./ruby-3C7QFP4T.js")
+    "import": () => import("./ruby-7YW7B7XB.js")
   },
   {
     "id": "rust",
@@ -1097,7 +1097,7 @@ var bundledLanguagesInfo = [
   {
     "id": "twig",
     "name": "Twig",
-    "import": () => import("./twig-6XERLK3W.js")
+    "import": () => import("./twig-5AQDNZOS.js")
   },
   {
     "id": "typescript",
@@ -1203,7 +1203,7 @@ var bundledLanguagesInfo = [
       "mediawiki",
       "wiki"
     ],
-    "import": () => import("./wikitext-LKB6OU5A.js")
+    "import": () => import("./wikitext-AD7J35XR.js")
   },
   {
     "id": "wolfram",

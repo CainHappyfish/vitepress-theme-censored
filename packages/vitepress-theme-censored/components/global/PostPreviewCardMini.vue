@@ -22,7 +22,7 @@ const handleImageError = (event: any) => {
       <img v-else src='../../assets/DefaultCover.jpg'  alt="cover"/>
       <div class="summary">
         <h1>{{ post.title }}</h1>
-        {{ post.excerpt }}
+        <p>{{ post.excerpt }}</p>
       </div>
     </a>
   </div>
@@ -91,6 +91,21 @@ img {
     width: 90vw;
     height: 40vw;
   }
+
+  .summary {
+    overflow: hidden;
+  }
+
+  .summary h1 {
+    font-size: 1.3rem;
+  }
+
+  .summary p {
+    margin: 1vw;
+    visibility: hidden;
+  }
+
+
 
 }
 
