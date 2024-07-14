@@ -53,7 +53,7 @@ tags:
 
   - 错误信息 `Hydration completed but contains mismatches`
 
-    ![image-20240714190448509](D:\Learning\frontEnd\vitepress-theme-censored\packages\create-theme\public\template\posts\Vitepress主题制作学习笔记-1.assets\image-20240714190448509.png)
+    ![image-20240714190448509](THEME-CENOSORD.assets/image-20240714190448509.png)
 
     或许不是我的问题，后面换成vercel试试，然后发现也一样
 
