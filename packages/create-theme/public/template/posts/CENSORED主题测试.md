@@ -3,7 +3,7 @@ layout: page
 title: CENSORED主题测试
 tags: 
   - Vitepress
-  - 主题测试
+  - theme-censored
 cover: https://pic.imgdb.cn/item/66936bd8d9c307b7e961f10b.jpg
 description: 这是一篇测试文章
 ---
