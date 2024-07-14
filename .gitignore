@@ -1,8 +1,8 @@
-# 忽略 node_modules 目录
-node_modules/
-
-# 忽略 package-lock.json 文件
-package-lock.json
+## 忽略 node_modules 目录
+#node_modules/
+#
+## 忽略 package-lock.json 文件
+#package-lock.json
 
 # 如果使用 Yarn，还需要忽略 yarn.lock 文件
 yarn.lock
