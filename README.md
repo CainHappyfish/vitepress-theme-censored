@@ -1,7 +1,7 @@
 # Vitepress-theme-censored
 
 <div align="center">
-    
+
 [Github](https://github.com/CainHappyfish/vitepress-theme-censored) | 
 [Blog](https://cainhappyfish.github.io/vitepress-theme-censored/)
     
@@ -51,7 +51,7 @@
 
 目前发现的bug
 
-> bug主要写在LOG文章里
+> bug主要写在[LOG文章](https://cainhappyfish.github.io/vitepress-theme-censored/posts/THEME-CENOSORD)里
 
 - 部署到GitHubPage时有些文章页面刷新后显示不完全 e.g. 主题测试，一刷新文章内容就消失了（没进行异步？）
   - 本地环境就没有这个问题
