@@ -69,4 +69,13 @@ onUnmounted(() => {
     width: 90vw;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .archive-container {
+    max-width: 80vw;
+  }
+  .archive-card {
+    width: 85vw;
+  }
+}
 </style>

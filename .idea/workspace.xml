@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArticleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArticleInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPageSideIntro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPageSideIntro.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArticleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArticleInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPageSideIntro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPageSideIntro.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageArchives.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageArchives.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArchiveCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArchiveCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageArchives.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageArchives.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArchiveCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArchiveCard.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +164,7 @@
       <workItem from="1720703746699" duration="1433000" />
       <workItem from="1720750397777" duration="35507000" />
       <workItem from="1720834822901" duration="36491000" />
-      <workItem from="1720924656604" duration="27096000" />
+      <workItem from="1720924656604" duration="28060000" />
     </task>
     <servers />
   </component>

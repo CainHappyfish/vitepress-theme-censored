@@ -60,6 +60,10 @@ defineProps<{
 
 }
 
+.timeline-content p {
+    font-family: Microsoft YaHei UI Light, sans-serif;
+  }
+
 @media only screen and (max-width: 1400px) {
   .timeline-container {
     width: 65vw;
@@ -85,6 +89,18 @@ defineProps<{
   .timeline-content {
     width: 70vw;
     left: 10px;
+  }
+
+  .timeline-content h2 {
+    font-size: 1.1em;
+  }
+
+  .timeline-content h3 {
+    font-size: 0.9em;
+  }
+
+  .timeline-content p {
+    font-size: 0.8em;
   }
 }
 </style>
