@@ -10,7 +10,7 @@
 
 一个非常简单的Vitepress博客主题。
 
-![image-20240714173418423](README.assets/image-20240714173418423.png)
+![preview](README.assets/preview.png)
 
 搭建该主题的本意是练习前端（博主才学了一两个月QAQ）。这个博客从2024/6/22开始搭建，在2024/7/14完成第一版的制作，目前完成的模块有：
 
