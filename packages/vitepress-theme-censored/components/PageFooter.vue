@@ -21,16 +21,18 @@ const { theme } = useData<CensoredThemeConfig>()
 <style scoped>
 .foot-container {
   margin: 20px 0;
+  padding: 10px;
   background: var(--censored-nav-color);
   filter: drop-shadow(0 0 2px var(--censored-shadow-color));
   color: var(--censored-text-color);
-  width: 97%;
+  width: 96%;
   border-radius: 20px;
 
   font-family: "Microsoft YaHei UI Light", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .foot-copyright {
   margin: 0.5em 0;
@@ -43,4 +45,9 @@ const { theme } = useData<CensoredThemeConfig>()
   color: var(--censored-text-color);
 }
 
+@media only screen and (max-width: 600px){
+  .foot-container {
+      font-size: 0.5em;
+  }
+}
 </style>

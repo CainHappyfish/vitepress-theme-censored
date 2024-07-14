@@ -13,7 +13,7 @@ const AvatarURL = ref(Avatar)
 <div class="side-container">
   <img :src="AvatarURL" alt="Avatar" class="side-avatar"/>
   <h2>{{ theme.user?.name }}</h2>
-  <p style="intro">{{ theme.user?.describe }}</p>
+  <p class="intro">{{ theme.user?.describe }}</p>
 
 
 </div>

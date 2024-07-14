@@ -6,38 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/about.md.CrwF8waL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/about.md.CrwF8waL.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/app.BDcd1mlY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/archives.md.BzbD1541.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/archives.md.BzbD1541.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/chunks/framework.DLat4R4U.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/chunks/theme.CZhpkfCW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/friends.md.C2pbGdV6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/friends.md.C2pbGdV6.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/index.md.BbCGnqy1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/index.md.BbCGnqy1.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/posts_CENSORED主题测试.md.DpoK6VVO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/posts_CENSORED主题测试.md.DpoK6VVO.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/posts_VitePress主题制作指北.md.SaVq2hwt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/posts_VitePress主题制作指北.md.SaVq2hwt.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/posts_Vitepress主题制作学习笔记-1.md.DGY3qB91.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/posts_Vitepress主题制作学习笔记-1.md.DGY3qB91.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/tags.md.B7iMLzWG.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/tags.md.B7iMLzWG.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/test.md.MLhJDECb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/test.md.MLhJDECb.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/friends.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/friends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/hashmap.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/hashmap.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/posts/CENSORED主题测试.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/posts/CENSORED主题测试.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/posts/VitePress主题制作指北.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/posts/VitePress主题制作指北.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/posts/Vitepress主题制作学习笔记-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/posts/Vitepress主题制作学习笔记-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArticleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArticleInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPageSideIntro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPageSideIntro.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageAbout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArticleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArticleInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPageSideIntro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPageSideIntro.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +168,7 @@
       <workItem from="1720703746699" duration="1433000" />
       <workItem from="1720750397777" duration="35507000" />
       <workItem from="1720834822901" duration="36491000" />
-      <workItem from="1720924656604" duration="25284000" />
+      <workItem from="1720924656604" duration="27096000" />
     </task>
     <servers />
   </component>

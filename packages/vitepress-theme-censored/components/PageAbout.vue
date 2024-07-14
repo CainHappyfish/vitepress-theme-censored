@@ -6,6 +6,9 @@ const { theme } = useData<CensoredThemeConfig>()
 import Avatar from "../assets/avatar.gif"
 import {ref} from "vue";
 import PageFooter from "./PageFooter.vue";
+import githubIcon from "./icons/github.svg";
+import bilibiliIcon from "./icons/bilibili-fill.svg";
+import themeIcon from "./icons/theme.svg";
 const AvatarURL = ref(Avatar)
 </script>
 
@@ -14,6 +17,17 @@ const AvatarURL = ref(Avatar)
     <div class="infor-content">
       <img :src="AvatarURL" alt="Avatar" class="side-avatar"/>
       <h2>{{ theme.user?.name }}</h2>
+      <div class="links-info">
+        <a class="github" href="https://github.com/CainHappyfish">
+          <img :src="githubIcon" alt="GitHub" class=" link-icon"/>
+        </a>
+        <a class="bilibili" href="https://www.bilibili.com/video/BV1Zu4y1B7DU/?spm_id_from=333.337.search-card.all.click&vd_source=f4ff1713be2d7897decaf0e4e3bc74ad">
+          <img :src="bilibiliIcon" alt="bilibili" class=" link-icon"/>
+        </a>
+        <a class="theme" href="https://github.com/CainHappyfish/vitepress-theme-censored">
+          <img :src="themeIcon" alt="theme-censored" class=" link-icon"/>
+        </a>
+      </div>
     </div>
 
     <div class="content">
@@ -88,8 +102,9 @@ const AvatarURL = ref(Avatar)
 
 .infor-content {
   margin: 0 10px;
-  width: 30%;
-  height: 80vh;
+  width: 300px;
+  height: 400px;
+  max-height: 80vh;
   border-radius: 10px;
   background: var(--censored-nav-color);
   filter: drop-shadow(0 0 2px var(--censored-shadow-color));
@@ -109,6 +124,25 @@ const AvatarURL = ref(Avatar)
   border-radius: 50%;
 }
 
+.links-info {
+  margin: 20px;
+  height: 140px;
+  width: 80%;
+  border-top: 2px dotted var(--censored-text-color);
+  border-bottom: 2px dotted var(--censored-text-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.link-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
 
 
 @media only screen and (max-width: 600px){

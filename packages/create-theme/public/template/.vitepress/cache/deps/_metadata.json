@@ -1,0 +1,49 @@
+{
+  "hash": "c8670c69",
+  "configHash": "1523c519",
+  "lockfileHash": "9c7c16dc",
+  "browserHash": "5d3e4c49",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "cc76b676",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../../../../node_modules/vitepress/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "96ff8acb",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "745c4f6f",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../../../../../../node_modules/pinia/dist/pinia.mjs",
+      "file": "pinia.js",
+      "fileHash": "b10c192d",
+      "needsInterop": false
+    },
+    "@homegrown/word-counter": {
+      "src": "../../../../../../../node_modules/@homegrown/word-counter/dist/index.js",
+      "file": "@homegrown_word-counter.js",
+      "fileHash": "9be56215",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-6KIIABV7": {
+      "file": "chunk-6KIIABV7.js"
+    },
+    "chunk-D4IDMI4O": {
+      "file": "chunk-D4IDMI4O.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
+    }
+  }
+}

@@ -114,15 +114,37 @@ const { theme, page } = useData<CensoredThemeConfig>()
     max-width: 85vw;
     flex-direction: column;
   }
+
   .info-content {
     padding: 20px;
-    width: 90%;
+    max-width: 60vw;
+  }
+
+  .tags-info {
+    width: 60vw;
+  }
+
+  .info-cover {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .post-cover {
+    border-radius: 10px;
+    width: 100%;
+
+    object-fit: fill;
   }
 }
 
 
 
 @media only screen and (max-width: 600px) {
+  .info-content {
+    width: 100%;
+  }
+
   .info-content h2 {
     font-size: 1.3rem;
   }
