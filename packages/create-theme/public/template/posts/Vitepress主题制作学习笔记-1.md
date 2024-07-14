@@ -58,7 +58,15 @@ tags:
 
 - 部署到GitHubPage时有些文章页面刷新后显示不完全 e.g. 主题测试，一刷新文章内容就消失了（没进行异步？）
   - 本地环境就没有这个问题
+  
   - 有些文章也不会出现这种问题
+  
   - 错误信息 `Hydration completed but contains mismatches`
+  
+    ![image-20240714190448509](Vitepress主题制作学习笔记-1.assets/image-20240714190448509.png)
+  
+    或许不是我的问题，后面换成vercel试试
+  
 - 网站图标无法正常显示
+
 - 等待发现

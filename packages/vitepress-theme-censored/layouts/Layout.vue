@@ -21,12 +21,7 @@ import TESTPAGE from "../components/global/TESTPAGE.vue";
 
 const LoadStore = useLoadingStore()
 
-
-
 const { theme, page } = useData<CensoredThemeConfig>()
-
-
-setupScrollAnimation()
 
 
 function loadCounter() {
