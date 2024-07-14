@@ -7,7 +7,7 @@
 </div>
 
 
-一个非常简单的Vitepress博客。
+一个非常简单的Vitepress博客主题。
 
 ![image-20240714173418423](README.assets/image-20240714173418423.png)
 
