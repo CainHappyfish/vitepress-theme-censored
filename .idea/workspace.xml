@@ -5,91 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPageSideIntro.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/icons/bilibili-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/icons/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/icons/tag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/icons/theme.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/equation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PagePost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/PagePost.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/SideBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/SideBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArticleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/ArticleInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/toTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/toTop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/composables/post.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/composables/post.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/components/codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/components/codes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/utils/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/utils/blog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/@shikijs_markdown-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/@shikijs_markdown-it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/angular-ts-NM2IMJ2M.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/angular-ts-NM2IMJ2M.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/asciidoc-ZBSJBWOO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/asciidoc-ZBSJBWOO.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-JTPOOJPM.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-JTPOOJPM.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-L6QIU3SO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-L6QIU3SO.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-N4Y2LRQ6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-N4Y2LRQ6.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-RAXDP27B.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/chunk-RAXDP27B.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/cpp-L4V7HMED.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/cpp-L4V7HMED.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/erb-3DXOBR6L.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/erb-3DXOBR6L.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/gdresource-IG6YSXRH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/gdresource-IG6YSXRH.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/haml-XKHBOXUJ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/haml-XKHBOXUJ.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/julia-5QKWXLZE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/julia-5QKWXLZE.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/latex-KSBIMERC.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/latex-KSBIMERC.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/rst-ZMTAOAUN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/rst-ZMTAOAUN.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/ruby-3C7QFP4T.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/ruby-3C7QFP4T.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/twig-6XERLK3W.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/twig-6XERLK3W.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/wikitext-LKB6OU5A.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/cache/deps/wikitext-LKB6OU5A.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/api-examples.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/api-examples.md.KmYWYBbf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/api-examples.md.KmYWYBbf.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/app.Bv3ZZdB2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/chunks/framework.C44xTZ8E.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/chunks/theme.C9BpZpRf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/index.md.C3TxBMQU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/index.md.C3TxBMQU.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/markdown-examples.md.C-5fVj5X.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/markdown-examples.md.C-5fVj5X.lean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/assets/style.Xsz4bvVQ.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/hashmap.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/hashmap.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/dist/markdown-examples.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/CENSORED主题测试.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/CENSORED主题测试.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PageIndex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PagePost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/PagePost.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/SideBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/SideBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArticleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/ArticleInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/PostPreviewCardMini.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/toTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/toTop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/composables/post.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/composables/post.data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/layouts/Layout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/codes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/utils/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/utils/blog.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +160,7 @@
       <workItem from="1720703746699" duration="1433000" />
       <workItem from="1720750397777" duration="35507000" />
       <workItem from="1720834822901" duration="36491000" />
-      <workItem from="1720924656604" duration="17090000" />
+      <workItem from="1720924656604" duration="17746000" />
     </task>
     <servers />
   </component>

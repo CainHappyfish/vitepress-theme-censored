@@ -90,7 +90,7 @@ watch(page, () => {
   <link rel="icon" href="../assets/favicon.ico" />
   <NotFound v-if="page.isNotFound"/>
   <PageLoading v-if="theme.pageLoading && !page.isNotFound " :key="LoadStore.pageLoadingKey"/>
-  <div class="layout-container">
+  <div class="layout-container" v-if="!page.isNotFound">
     <Index v-if="page.frontmatter.layout == 'index'" />
     <PageContent class="page-container" v-else>
       <NavBar />
