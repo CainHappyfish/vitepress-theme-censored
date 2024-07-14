@@ -58,6 +58,8 @@ const AvatarURL = ref(Avatar)
 
 .intro {
   font-family: Microsoft YaHei UI Light, sans-serif;
+  padding: 10px;
+  text-align: center;
 }
 
 .side-avatar {

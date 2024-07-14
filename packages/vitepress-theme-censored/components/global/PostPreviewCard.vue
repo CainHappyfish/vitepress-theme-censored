@@ -55,7 +55,7 @@ const handleImageError = (event: any) => {
 
 img {
   height: 90%;
-  width: calc(40%- 20px);
+  width: calc(40% - 20px);
 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;

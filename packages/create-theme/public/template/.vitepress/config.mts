@@ -91,6 +91,13 @@ const inlineCodePlugin: PluginWithOptions = (md, options) => {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    server: {
+        headers: {
+            'Cache-Control': 'no-store'
+        }
+    }
+  },
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
