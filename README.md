@@ -1,6 +1,7 @@
 # Vitepress-theme-censored
 
 <div align="center">
+    
 [Github](https://github.com/CainHappyfish/vitepress-theme-censored) | 
 [Blog](https://cainhappyfish.github.io/vitepress-theme-censored/)
     
