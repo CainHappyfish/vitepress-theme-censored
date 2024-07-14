@@ -13,7 +13,7 @@ const AvatarURL = ref(Avatar)
 <div class="side-container">
   <img :src="AvatarURL" alt="Avatar" class="side-avatar"/>
   <h2>{{ theme.user?.name }}</h2>
-  <p>{{ theme.user?.describe }}</p>
+  <p style="intro">{{ theme.user?.describe }}</p>
 
 
 </div>
@@ -46,5 +46,11 @@ const AvatarURL = ref(Avatar)
   width:100px;
   height:100px;
   border-radius: 50%;
+}
+
+.intro {
+  font-family: Microsoft YaHei UI Light, sans-serif;
+  padding: 10px;
+  text-align: center;
 }
 </style>
