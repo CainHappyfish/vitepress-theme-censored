@@ -103,7 +103,7 @@ export default defineConfig({
   ],
   srcDir: './',
   postDir: './posts',
-  // cleanUrls: true,
+  cleanUrls: true,
   base: '/vitepress-theme-censored/',
   title: "BLOG THEME CENSORED",
   description: "A theme for Vitepress",
