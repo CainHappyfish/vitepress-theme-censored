@@ -4,7 +4,7 @@
 // const { theme } = useData<CensoredThemeConfig>()
 import { Title } from "utils/outline"
 import {onMounted, ref} from "vue";
-import OutlineItem from "../OutlineItem.vue";
+import OutlineItem from "./OutlineItem.vue";
 
 const getTitle = (): Title[] => {
   const headers = document.querySelectorAll('.post-content :where(h1,h2,h3,h4,h5,h6)');

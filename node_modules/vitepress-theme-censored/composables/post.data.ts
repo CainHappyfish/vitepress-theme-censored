@@ -54,7 +54,7 @@ export default <LoaderModule>{
 				meta.date = getFileBirth(file);
 				if (!meta.date) {
 					meta.date = birthtimeMs;
-					console.log(typeof(meta.date), "default")
+					// console.log(typeof(meta.date), "default")
 				}
 			} else {
 				meta.date = new Date(`${new Date(meta.date).toUTCString()}+${timeZone}`).toLocaleString();

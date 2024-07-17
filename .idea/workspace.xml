@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/OutlineItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/Outline.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/components/global/Outline.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/composables/post.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/composables/post.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/components/codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/components/codes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/Vitepress主题制作学习笔记-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/Vitepress主题制作学习笔记-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/export-&amp;-export-default.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/export-&amp;-export-default.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/OutlineItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/OutlineItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/Outline.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/components/global/Outline.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/composables/post.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/composables/post.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/codes.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +87,10 @@
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\global" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\icons" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\assets\icons" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored" />
-      <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components\global" />
       <recent name="D:\Learning\frontEnd\vitepress-theme-censored\packages\vitepress-theme-censored\components" />
     </key>
   </component>
@@ -167,7 +171,7 @@
       <workItem from="1720924656604" duration="28060000" />
       <workItem from="1720972647546" duration="346000" />
       <workItem from="1721017470325" duration="27882000" />
-      <workItem from="1721178564156" duration="7486000" />
+      <workItem from="1721178564156" duration="16969000" />
     </task>
     <servers />
   </component>

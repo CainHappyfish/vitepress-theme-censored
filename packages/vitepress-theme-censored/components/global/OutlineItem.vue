@@ -7,7 +7,7 @@ v0.0.0 待实现
 -->
 
 <script setup lang="ts">
-import { Title } from "utils/outline"
+import { Title } from "../../utils/outline"
 import {ref} from "vue";
 defineProps<{
   children: Title[],
