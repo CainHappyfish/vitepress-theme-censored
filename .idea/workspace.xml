@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/VitePress主题制作指北.assets/9908cf0567cf8ec437478d7843e6d76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/VitePress主题制作指北.assets/image-20240623021339512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/VitePress主题制作指北.assets/sample.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/VitePress主题制作指北.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/Vitepress主题制作学习笔记-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/posts/Vitepress主题制作学习笔记-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/composables/post.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/composables/post.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/components/codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/styles/components/codes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/composables/post.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/composables/post.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/codes.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/styles/components/codes.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +166,8 @@
       <workItem from="1720834822901" duration="36491000" />
       <workItem from="1720924656604" duration="28060000" />
       <workItem from="1720972647546" duration="346000" />
-      <workItem from="1721017470325" duration="9956000" />
+      <workItem from="1721017470325" duration="27882000" />
+      <workItem from="1721178564156" duration="7486000" />
     </task>
     <servers />
   </component>

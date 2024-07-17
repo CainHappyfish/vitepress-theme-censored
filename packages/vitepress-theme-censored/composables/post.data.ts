@@ -10,7 +10,6 @@ import path from 'path';
 import { sortBy, withBase } from '../utils/shared';
 import { isString } from "is-what";
 import {slash, getFileBirth, getFileLastUpdate} from "../utils/node";
-import {countWords} from "@homegrown/word-counter"
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const config: SiteConfig<CensoredThemeConfig> = (globalThis as any).VITEPRESS_CONFIG;
