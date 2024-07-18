@@ -1,5 +1,3 @@
-import fs from "fs";
-
 
 export function RollingLoading() {
     window.addEventListener('load', () => {
@@ -43,8 +41,8 @@ export function setupScrollAnimation() {
   triggerScrollAnimation();
 }
 
-export function getFileContent(filePath) {
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
-    console.log(fileContent)
-    return fileContent
-}
+// export function getFileContent(filePath) {
+//     const fileContent = fs.readFileSync(filePath, 'utf-8');
+//     console.log(fileContent)
+//     return fileContent
+// }

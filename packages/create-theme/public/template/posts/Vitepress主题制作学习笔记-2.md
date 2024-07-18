@@ -194,3 +194,372 @@ export const useAllPosts = (sort?: CensoredTheme.OrderByArg, filter?: (v: Censor
 # 工具函数
 
 这部分我们来看`vitepress-theme-censored/utils`内的ts使用。
+
+## `client/index.ts`
+
+```
+export const formatDate = (d: Date | number | string | undefined, fmt: string = 'yyyy-MM-dd HH:mm:ss'): string => {
+	if (!(d instanceof Date)) {
+		if (isString(d)) {
+			d = d.replace(/-/gs, '/');
+		}
+		d = d ? new Date(d) : new Date();
+	}
+
+	const o = {
+		'M+': d.getMonth() + 1,
+		'(d|D)+': d.getDate(),
+		'(h|H)+': d.getHours(),
+		'm+': d.getMinutes(),
+		's+': d.getSeconds(),
+		'q+': Math.floor((d.getMonth() + 3) / 3),
+		S: d.getMilliseconds(),
+	};
+
+	if (/(([Yy])+)/.test(fmt)) {
+		fmt = fmt.replace(RegExp.$1, (d.getFullYear() + '').substring(4 - RegExp.$1.length));
+	}
+
+	for (const k in o) {
+		if (new RegExp('(' + k + ')').test(fmt)) {
+			const val = o[k as keyof typeof o].toString();
+			fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? val : ('00' + val).substring(val.length));
+		}
+	}
+
+	return fmt;
+};
+```
+
+该函数接受两个参数：
+
+- `d`：可以是 `Date` 对象、数字、字符串或 `undefined`，表示需要格式化的日期。
+- `fmt`：一个可选的字符串，表示日期的格式，默认值为 `'yyyy-MM-dd HH:mm:ss'`。
+
+如果 `d` 不是 `Date` 对象，且 `d` 如果是字符串，用 `/` 替换所有的 `-`，若 `d` 不为 `null` 或 `undefined`，将 `d` 转换为 `Date` 对象；否则，使用当前日期。
+
+然后我们定义一个对象 `o`，其中包含日期各部分的正则表达式和相应的值：
+
+- `'M+'`：月份，从0开始，因此需要加1。
+- `'(d|D)+'`：日期。
+- `'(h|H)+'`：小时。
+- `'m+'`：分钟。
+- `'s+'`：秒数。
+- `'q+'`：季度。
+- `'S'`：毫秒。
+
+对于`if (/(([Yy])+)/.test(fmt)) { ... }`，如果格式字符串中包含年（`Y`或`y`），将其替换为年份`fmt.replace(RegExp.$1, (d.getFullYear() + '').substring(4 - RegExp.$1.length))`，将年份替换为 `d.getFullYear()` 的字符串表示，根据 `Y`或`y`的长度决定截取的位数。
+
+遍历对象 `o` 的键，将格式字符串中的对应部分替换为相应的值：，`if (new RegExp('(' + k + ')').test(fmt)) { ... }`如果格式字符串中包含当前键 `k`，执行以下操作：
+
+- `const val = o[k as keyof typeof o].toString();`：将键 `k` 对应的值转换为字符串。
+- `fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? val : ('00' + val).substring(val.length));`：替换格式字符串中的匹配部分。如果匹配长度为1，直接替换为值；否则，补齐前导零。
+
+最后返回格式化后的日期字符串。
+
+> 由于新标准下正则表达式得`$`运算符（静态属性）已经被废弃，建议使用`replace`来代替
+>
+> from GPT
+>
+> ```
+> export const formatDate = (d: Date | number | string | undefined, fmt: string = 'yyyy-MM-dd HH:mm:ss'): string => {
+> 	if (!(d instanceof Date)) {
+> 		if (typeof d === 'string') {
+> 			d = d.replace(/-/gs, '/');
+> 		}
+> 		d = d ? new Date(d) : new Date();
+> 	}
+> 
+> 	const o = {
+> 		'M+': d.getMonth() + 1,
+> 		'(d|D)+': d.getDate(),
+> 		'(h|H)+': d.getHours(),
+> 		'm+': d.getMinutes(),
+> 		's+': d.getSeconds(),
+> 		'q+': Math.floor((d.getMonth() + 3) / 3),
+> 		'S': d.getMilliseconds(),
+> 	};
+> 
+> 	if (/(([Yy])+)/.test(fmt)) {
+> 		fmt = fmt.replace(/(([Yy])+)/, (match) => {
+> 			return (d.getFullYear() + '').substring(4 - match.length);
+> 		});
+> 	}
+> 
+> 	for (const k in o) {
+> 		if (new RegExp('(' + k + ')').test(fmt)) {
+> 			const val = o[k as keyof typeof o].toString();
+> 			fmt = fmt.replace(new RegExp('(' + k + ')'), (match) => {
+> 				return match.length === 1 ? val : ('00' + val).substring(val.length);
+> 			});
+> 		}
+> 	}
+> 
+> 	return fmt;
+> };
+> ```
+>
+> 当你使用一个替换函数作为 `replace` 方法的第二个参数时，匹配的部分会作为该函数的参数传递。这是 `String.prototype.replace` 的一个特性。
+
+## `shared.ts`
+
+这部分主要负责文章发布相关信息的具体处理。
+
+### `dataPath`
+
+`dataPath` 函数通过遍历 `paths` 中的键名，从嵌套对象 `data` 中提取指定路径上的值。如果路径中任意一级不是对象且未到达终点，函数返回 `undefined`。遍历完成后，返回最终路径部分对应的值。
+
+```typescript
+export const dataPath = <T>(data: any, paths: string): T | undefined => {
+	const keys = paths.split('.');
+	if (!isObject(data)) return;
+	const len = keys.length;
+	for (let index = 0; index < len; index++) {
+		const key = keys[index];
+		if (!isObject(data[key]) && index < len - 1) {
+			return;
+		} else {
+			data = data[key];
+		}
+	}
+	return data;
+};
+```
+
+`<T>`：泛型参数 `T`，表示返回值的类型。
+
+`(data: any, paths: string): T | undefined`：函数接受两个参数：
+
+- `data: any`：表示输入对象。
+- `paths: string`：表示对象中要提取的路径，路径部分用点 `.` 分隔。
+- 返回值类型为 `T` 或 `undefined`，表示路径上找到的值或 `undefined`。
+
+`const keys = paths.split('.');`将路径字符串 `paths` 按点 `.` 分割成数组 `keys`。检查 `data` 是否为对象（ `isObject` 是`@vueuse/core`中一个判断输入值是否为对象的辅助函数）。如果 `data` 不是对象，返回 `undefined`。遍历路径部分：
+
+- `const key = keys[index];`：获取当前路径部分 `key`。
+- `if (!isObject(data[key]) && index < len - 1) { return; }`：检查 `data[key]` 是否为对象，且当前路径部分不是最后一个路径部分。如果 `data[key]` 不是对象且不是最后一个路径部分，返回 `undefined`。
+- `else { data = data[key]; }`：否则，将 `data` 更新为 `data[key]`，继续遍历下一路径部分。
+
+### `groupBy`
+
+ `groupBy` 泛型函数用于将一个对象数组按照指定路径上的值进行分组，并计算每个组的出现次数。该函数将 `Map` 对象转换为数组并返回，数组中的每个元素都是一个 `[key, value]` 数组，表示键值和对应的计数。
+
+```typescript
+export const groupBy = <T extends AnyObject>(data: T[], path: string, convert?: (key: string) => string) => {
+	const map = new Map<string, number>();
+	convert = convert ?? ((key: string) => key);
+
+	const setMap = (key: string) => {
+		const id = convert!(key);
+		if (map.has(id)) {
+			map.set(id, map.get(id)! + 1);
+		} else {
+			map.set(id, 1);
+		}
+	};
+
+	data.forEach(item => {
+		const val = dataPath(item, path);
+		if ((val ?? '') !== '') {
+			if (Array.isArray(val)) {
+				for (let index = 0; index < val.length; index++) {
+					setMap(<string>val[index]);
+				}
+			} else {
+				setMap(<string>val);
+			}
+		} else {
+			setMap('');
+		}
+	});
+	return Array.from(map);
+};
+```
+
+`<T extends AnyObject>`泛型参数 `T`，表示函数适用于任何对象类型;`data: T[]`表示一个包含对象的数组，表示要分组的数据。`path: string`为字符串参数，指定用于分组的对象路径。`convert?: (key: string) => string`表示可选的转换函数，用于将键值转换为字符串。
+
+`const map = new Map<string, number>();`创建一个 `Map` 对象，用于存储分组后的键值和对应的计数。`convert = convert ?? ((key: string) => key);`如果未提供 `convert` 函数，使用默认的身份函数（返回键本身）。
+
+```typescript
+const setMap = (key: string) => {
+	const id = convert!(key);
+	if (map.has(id)) {
+		map.set(id, map.get(id)! + 1);
+	} else {
+		map.set(id, 1);
+	}
+};
+```
+
+`const setMap = (key: string) => { ... }`定义了一个内部函数 `setMap`，用于更新 `Map` 对象：
+
+- `const id = convert!(key);`：将键值转换为字符串 `id`
+- `if (map.has(id)) { map.set(id, map.get(id)! + 1); }`：如果 `map` 中已存在该键，则计数加1
+- `else { map.set(id, 1); }`：否则，将该键值的计数设置为1
+
+```
+data.forEach(item => {
+	const val = dataPath(item, path);
+	if ((val ?? '') !== '') {
+		if (Array.isArray(val)) {
+			for (let index = 0; index < val.length; index++) {
+				setMap(<string>val[index]);
+			}
+		} else {
+			setMap(<string>val);
+		}
+	} else {
+		setMap('');
+	}
+});
+```
+
+`data.forEach(item => { ... })`遍历 `data` 数组中的每个对象 `item`：
+
+- `const val = dataPath(item, path);`：调用上面的`datapath`函数获取对象 `item` 中指定路径 `path` 的值。
+
+- 如果 `val` 不为 `null` 或 `undefined` 且不为空字符串：
+
+  - 如果 `val` 是数组，遍历数组并调用 `setMap`：
+
+    `setMap(<string>val[index]);`将数组中的每个元素转换为字符串并更新 `Map`。
+
+- 否则，将 `val` 转换为字符串并更新 `Map`。
+
+- 如果 `val` 为 `null` 或 `undefined` 或空字符串，将空字符串作为键值更新 `Map`。
+
+### `parseArgs 
+
+`parseArgs` 函数用于解析排序参数 `orderby` 并将其转换为一个数组，返回解析后的排序键值对数组。
+
+- 检查 `orderby` 是否为字符串。
+- 如果是字符串，将其按空格分割，并根据前缀 `+` 或 `-` 确定排序顺序。
+- 如果是对象，将其键值对映射为 `[key, value]` 元组，并将排序顺序设定为 `1` 或 `-1`。
+- 返回解析后的排序键值对数组。
+
+```
+export const parseArgs = (orderby: CensoredTheme.OrderByArg) => {
+	const result: [string | number, -1 | 1][] = [];
+	if (typeof orderby === 'string') {
+		const arr = orderby.split(' ');
+		for (let i = 0, len = arr.length; i < len; i++) {
+			const key = arr[i];
+			switch (key[0]) {
+				case '+':
+					result.push([key.slice(1), 1]);
+					break;
+				case '-':
+					result.push([key.slice(1), -1]);
+					break;
+				default:
+					result.push([key, 1]);
+			}
+		}
+	} else {
+		result.push(
+			...Object.keys(orderby).map<[string, -1 | 1]>(key => {
+				return [key, orderby[key]];
+			}),
+		);
+	}
+	return result;
+};
+```
+
+函数接受一个参数 `orderby`，其类型为 `CensoredTheme.OrderByArg`，可能是字符串或对象。`const result: [string | number, -1 | 1][] = [];`初始化一个空数组 `result`，用于存储解析后的排序键值对。每个元素是一个元组，包含一个键（字符串或数字）和一个排序顺序（-1 或 1）。
+
+```
+if (typeof orderby === 'string') {
+	const arr = orderby.split(' ');
+	for (let i = 0, len = arr.length; i < len; i++) {
+		const key = arr[i];
+		switch (key[0]) {
+			case '+':
+				result.push([key.slice(1), 1]);
+				break;
+			case '-':
+				result.push([key.slice(1), -1]);
+				break;
+			default:
+				result.push([key, 1]);
+		}
+	}
+
+```
+
+`if (typeof orderby === 'string')`：检查 `orderby` 是否为字符串。
+
+`const arr = orderby.split(' ');`：将字符串按空格分割成数组 `arr`。
+
+`for (let i = 0, len = arr.length; i < len; i++) { ... }`：遍历数组 `arr`：
+- `const key = arr[i];`：获取当前键 `key`。
+- `switch (key[0]) { ... }`：根据键的第一个字符判断排序顺序：
+  - `case '+':`：如果键以 `+` 开头，表示升序，移除 `+` 并添加到 `result`。
+  - `case '-':`：如果键以 `-` 开头，表示降序，移除 `-` 并添加到 `result`。
+  - `default:`：默认情况下，表示升序，直接添加到 `result`。
+
+```typescript
+} else {
+	result.push(
+		...Object.keys(orderby).map<[string, -1 | 1]>(key => {
+			return [key, orderby[key]];
+		}),
+	);
+}
+```
+
+如果 `orderby` 不是字符串，则假定其为对象。`result.push(...Object.keys(orderby).map<[string, -1 | 1]>(key => { ... }));`：将对象 `orderby` 的键值对映射为元组并添加到 `result`：
+
+- `Object.keys(orderby)`：获取对象的所有键。
+- `.map<[string, -1 | 1]>(key => { ... })`：将每个键映射为 `[key, orderby[key]]` 元组。
+- `...`：使用展开运算符将映射后的元组数组展开并添加到 `result`。
+
+### `sortBy`
+
+`sortBy` 泛型函数用于根据指定的排序参数 `orderby` 对对象数组 `data` 进行排序。
+
+```
+export const sortBy = <T extends AnyObject>(data: T[], orderby: CensoredTheme.OrderByArg) => {
+	const sort = parseArgs(orderby);
+	const len = sort.length;
+	return data.sort((a, b) => {
+		for (let index = 0; index < len; index++) {
+			const [key, order] = sort[index];
+			if (a[key] === b[key]) {
+
+			} else {
+				return order > 0 ? a[key] - b[key] : b[key] - a[key];
+			}
+		}
+		return 0;
+	});
+};
+```
+
+`data: T[]`：一个包含对象的数组，表示要排序的数据。`orderby: CensoredTheme.OrderByArg`为排序参数，可以是字符串或对象。
+
+`const sort = parseArgs(orderby);`调用 `parseArgs` 函数解析 `orderby`，返回一个排序键值对数组 `sort`。`const len = sort.length;`获取排序键值对数组的长度 `len`。
+
+```
+return data.sort((a, b) => {
+	for (let index = 0; index < len; index++) {
+		const [key, order] = sort[index];
+		if (a[key] === b[key]) {
+
+		} else {
+			return order > 0 ? a[key] - b[key] : b[key] - a[key];
+		}
+	}
+	return 0;
+});
+```
+
+对 `data` 数组进行排序，`(a, b) => { ... }`比较函数接受两个参数 `a` 和 `b`，表示要比较的两个对象。遍历排序键值对数组 `sort`：
+
+- `const [key, order] = sort[index];`：解构赋值，获取当前排序键值对的键 `key` 和排序顺序 `order`。
+
+- `if (a[key] === b[key]) { ... }`：如果 `a` 和 `b` 在当前键 `key` 上的值相等，继续比较下一个键。
+
+- 否则，根据排序顺序返回比较结果
+
+  `return order > 0 ? a[key] - b[key] : b[key] - a[key];`：如果 `order` 大于0，表示升序；否则，表示降序。返回两个值的差值以确定排序顺序。如果所有排序键的值都相等，返回0，表示 `a` 和 `b` 相等
