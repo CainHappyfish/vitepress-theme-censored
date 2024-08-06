@@ -27,7 +27,7 @@ export declare interface CensoredThemeConfig {
 	postDir?: string;
 
 	/** 内置页地址配置 | built in page path config */
-	page?: CensoredTheme.BuiltPageConfig;
+	page?: CensoredTheme.BuiltPageCsconfig;
 
 	/** 首页分页 | Index page generator */
 	indexGenerator?: Omit<CensoredTheme.PaginationConfig, 'date_fmt'>;
