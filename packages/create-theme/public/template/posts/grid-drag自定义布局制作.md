@@ -321,3 +321,95 @@ export interface ItemData {
   }
 }
 ```
+
+定义`DragCards`对象：
+
+```
+class DragCards <T extends ItemData>  {
+  cards = new Map<string, ItemData>();
+
+  set(key: string, data: T): void {
+    this.cards.set(key, data);
+  }
+
+  remove(key: string): void {
+    this.cards.delete(key);
+  }
+
+  get(key: string): ItemData | undefined {
+    return this.cards.get(key)
+  }
+}
+```
+
+然后使用`Map`来存数据：
+
+```
+export const dragCards = new DragCards<ItemData>()
+```
+
+使用`v-for`即可，效果如下：
+
+![image-20240807171231954](grid-drag自定义布局制作.assets/image-20240807171231954.png)
+
+## 卡片碰撞
+
+### 拖曳碰撞
+
+拖曳碰撞比较简单，只要判断鼠标位置元素是不是也是卡片就行了。
+
+```typescript
+isDroppable.value = !(CardRight.value > CanvasWidth.value ||
+  CardBottom.value > CanvasHeight.value ||
+  CurrentElement.classList.contains('item-container') // 判断碰撞
+)
+```
+
+当然我这里其实有点不友好，拖曳放置的判断鼠标位置而不是根据预览卡片的位置来放置的。比起单个卡片，我们需要修改预览卡片的位置信息：
+
+```typescript
+ const board: HTMLElement | null = document.querySelector(".drag-board")
+  if (board) {
+    PreviewData.value.X = Math.floor((event.clientX - board.getBoundingClientRect().x - 25) / ItemWidth.value)
+    PreviewData.value.Y = Math.floor((event.clientY - board.getBoundingClientRect().y - 25) / ItemHeight.value)
+  }
+
+  PreviewData.value.Left = PreviewData.value.X * (ItemWidth.value) + 25
+  PreviewData.value.Top = PreviewData.value.Y * (ItemHeight.value) + 25
+```
+
+如果存在碰撞，我们这里触发事件的元素是碰撞卡片而不是网格，所以我们要用坐标来确定预览卡片的位置，最后效果如下：
+
+![7772afdd33022d524c493bbdffd19bdf](grid-drag自定义布局制作.assets/7772afdd33022d524c493bbdffd19bdf.png)
+
+### 缩放碰撞
+
+![image-20240807174914506](grid-drag自定义布局制作.assets/image-20240807174914506.png)
+
+由于我们是向右下方缩放的，所以只需要判断右下方的元素是否重叠即可。知道这回事就很简单了：如果卡片元素的右侧距离大于其他卡片某一元素的左侧且底部距离大于某一元素的顶部距离，则判断为碰撞。注意这里只有一个方向满足条件不会碰撞（~~我是StarBeat~~）。
+
+```typescript
+const cards = document.querySelectorAll('.item-container')
+if (cards) {
+cards.forEach((e) => {
+      if (e.id !== CurrentCard.id) {
+        resizable.value = !(( (CurrentCard.getBoundingClientRect().right >= e.getBoundingClientRect().left ) &&
+             CurrentCard.getBoundingClientRect().bottom >= e.getBoundingClientRect().top
+            ) &&
+            (CurrentCard.getBoundingClientRect().left <= e.getBoundingClientRect().left &&
+             CurrentCard.getBoundingClientRect().top <= e.getBoundingClientRect().top
+            ))
+      }
+	})
+}
+```
+
+最后效果如下：
+
+![image-20240807190902673](grid-drag自定义布局制作.assets/image-20240807190902673.png)
+
+# Grid拖曳布局最终效果
+
+至此我们完成了Grid拖曳布局，效果如下：
+
+![image-20240807191029108](grid-drag自定义布局制作.assets/image-20240807191029108.png)
