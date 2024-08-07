@@ -2,7 +2,7 @@
 title: grid-drag自定义布局制作
 layout: page
 author: C4iN
-cover: https://i0.wp.com/puresourcecode.com/wp-content/uploads/2020/06/typescript-wallpaper.png?w=1920&ssl=1
+cover: https://pic.imgdb.cn/item/66b356f1d9c307b7e9117788.png
 tags:
  - 前端
  - vue3
