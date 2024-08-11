@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="194609fa-0ed4-4d7f-a94e-8e9807b51663" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vitepress-theme-censored/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/JavaScript复习-1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/JavaScript复习-2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/posts/JavaScript复习-3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vitepress-theme-censored/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vitepress-theme-censored/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/create-theme/public/template/.vitepress/config.mts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +177,8 @@
       <workItem from="1722566760449" duration="3856000" />
       <workItem from="1722829012976" duration="621000" />
       <workItem from="1722864418077" duration="193000" />
+      <workItem from="1723097799564" duration="1476000" />
+      <workItem from="1723355630042" duration="45000" />
     </task>
     <servers />
   </component>

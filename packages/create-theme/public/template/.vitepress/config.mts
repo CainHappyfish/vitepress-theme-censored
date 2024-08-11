@@ -150,7 +150,7 @@ export default defineConfig({
 
     user: {
         name: "破酥",
-        describe: "博客正在开发中orz\n前端初学者，有bug请在issues中提出或直接联系我",
+        describe: "博客正在开发中orz\n前端初学者，有bug请在issues中提出或直接联系我\r\n临时博客C4in1.github.io",
         essay: "我将泪水也藏在表面之下。"
     },
 
